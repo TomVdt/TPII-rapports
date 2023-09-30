@@ -1,6 +1,7 @@
 \documentclass[a4paper, 12pt, oneside]{article}
 
 \input{config/imports.tex}
+\input{config/pgfplot.tex}
 \input{config/biblatex.tex}
 
 \begin{document}
@@ -10,6 +11,23 @@
 \date{\today}
 
 \maketitle
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/monocristallinP(U).tikz}
+        \label{fig:1b}
+        \caption{test 2}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/polycristallinP(U).tikz}
+        \label{fig:1c}
+        \caption{test 3}
+    \end{subfigure}
+    \caption{wahooo this is a test aaaaaa}
+\end{figure}
 
 \input{sections/0-introduction.tex}
 \input{sections/1-demarche.tex}

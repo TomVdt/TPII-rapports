@@ -1,0 +1,73 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={\(\displaystyle U_d\) [V]},
+xmin=0.09525, xmax=0.41975,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle I_r\) [mA]},
+ymin=-7.2075, ymax=192.0575,
+ytick style={color=black}
+]
+\addplot [draw=steelblue31119180, fill=steelblue31119180, mark=+, only marks]
+table{%
+x  y
+0.405 26
+0.39 38
+0.378 46
+0.361 57
+0.329 79
+0.304 96
+0.264 120
+0.194 164
+0.232 144
+0.267 123
+0.19 168
+0.167 183
+0.187 172
+};
+\addlegendentry{d = 40 cm}
+\addplot [draw=darkorange25512714, fill=darkorange25512714, mark=x, only marks]
+table{%
+x  y
+0.369 1.85
+0.363 4.48
+0.362 5.07
+0.358 6.94
+0.353 8.49
+0.344 12.88
+0.342 14.33
+0.339 15.37
+0.335 16.84
+0.329 19.46
+0.321 22.84
+0.299 29
+0.292 31
+0.284 34
+0.275 38
+0.271 39
+0.248 48
+0.229 54
+0.201 63
+0.166 74
+0.135 83
+0.139 83
+0.11 89
+0.134 84
+0.119 87
+};
+\addlegendentry{d = 70 cm}
+\end{axis}
+
+\end{tikzpicture}
