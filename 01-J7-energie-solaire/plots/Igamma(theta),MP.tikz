@@ -1,0 +1,115 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray204}{RGB}{204,204,204}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={Angle d'incidence [deg]},
+xmin=-4.5, xmax=94.5,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle I_{\gamma}\) [mA]},
+ymin=6.57182922188048, ymax=463.782293846577,
+ytick style={color=black}
+]
+\addplot [draw=blue, fill=blue, forget plot, mark=+, only marks]
+table{%
+x  y
+0 443
+5 439
+10 434
+15 423
+20 410
+25 396
+30 377
+35 356
+40 334
+45 308
+50 279
+55 249
+60 217
+65 183
+70 153
+75 125
+80 100
+85 79
+90 63
+};
+\addplot [draw=red, fill=red, forget plot, mark=+, only marks]
+table{%
+x  y
+0 279
+5 277
+10 275
+15 269
+20 261
+25 250
+30 237
+35 225
+40 206
+45 189
+50 169
+55 148
+60 129
+65 107
+70 87
+75 69
+80 53
+85 41
+90 32
+};
+\addplot [semithick, blue, dashed]
+table {%
+0 442.857107527496
+5 440.92015434853
+10 435.142474471158
+15 425.623038512367
+20 412.524912697732
+25 396.072465566312
+30 376.54752457793
+35 354.284548459486
+40 329.664897987127
+45 303.110303344758
+50 275.075639961845
+55 246.041136579141
+60 216.50414901674
+65 186.970640558345
+70 157.946514891232
+75 129.928950067093
+80 103.397881931446
+85 78.8077829089295
+90 56.5798769724268
+};
+\addlegendentry{$I_{\gamma} = 226\cos{(-0.026 * \theta)} + 217$}
+\addplot [semithick, red, dashed]
+table {%
+0 281.427839803992
+5 280.092637725218
+10 276.11198734731
+15 269.5602898031
+20 260.560000890759
+25 249.27934228949
+30 235.929157378981
+35 220.758970429531
+40 204.052322819347
+45 186.121473448365
+50 167.301562401544
+55 147.944346946858
+60 128.411626946534
+65 109.068482565209
+70 90.2764506669328
+75 72.3867674389408
+80 55.7338035422592
+85 40.6288144907622
+90 27.3541230684576
+};
+\addlegendentry{$I_{\gamma} = 143\cos{(0.027 * \theta)} + 139$}
+\end{axis}
+
+\end{tikzpicture}

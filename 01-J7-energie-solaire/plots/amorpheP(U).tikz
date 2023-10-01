@@ -2,9 +2,8 @@
 \begin{tikzpicture}
 
 \definecolor{darkgray176}{RGB}{176,176,176}
-\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{green01270}{RGB}{0,127,0}
 \definecolor{lightgray204}{RGB}{204,204,204}
-\definecolor{steelblue31119180}{RGB}{31,119,180}
 
 \begin{axis}[
 legend cell align={left},
@@ -27,7 +26,7 @@ ylabel={Puissance [W]},
 ymin=0.00262044, ymax=0.07879896,
 ytick style={color=black}
 ]
-\addplot [draw=steelblue31119180, fill=steelblue31119180, mark=+, only marks]
+\addplot [draw=green01270, fill=green01270, mark=+, only marks]
 table{%
 x  y
 8.88 0.0398712
@@ -65,7 +64,7 @@ x  y
 0.405 0.0060831
 };
 \addlegendentry{d = 40 cm}
-\addplot [draw=darkorange25512714, fill=darkorange25512714, mark=x, only marks]
+\addplot [draw=green01270, fill=green01270, mark=x, only marks]
 table{%
 x  y
 8.56 0.0148088

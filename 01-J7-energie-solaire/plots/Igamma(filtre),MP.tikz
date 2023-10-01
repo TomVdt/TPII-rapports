@@ -1,0 +1,47 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray204}{RGB}{204,204,204}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={Filtre},
+xmin=-0.5, xmax=7.75,
+xtick style={color=black},
+xtick={0.125,1.125,2.125,3.125,4.125,5.125,6.125,7.125},
+xticklabels={Aucun,2B,8,16,25,87C,47,58},
+y grid style={darkgray176},
+ylabel={i [mA/W]},
+ymin=0, ymax=3.44856722997796,
+ytick style={color=black}
+]
+\draw[draw=none,fill=blue] (axis cs:-0.125,0) rectangle (axis cs:0.125,3.28434974283615);
+\addlegendimage{ybar,ybar legend,draw=none,fill=blue}
+\addlegendentry{M}
+
+\draw[draw=none,fill=blue] (axis cs:0.875,0) rectangle (axis cs:1.125,3.1781557743957);
+\draw[draw=none,fill=blue] (axis cs:1.875,0) rectangle (axis cs:2.125,2.89189189189189);
+\draw[draw=none,fill=blue] (axis cs:2.875,0) rectangle (axis cs:3.125,2.81365313653137);
+\draw[draw=none,fill=blue] (axis cs:3.875,0) rectangle (axis cs:4.125,1.99561403508772);
+\draw[draw=none,fill=blue] (axis cs:4.875,0) rectangle (axis cs:5.125,1.2962962962963);
+\draw[draw=none,fill=blue] (axis cs:5.875,0) rectangle (axis cs:6.125,1.66433566433566);
+\draw[draw=none,fill=blue] (axis cs:6.875,0) rectangle (axis cs:7.125,2.06329113924051);
+\draw[draw=none,fill=red] (axis cs:0.125,0) rectangle (axis cs:0.375,2.10874357090375);
+\addlegendimage{ybar,ybar legend,draw=none,fill=red}
+\addlegendentry{P}
+
+\draw[draw=none,fill=red] (axis cs:1.125,0) rectangle (axis cs:1.375,2.09489704565801);
+\draw[draw=none,fill=red] (axis cs:2.125,0) rectangle (axis cs:2.375,1.89189189189189);
+\draw[draw=none,fill=red] (axis cs:3.125,0) rectangle (axis cs:3.375,1.80811808118081);
+\draw[draw=none,fill=red] (axis cs:4.125,0) rectangle (axis cs:4.375,1.16228070175439);
+\draw[draw=none,fill=red] (axis cs:5.125,0) rectangle (axis cs:5.375,0.58641975308642);
+\draw[draw=none,fill=red] (axis cs:6.125,0) rectangle (axis cs:6.375,0.797202797202797);
+\draw[draw=none,fill=red] (axis cs:7.125,0) rectangle (axis cs:7.375,1.16455696202532);
+\end{axis}
+
+\end{tikzpicture}

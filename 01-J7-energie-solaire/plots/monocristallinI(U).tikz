@@ -2,8 +2,6 @@
 \begin{tikzpicture}
 
 \definecolor{darkgray176}{RGB}{176,176,176}
-\definecolor{darkorange25512714}{RGB}{255,127,14}
-\definecolor{steelblue31119180}{RGB}{31,119,180}
 
 \begin{axis}[
 tick align=outside,
@@ -17,7 +15,7 @@ ylabel={\(\displaystyle I_r\) [mA]},
 ymin=-1.3, ymax=291.3,
 ytick style={color=black}
 ]
-\addplot [draw=steelblue31119180, fill=steelblue31119180, mark=+, only marks]
+\addplot [draw=blue, fill=blue, mark=+, only marks]
 table{%
 x  y
 0.506 20
@@ -33,7 +31,7 @@ x  y
 0.274 251
 0.211 278
 };
-\addplot [draw=darkorange25512714, fill=darkorange25512714, mark=x, only marks]
+\addplot [draw=blue, fill=blue, mark=x, only marks]
 table{%
 x  y
 0.474 12

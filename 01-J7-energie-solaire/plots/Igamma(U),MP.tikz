@@ -11,13 +11,49 @@ tick align=outside,
 tick pos=left,
 x grid style={darkgray176},
 xlabel={\(\displaystyle U_d\) [V]},
-xmin=0.09525, xmax=0.41975,
+xmin=0.0902, xmax=0.5258,
 xtick style={color=black},
 y grid style={darkgray176},
 ylabel={\(\displaystyle I_r\) [mA]},
-ymin=-7.2075, ymax=192.0575,
+ymin=-11.9575, ymax=291.8075,
 ytick style={color=black}
 ]
+\addplot [draw=blue, fill=blue, mark=+, only marks]
+table{%
+x  y
+0.506 20
+0.502 25
+0.496 32
+0.485 47
+0.452 87
+0.412 130
+0.373 171
+0.286 243
+0.33 206
+0.343 196
+0.274 251
+0.211 278
+};
+\addlegendentry{M, d = 40 cm}
+\addplot [draw=blue, fill=blue, mark=x, only marks]
+table{%
+x  y
+0.474 12
+0.467 15
+0.462 18
+0.455 22
+0.443 29
+0.42 41
+0.403 49
+0.391 54
+0.381 59
+0.358 69
+0.333 80
+0.298 94
+0.25 112
+0.166 137
+};
+\addlegendentry{M, d = 70 cm}
 \addplot [draw=red, fill=red, mark=+, only marks]
 table{%
 x  y
@@ -35,7 +71,7 @@ x  y
 0.167 183
 0.187 172
 };
-\addlegendentry{d = 40 cm}
+\addlegendentry{P, d = 40 cm}
 \addplot [draw=red, fill=red, mark=x, only marks]
 table{%
 x  y
@@ -65,7 +101,7 @@ x  y
 0.134 84
 0.119 87
 };
-\addlegendentry{d = 70 cm}
+\addlegendentry{P, d = 70 cm}
 \end{axis}
 
 \end{tikzpicture}
