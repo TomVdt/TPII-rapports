@@ -64,30 +64,6 @@ ytick style={color=black}
 (axis cs:7,3.5937029322224)
 --(axis cs:7,4.00123377663836);
 
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0 9.09734165946399
-1 7.66018535067633
-2 6.85128642155669
-3 6.13692283601803
-4 1.03731917513081
-5 0.155713686937967
-6 1.17336006650692
-7 3.5937029322224
-};
-\addlegendentry{A}
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0 10.0062586344376
-1 8.45440730823146
-2 7.56312799285772
-3 6.77820631527348
-4 1.15566328100954
-5 0.183792485901539
-6 1.31615042300357
-7 4.00123377663836
-};
-\addlegendentry{A}
 \end{axis}
 
 \end{tikzpicture}

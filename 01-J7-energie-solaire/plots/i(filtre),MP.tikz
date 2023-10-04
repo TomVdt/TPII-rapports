@@ -74,30 +74,6 @@ ytick style={color=black}
 (axis cs:7,195.460390962987)
 --(axis cs:7,217.197836885115);
 
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0 312.882182407909
-1 302.25500825927
-2 275.013610908205
-3 267.512312604676
-4 189.387484610649
-5 122.439357567444
-6 157.444285784146
-7 195.460390962987
-};
-\addlegendentry{P}
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0 343.987766159321
-1 333.376146619871
-2 303.364767470173
-3 295.218314701597
-4 209.735322406894
-5 136.819901691815
-6 175.422847082987
-7 217.197836885115
-};
-\addlegendentry{P}
 \path [draw=black, semithick]
 (axis cs:0.25,200.887771072077)
 --(axis cs:0.25,220.860943108673);
@@ -130,30 +106,6 @@ table {%
 (axis cs:7.25,110.319548149335)
 --(axis cs:7.25,122.591844255728);
 
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0.25 200.887771072077
-1.25 199.231963253663
-2.25 179.914511809106
-3.25 171.908562655737
-4.25 110.301227300708
-5.25 55.3866979119037
-6.25 75.4123037801359
-7.25 110.319548149335
-};
-\addlegendentry{P}
-\addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
-table {%
-0.25 220.860943108673
-1.25 219.747445877939
-2.25 198.463866569272
-3.25 189.715053580425
-4.25 122.154913050169
-5.25 61.8972527053803
-6.25 84.0282556604235
-7.25 122.591844255728
-};
-\addlegendentry{P}
 \end{axis}
 
 \end{tikzpicture}
