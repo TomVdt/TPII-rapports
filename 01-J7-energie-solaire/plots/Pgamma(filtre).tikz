@@ -12,7 +12,7 @@ xlabel={Filtre},
 xmin=-0.4875, xmax=7.4875,
 xtick style={color=black},
 y grid style={darkgray176},
-ylabel={\(\displaystyle P_{\gamma}\) [W \(\displaystyle \cdot\) m\(\displaystyle ^{-2}\)]},
+ylabel={\(\displaystyle P_{\gamma}\) [\(\displaystyle W\)]},
 ymin=0, ymax=142.905,
 ytick style={color=black}
 ]

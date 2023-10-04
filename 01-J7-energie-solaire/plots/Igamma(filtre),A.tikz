@@ -18,20 +18,20 @@ xtick={0,1,2,3,4,5,6,7},
 xticklabels={Aucun,2B,8,16,25,87C,47,58},
 y grid style={darkgray176},
 ylabel={i [mA/W]},
-ymin=0, ymax=0.100293901542983,
+ymin=0, ymax=10.0293901542983,
 ytick style={color=black}
 ]
-\draw[draw=none,fill=green01270] (axis cs:-0.125,0) rectangle (axis cs:0.125,0.0955180014695077);
+\draw[draw=none,fill=green01270] (axis cs:-0.125,0) rectangle (axis cs:0.125,9.55180014695077);
 \addlegendimage{ybar,ybar legend,draw=none,fill=green01270}
 \addlegendentry{A}
 
-\draw[draw=none,fill=green01270] (axis cs:0.875,0) rectangle (axis cs:1.125,0.0805729632945389);
-\draw[draw=none,fill=green01270] (axis cs:1.875,0) rectangle (axis cs:2.125,0.0720720720720721);
-\draw[draw=none,fill=green01270] (axis cs:2.875,0) rectangle (axis cs:3.125,0.0645756457564576);
-\draw[draw=none,fill=green01270] (axis cs:3.875,0) rectangle (axis cs:4.125,0.0109649122807018);
-\draw[draw=none,fill=green01270] (axis cs:4.875,0) rectangle (axis cs:5.125,0.00169753086419753);
-\draw[draw=none,fill=green01270] (axis cs:5.875,0) rectangle (axis cs:6.125,0.0124475524475524);
-\draw[draw=none,fill=green01270] (axis cs:6.875,0) rectangle (axis cs:7.125,0.0379746835443038);
+\draw[draw=none,fill=green01270] (axis cs:0.875,0) rectangle (axis cs:1.125,8.05729632945389);
+\draw[draw=none,fill=green01270] (axis cs:1.875,0) rectangle (axis cs:2.125,7.20720720720721);
+\draw[draw=none,fill=green01270] (axis cs:2.875,0) rectangle (axis cs:3.125,6.45756457564576);
+\draw[draw=none,fill=green01270] (axis cs:3.875,0) rectangle (axis cs:4.125,1.09649122807018);
+\draw[draw=none,fill=green01270] (axis cs:4.875,0) rectangle (axis cs:5.125,0.169753086419753);
+\draw[draw=none,fill=green01270] (axis cs:5.875,0) rectangle (axis cs:6.125,1.24475524475524);
+\draw[draw=none,fill=green01270] (axis cs:6.875,0) rectangle (axis cs:7.125,3.79746835443038);
 \end{axis}
 
 \end{tikzpicture}
