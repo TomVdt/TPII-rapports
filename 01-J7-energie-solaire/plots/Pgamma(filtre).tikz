@@ -13,7 +13,7 @@ xmin=-0.4875, xmax=7.4875,
 xtick style={color=black},
 y grid style={darkgray176},
 ylabel={\(\displaystyle P_{\gamma}\) [W]},
-ymin=0, ymax=1.591212,
+ymin=0, ymax=1.496712,
 ytick style={color=black}
 ]
 \draw[draw=none,fill=steelblue31119180] (axis cs:-0.125,0) rectangle (axis cs:0.125,1.361);
@@ -25,58 +25,58 @@ ytick style={color=black}
 \draw[draw=none,fill=steelblue31119180] (axis cs:5.875,0) rectangle (axis cs:6.125,0.715);
 \draw[draw=none,fill=steelblue31119180] (axis cs:6.875,0) rectangle (axis cs:7.125,0.79);
 \path [draw=black, semithick]
-(axis cs:0,1.20656)
---(axis cs:0,1.51544);
+(axis cs:0,1.29656)
+--(axis cs:0,1.42544);
 
 \path [draw=black, semithick]
-(axis cs:1,0.97232)
---(axis cs:1,1.26168);
+(axis cs:1,1.06232)
+--(axis cs:1,1.17168);
 
 \path [draw=black, semithick]
-(axis cs:2,0.9656)
---(axis cs:2,1.2544);
+(axis cs:2,1.0556)
+--(axis cs:2,1.1644);
 
 \path [draw=black, semithick]
-(axis cs:3,0.94064)
---(axis cs:3,1.22736);
+(axis cs:3,1.03064)
+--(axis cs:3,1.13736);
 
 \path [draw=black, semithick]
-(axis cs:4,0.77552)
---(axis cs:4,1.04848);
+(axis cs:4,0.86552)
+--(axis cs:4,0.95848);
 
 \path [draw=black, semithick]
-(axis cs:5,0.52208)
---(axis cs:5,0.77392);
+(axis cs:5,0.61208)
+--(axis cs:5,0.68392);
 
 \path [draw=black, semithick]
-(axis cs:6,0.5864)
---(axis cs:6,0.8436);
+(axis cs:6,0.6764)
+--(axis cs:6,0.7536);
 
 \path [draw=black, semithick]
-(axis cs:7,0.6584)
---(axis cs:7,0.9216);
+(axis cs:7,0.7484)
+--(axis cs:7,0.8316);
 
 \addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
 table {%
-0 1.20656
-1 0.97232
-2 0.9656
-3 0.94064
-4 0.77552
-5 0.52208
-6 0.5864
-7 0.6584
+0 1.29656
+1 1.06232
+2 1.0556
+3 1.03064
+4 0.86552
+5 0.61208
+6 0.6764
+7 0.7484
 };
 \addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
 table {%
-0 1.51544
-1 1.26168
-2 1.2544
-3 1.22736
-4 1.04848
-5 0.77392
-6 0.8436
-7 0.9216
+0 1.42544
+1 1.17168
+2 1.1644
+3 1.13736
+4 0.95848
+5 0.68392
+6 0.7536
+7 0.8316
 };
 \end{axis}
 

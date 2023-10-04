@@ -18,7 +18,7 @@ xtick={0,1,2,3,4,5,6,7},
 xticklabels={Aucun,2B,8,16,25,87C,47,58},
 y grid style={darkgray176},
 ylabel={i [mA/W]},
-ymin=-2.04528795694312, ymax=12.0092927900595,
+ymin=0, ymax=10.5065715661594,
 ytick style={color=black}
 ]
 \draw[draw=none,fill=green01270] (axis cs:-0.125,0) rectangle (axis cs:0.125,9.55180014695077);
@@ -33,59 +33,59 @@ ytick style={color=black}
 \draw[draw=none,fill=green01270] (axis cs:5.875,0) rectangle (axis cs:6.125,1.24475524475524);
 \draw[draw=none,fill=green01270] (axis cs:6.875,0) rectangle (axis cs:7.125,3.79746835443038);
 \path [draw=black, semithick]
-(axis cs:0,7.73315208325123)
---(axis cs:0,11.3704482106503);
+(axis cs:0,9.09734165946399)
+--(axis cs:0,10.0062586344376);
 
 \path [draw=black, semithick]
-(axis cs:1,6.11841572699607)
---(axis cs:1,9.99617693191172);
+(axis cs:1,7.66018535067633)
+--(axis cs:1,8.45440730823146);
 
 \path [draw=black, semithick]
-(axis cs:2,5.36872007142277)
---(axis cs:2,9.04569434299164);
+(axis cs:2,6.85128642155669)
+--(axis cs:2,7.56312799285772);
 
 \path [draw=black, semithick]
-(axis cs:3,4.68103647826146)
---(axis cs:3,8.23409267303005);
+(axis cs:3,6.13692283601803)
+--(axis cs:3,6.77820631527348);
 
 \path [draw=black, semithick]
-(axis cs:4,-0.164088950446291)
---(axis cs:4,2.35707140658664);
+(axis cs:4,1.03731917513081)
+--(axis cs:4,1.15566328100954);
 
 \path [draw=black, semithick]
-(axis cs:5,-1.40644337753391)
---(axis cs:5,1.74594955037342);
+(axis cs:5,0.155713686937967)
+--(axis cs:5,0.183792485901539);
 
 \path [draw=black, semithick]
-(axis cs:6,-0.377728006259475)
---(axis cs:6,2.86723849576996);
+(axis cs:6,1.17336006650692)
+--(axis cs:6,1.31615042300357);
 
 \path [draw=black, semithick]
-(axis cs:7,1.8990546386797)
---(axis cs:7,5.69588207018106);
+(axis cs:7,3.5937029322224)
+--(axis cs:7,4.00123377663836);
 
 \addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
 table {%
-0 7.73315208325123
-1 6.11841572699607
-2 5.36872007142277
-3 4.68103647826146
-4 -0.164088950446291
-5 -1.40644337753391
-6 -0.377728006259475
-7 1.8990546386797
+0 9.09734165946399
+1 7.66018535067633
+2 6.85128642155669
+3 6.13692283601803
+4 1.03731917513081
+5 0.155713686937967
+6 1.17336006650692
+7 3.5937029322224
 };
 \addlegendentry{A}
 \addplot [semithick, black, mark=-, mark size=3, mark options={solid}, only marks]
 table {%
-0 11.3704482106503
-1 9.99617693191172
-2 9.04569434299164
-3 8.23409267303005
-4 2.35707140658664
-5 1.74594955037342
-6 2.86723849576996
-7 5.69588207018106
+0 10.0062586344376
+1 8.45440730823146
+2 7.56312799285772
+3 6.77820631527348
+4 1.15566328100954
+5 0.183792485901539
+6 1.31615042300357
+7 4.00123377663836
 };
 \addlegendentry{A}
 \end{axis}
