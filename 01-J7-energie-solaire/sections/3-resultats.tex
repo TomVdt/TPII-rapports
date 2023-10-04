@@ -1,9 +1,9 @@
 \section{Résultats}
 
 \paragraph*{Relation \(P_\gamma\) et \(\frac{1}{d^2}\)}
-Il y a une relation linéaire entre \(\frac{1}{d^2}\) et la puissance lumineuse par surface \(P\gamma\) sur le capteur mise en évidence dans la figure \ref{plot:1}. Une régression linéaire de la bibliothèque python numpy a été utilisée afin de souligner cette relation.
+Il y a une relation linéaire entre \(\frac{1}{d^2}\) et la puissance lumineuse par surface \(P\gamma\) sur le capteur. Cette relation est mise en évidence dans la figure \ref{plot:1}. Une régression linéaire de la bibliothèque python numpy a été utilisée afin de souligner cette relation.
 Le choix a été fait de ne pas afficher les 5 dernières mesures et de ne pas prendre en compte pour la régression les 10 dernières car celles-ci divergeaient du comportement attendu par la théorie.
-% (  TODO:::::  La relation entre ces valeurs est Pgamma = alpha/d² avec alpha = (truc +/- machin)W.s^(-1)   )
+
 
 \begin{figure}[h]
     \centering
@@ -55,9 +55,19 @@ Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et 
 \end{figure}
 
 \paragraph*{\(P_{max}\) et \(\eta_{max}\)}
-La mesure de \(P_{max}\) se fait en regardant le maximum des données de la Fig. \ref{plot:3a} et Fig. \ref{plot:3b} et donne: PMAX 3 CELLULES. 
-Les valeurs de rendements maximums peuvent être obtenues en connaissant les valeurs de \(P_\gamma\) à \(d_1\) et \(d_2\): \(P_\gamma (d_1) = 1.49\) \unit{watt}, \(P_\gamma (d_2) = 0.621\) \unit{watt}. On obtient: RENDEMENT MAX IL FAUT PMAX TOOOOOOOOOM.
-COMPAREEEER LES RENDEMEEEEEEEENTS
+La mesure de \(P_{max}\) se fait en regardant le maximum des données de la Fig. \ref{plot:3a} et Fig. \ref{plot:3b} et donne: 
+\(P_{max,mono} (d_1) =  (0.069 \pm 0.007)\) \unit{\watt} \\
+\(P_{max,mono} (d_2) =  (0.028 \pm 0.007)\) \unit{\watt} \\
+\(P_{max,poly} (d_1) =  (0.033 \pm 0.005)\) \unit{\watt} \\
+\(P_{max,poly} (d_2) =  (0.013 \pm 0.003)\) \unit{\watt} \\
+Les valeurs de rendements maximums peuvent être obtenues en connaissant les valeurs de \(P_\gamma\) à \(d_1\) et \(d_2\): \(P_\gamma (d_1) = 1.49\) \unit{watt}, \(P_\gamma (d_2) = 0.621\) \unit{watt} et donne:
+\(\eta_{max,mono} (d_1) =  0.047\) \\
+\(\eta_{max,mono} (d_2) =  0.045\) \\
+\(\eta_{max,poly} (d_1) =  0.022\) \\
+\(\eta_{max,poly} (d_2) =  0.020\) \\
+Les rendements maximums pour les même cellules sont similaires. De plus la cellule monocristalline a un rendement maximum deux fois supérieur à celle polycristalline.
+% TODO:erreur rendements
+% TODO: cellule amorphe
 
 \paragraph*{\(I_\gamma\) et \(i\) selon \(d\)}
 En retirant toute résistance du circuit il est possible de mesurer \(I_\gamma\) le courant de court-circuit généré par la cellule photovoltaïque pour une distance (et donc une puissance lumineuse) donnée. Les données montrent que l'intensité \(I_\gamma\) dépend fortment de la distance, avec des distances courtes ayant une influence beaucoup plus élevée que les distances plus longues, comme illustré à la Fig. \ref{plot:4}. \\
