@@ -1,15 +1,58 @@
 \section{Résultats}
 
 \paragraph*{Relation \(P_\gamma\) et \(\frac{1}{d^2}\):}
-Il y a une relation linéaire entre \(frac{1}{d^2}\) et la puissance lumineuse par surface \(P\gamma\) sur le capteur mise en évidence dans la figure FIGURE1. Une régression linéaire de la bibliothèque python numpy a été utilisé afin de souligner cette relation.
+Il y a une relation linéaire entre \(\frac{1}{d^2}\) et la puissance lumineuse par surface \(P\gamma\) sur le capteur mise en évidence dans la figure \ref{plot:1}. Une régression linéaire de la bibliothèque python numpy a été utilisée afin de souligner cette relation.
 Le choix a été fait de ne pas afficher les 5 dernières mesures et de ne pas prendre en compte pour la régression les 10 dernières car celles-ci divergeaient du comportement attendu par la théorie.
 % (  TODO:::::  La relation entre ces valeurs est Pgamma = alpha/d² avec alpha = (truc +/- machin)W.s^(-1)   )
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{plots/Pgamma(1d2).tikz}
+    \caption{TMP TMP}
+    \label{plot:1}
+\end{figure}
+
 \paragraph*{Courbes caractéristiques \(I_r(U_D)\) et \(P(U_D)\):}
-Afin de mettre en évidence les caractéristiques variées des 3 technologies de celulles photovoltaïques (Si Monocristallin, Si Polycristallin, Si Amorphe) plusieurs mesures variées peuvent être effectuées.
+Afin de mettre en évidence les caractéristiques variées des 3 technologies de celulles photovoltaïques (A, M et P) plusieurs mesures variées peuvent être effectuées.
 Tout d'abord une mesure de l'intensité du courant inverse de la diode \(I_r\) en fonction de la tension \(U_D\) aux bornes d'une résistance \(R_C\) branchée aux bornes de la diode.
-Cette mesure a été effectué pour les 3 cellules à deux distances différentes, \(d_1\) et \(d_2\), en faisant varier les valeurs de \(R_C\). Cela a permis de tracer les courbes caractéristiques des FIGURES2(a) et (b).
-Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et donc les courbes \(P(U_D)\) des FIGURE3(a) et (b).
+Cette mesure a été effectué pour les 3 cellules à deux distances différentes, \(d_1\) et \(d_2\), en faisant varier les valeurs de \(R_C\). Cela a permis de tracer les courbes caractéristiques des Fig. \ref{plot:2a} et Fig. \ref{plot:2b}.
+Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et donc les courbes \(P(U_D)\) des Fig. \ref{plot:3a} et Fig. \ref{plot:3b}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/Ir(U),A.tikz}
+        \caption{Amorphe}
+        \label{plot:2a}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/Ir(U),MP.tikz}
+        \caption{Mono et poly}
+        \label{plot:2b}
+    \end{subfigure}
+    \caption{caractéristique blalbla}
+    \label{plot:2}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/P(U),A.tikz}
+        \caption{Amorphe}
+        \label{plot:3a}        
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/P(U),MP.tikz}
+        \caption{Mono et poly}
+        \label{plot:3b}        
+    \end{subfigure}
+    \caption{caractéristique blalbla}
+    \label{plot:3}
+\end{figure}
 
 \paragraph*{\(P_{max}\) et \(\eta_{max}\):}
 La mesure de \(P_{max}\) se fait en regardant le pic de ces courbes des FIGURE3(a) et (b) et donne: PMAX 3 CELLULES. 

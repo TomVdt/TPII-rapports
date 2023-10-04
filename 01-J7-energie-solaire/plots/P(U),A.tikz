@@ -63,7 +63,7 @@ x  y
 0.781 0.01175405
 0.405 0.0060831
 };
-\addlegendentry{d = 40 cm}
+\addlegendentry{$d_1$}
 \addplot [draw=green01270, fill=green01270, mark=x, only marks]
 table{%
 x  y
@@ -88,7 +88,7 @@ x  y
 6.1 0.028914
 6.32 0.0288192
 };
-\addlegendentry{d = 70 cm}
+\addlegendentry{$d_2$}
 \end{axis}
 
 \end{tikzpicture}
