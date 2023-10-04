@@ -23,24 +23,49 @@
 
 \section{Calcul d'erreurs}
 
+Les erreurs estimées de mesure sont indiquées dans la figure \ref{tab:erreurs}
 
-Incertitude sur \(\frac{1}{d^2}\): 
-\begin{equation*} 
-    \Delta \frac{1}{d^2} = \left|\frac{\partial\frac{1}{d^2}}{\partial d}\Delta d\right| = \left|\frac{-2\Delta d}{d^3}\right| = \frac{2\Delta d}{d^3} 
+\begin{figure}[H]
+    \centering
+    \begin{tabulary}{0.7\linewidth}{C C C C C C C}
+        \toprule
+        Variable & \(d\)      & \(P_{\gamma,S}\) & \(U_D\)   & \(I_R\)  & \(l_{cellule}\) & \(\theta\) \\
+        Erreur   & \(0.2\) cm & \(10\) \unit{\watt \per \meter^2}        & \(10\) \unit{\milli\volt} & \(1\) \unit{\milli\ampere} & 0.2 \unit{\centi\meter}      & \(1 \deg\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Erreurs estimées sur les mesures}
+    \label{tab:erreurs}
+\end{figure}
+
+La formule utilisée pour le calcul d'erreur d'une fonction \(G(x,y,z)\) est \cite{erreursmesure}
+
+\begin{equation*}
+    \Delta G = \left|\frac{\partial{G}}{\partial{x}}\Delta x\right| + \left|\frac{\partial{G}}{\partial{y}}\Delta y\right| + \left|\frac{\partial{G}}{\partial{z}}\Delta z\right|
 \end{equation*}
-Incertitude sur Pgamma donnée par la notice de l'instrument (le laboratoire est estimé être à 25°C): le maximum de +/-10 W/m² et +/- 5%
-(   TODO::::::    De plus nous obtenons grâce à la fonction polyfit() l'incertitude sur cette valeur à partir des incertitudes sur 1/d² et Pgamma)
 
+\paragraph*{Puissance \(P\)}
+\[ \Delta P = \Delta (U_D I_R) = I_R \Delta U_D + U_D \Delta I_R \]
 
+\paragraph*{Distance \(\frac{1}{d^2}\)}
+\[ \Delta \frac{1}{d^2} = \frac{2}{d^3}\Delta d\]
 
-\begin{itemize}
-\item L'annexe n'est utile que pour le matériel supplémentaire, notamment pour les tableaux des paramètres utilisés ou encore les calculs d'erreur (seulement dans les rapports, pas dans un article scientifique).
-\item Toutes les figures d'intérêt doivent figurer dans le corps du rapport.
-\item Tous les éléments figurant dans l'annexe doivent être cités à l'endroit opportun dans les sections précédentes.
-\end{itemize}
+\paragraph*{Surface \(S\)}
+\[ \Delta S = 2 l_{cellule} \Delta l_{cellule} \]
 
-% \begin{itemize}
-    % \item \Delta U
-    % \item \Delta I
-    % \item 
-% \end{itemize}
+\paragraph*{Grandeur caractéristique \(i\)}
+\[ \Delta i = \Delta \frac{I_\gamma}{P_\gamma} = \frac{\Delta I_\gamma}{P_\gamma} + \frac{I_\gamma}{P_\gamma^2} \Delta P_\gamma \]
+
+\paragraph*{Efficacité \(\eta\)}
+\[ \Delta \eta = \Delta \frac{P}{P_\gamma} = \frac{\Delta P}{P_\gamma} + \frac{P}{P_\gamma^2} \Delta P_\gamma\]
+
+\paragraph*{Régression linéaire}
+Pour trouver une droite \(y = ax+b\) par la méthode des moindres carrés,
+il faut appliquer la formule:
+
+\[ blabla \]
+
+L'erreur sur la pente nous est donnée par
+
+\[ bite \]
+
+En pratique, les erreurs sur les régressions ont été calculées par la bibliothèque \texttt{numpy}.
