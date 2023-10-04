@@ -62,10 +62,12 @@ La formule utilisée pour le calcul d'erreur d'une fonction \(G(x,y,z)\) est \ci
 Pour trouver une droite \(y = ax+b\) par la méthode des moindres carrés,
 il faut appliquer la formule:
 
-\[ blabla \]
+\[ a=\frac{\sum_{i}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sum_{i}(x_{i}-\bar{x})^{2}} \]
+
+\[ b = \bar{y} - a\bar{x}\]
 
 L'erreur sur la pente nous est donnée par
 
-\[ bite \]
+\[ \left(\Delta{a}\right)^{2}\,=\,{\frac{\sum_{i}(y_{i}-\,a{x}_{i}-\,b)^{2}}{\left(n-\,2\right)\cdot\,\sum_{i}({x}_{i}\,-\,\bar{C})^{2}}} \]
 
-En pratique, les erreurs sur les régressions ont été calculées par la bibliothèque \texttt{numpy}.
+avec n le nombre de points. En pratique, les erreurs sur les régressions ont été calculées par la bibliothèque \texttt{numpy}.

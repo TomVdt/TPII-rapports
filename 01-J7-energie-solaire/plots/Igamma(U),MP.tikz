@@ -34,7 +34,7 @@ x  y
 0.274 251
 0.211 278
 };
-\addlegendentry{M, d = 40 cm}
+\addlegendentry{M, $d_1$}
 \addplot [draw=blue, fill=blue, mark=x, only marks]
 table{%
 x  y
@@ -53,7 +53,7 @@ x  y
 0.25 112
 0.166 137
 };
-\addlegendentry{M, d = 70 cm}
+\addlegendentry{M, $d_2$}
 \addplot [draw=red, fill=red, mark=+, only marks]
 table{%
 x  y
@@ -71,7 +71,7 @@ x  y
 0.167 183
 0.187 172
 };
-\addlegendentry{P, d = 40 cm}
+\addlegendentry{P, $d_1$}
 \addplot [draw=red, fill=red, mark=x, only marks]
 table{%
 x  y
@@ -101,7 +101,7 @@ x  y
 0.134 84
 0.119 87
 };
-\addlegendentry{P, d = 70 cm}
+\addlegendentry{P, $d_2$}
 \end{axis}
 
 \end{tikzpicture}
