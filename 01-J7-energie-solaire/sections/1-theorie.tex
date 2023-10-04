@@ -1,7 +1,7 @@
 \section{Théorie}
 
 Les cellules photovoltaïques sont composées de deux semi-conducteurs formant une jonction PN. Lorsque la lumière du soleil frappe la cellule photovoltaïque, elle génère des paires électron-trou dans la région de la jonction.
-Les électrons dans la zone N sont poussés vers la jonction par le champ électrique créé par les charges fixes dans le matériau. Ces électrons se déplacent vers la zone P, créant ainsi un courant électrique \(I_\gamma\), comme illustré dans la figure \ref{fig:pn}.
+Les électrons dans la zone N sont poussés vers la jonction par le champ électrique créé par les charges fixes dans le matériau. Ces électrons se déplacent vers la zone P, créant ainsi un courant électrique \(I_\gamma\), comme illustré dans la Fig. \ref{fig:pn}.
 Le courant \(I_D\) traversant la jonction PN est relié à la tension directe \(U_D\) [\unit{\volt}] par la relation \ref{eq:1} \cite{notice}:
 \begin{equation}
     I_D = I_{SO}[e^{\alpha\frac{U_D}{T}} - 1] - I_\gamma
@@ -9,12 +9,12 @@ Le courant \(I_D\) traversant la jonction PN est relié à la tension directe \(
 \end{equation}
 où \(\alpha\) est une constante, \(T\) la température de la jonction en kelvins et \(I_{SO}\) le courant de saturation inverse de la jonction.
 
-\begin{figure}[h]
+\begin{figure}
     \centering
     \begin{subfigure}[t]{0.45\linewidth}
         \centering
         \includegraphics[width = 0.6\linewidth]{figures/junction1.png}
-        \caption{Diagramme d'une jonction PN non illuminée. Le semi-conducteur P contient un excès de charge positives, des trous comme représenté ici, alors que N contient un excès de charges négatives, créant ainsi un champ électrique.}
+        \caption{Diagramme d'une jonction PN non illuminée. Le semi-conducteur P contient un excès de charge positives, des trous comme représenté ici, alors que N contient un excès de charges négatives, créant ainsi un champ électrique. Les symboles \textcircled{+} et \textcircled{-} représentent les trous.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.45\linewidth}

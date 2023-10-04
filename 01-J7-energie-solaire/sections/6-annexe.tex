@@ -23,8 +23,6 @@
 
 \section{Calcul d'erreurs}
 
-Les erreurs estimées de mesure sont indiquées dans la figure \ref{tab:erreurs}
-
 \begin{figure}[H]
     \centering
     \begin{tabulary}{0.7\linewidth}{C C C C C C C}
@@ -43,31 +41,17 @@ La formule utilisée pour le calcul d'erreur d'une fonction \(G(x,y,z)\) est \ci
     \Delta G = \left|\frac{\partial{G}}{\partial{x}}\Delta x\right| + \left|\frac{\partial{G}}{\partial{y}}\Delta y\right| + \left|\frac{\partial{G}}{\partial{z}}\Delta z\right|
 \end{equation*}
 
-\paragraph*{Puissance \(P\)}
-\[ \Delta P = \Delta (U_D I_R) = I_R \Delta U_D + U_D \Delta I_R \]
-
-\paragraph*{Distance \(\frac{1}{d^2}\)}
-\[ \Delta \frac{1}{d^2} = \frac{2}{d^3}\Delta d\]
-
-\paragraph*{Surface \(S\)}
-\[ \Delta S = 2 l_{cellule} \Delta l_{cellule} \]
-
-\paragraph*{Grandeur caractéristique \(i\)}
-\[ \Delta i = \Delta \frac{I_\gamma}{P_\gamma} = \frac{\Delta I_\gamma}{P_\gamma} + \frac{I_\gamma}{P_\gamma^2} \Delta P_\gamma \]
-
-\paragraph*{Efficacité \(\eta\)}
-\[ \Delta \eta = \Delta \frac{P}{P_\gamma} = \frac{\Delta P}{P_\gamma} + \frac{P}{P_\gamma^2} \Delta P_\gamma\]
+\begin{align*}
+    \Delta P &= \Delta (U_D I_R) = I_R \Delta U_D + U_D \Delta I_R \\
+    \Delta \frac{1}{d^2} &= \frac{2}{d^3}\Delta d \\
+    \Delta S &= 2 l_{cellule} \Delta l_{cellule} \\
+    \Delta i &= \Delta \frac{I_\gamma}{P_\gamma} = \frac{\Delta I_\gamma}{P_\gamma} + \frac{I_\gamma}{P_\gamma^2} \Delta P_\gamma \\
+    \Delta \eta &= \Delta \frac{P}{P_\gamma} = \frac{\Delta P}{P_\gamma} + \frac{P}{P_\gamma^2} \Delta P_\gamma \\
+\end{align*}
 
 \paragraph*{Régression linéaire}
-Pour trouver une droite \(y = ax+b\) par la méthode des moindres carrés,
-il faut appliquer la formule:
-
-\[ a=\frac{\sum_{i}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sum_{i}(x_{i}-\bar{x})^{2}} \]
-
-\[ b = \bar{y} - a\bar{x}\]
-
-L'erreur sur la pente nous est donnée par
+La droite nous est donnée par la méthode des moindres carrés. L'erreur sur la pente est alors
 
 \[ \left(\Delta{a}\right)^{2}\,=\,{\frac{\sum_{i}(y_{i}-\,a{x}_{i}-\,b)^{2}}{\left(n-\,2\right)\cdot\,\sum_{i}({x}_{i}\,-\,\bar{C})^{2}}} \]
 
-avec n le nombre de points. En pratique, les erreurs sur les régressions ont été calculées par la bibliothèque \texttt{numpy}.
+avec n le nombre de points. En pratique, le calcul est fait par la bibliothèque \texttt{numpy}.
