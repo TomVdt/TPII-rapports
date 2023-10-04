@@ -8,7 +8,7 @@ Le choix a été fait de ne pas afficher les 5 dernières mesures et de ne pas p
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.4\textwidth]{plots/Pgamma(1d2).tikz}
-    \caption{TMP TMP}
+    \caption{Relation inversement quadratique entre distance et puissance lumineuse}
     \label{plot:1}
 \end{figure}
 
@@ -29,10 +29,10 @@ Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et 
     \begin{subfigure}[c]{0.4\linewidth}
         \centering
         \includegraphics[width=\textwidth]{plots/Ir(U),MP.tikz}
-        \caption{Mono et poly}
+        \caption{Mono- et polycristallin}
         \label{plot:2b}
     \end{subfigure}
-    \caption{caractéristique blalbla}
+    \caption{Caractéristique des cellules photovoltaïques}
     \label{plot:2}
 \end{figure}
 
@@ -47,10 +47,10 @@ Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et 
     \begin{subfigure}[c]{0.4\linewidth}
         \centering
         \includegraphics[width=\textwidth]{plots/P(U),MP.tikz}
-        \caption{Mono et poly}
+        \caption{Mono- et polycristallin}
         \label{plot:3b}        
     \end{subfigure}
-    \caption{caractéristique blalbla}
+    \caption{Courbe de puissance des cellules photovoltaïques}
     \label{plot:3}
 \end{figure}
 
@@ -71,7 +71,7 @@ Les rendements maximums pour les même cellules sont similaires. De plus la cell
 
 \paragraph*{\(I_\gamma\) et \(i\) selon \(d\)}
 En retirant toute résistance du circuit il est possible de mesurer \(I_\gamma\) le courant de court-circuit généré par la cellule photovoltaïque pour une distance (et donc une puissance lumineuse) donnée. Les données montrent que l'intensité \(I_\gamma\) dépend fortment de la distance, avec des distances courtes ayant une influence beaucoup plus élevée que les distances plus longues, comme illustré à la Fig. \ref{plot:4}. \\
-Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) est peut être observée, et permet de trouver une grandeur caractéristique moyenne \(i = \frac{I_\gamma}{P_\gamma}\) pour chaque cellule photovoltaïque. Cela a été fait dans les graphes des FIGURE5(a), (b) et (c) pour les trois types de cellules. Une régression linéaire a été utilisée pour trouver cette valeur de \(i\) qui représente la pente de la courbe.
+Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) est peut être observée, et permet de trouver une grandeur caractéristique moyenne \(i = \frac{I_\gamma}{P_\gamma}\) pour chaque cellule photovoltaïque. Cela a été fait dans les Fig. \ref{plot:5a} et Fig. \ref{plot:5b} pour les trois types de cellules. Une régression linéaire a été utilisée pour trouver cette valeur de \(i\) qui représente la pente de la courbe.
 
 \begin{figure}
     \centering
@@ -82,19 +82,19 @@ Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) est peut être observ�
 
 \begin{figure}
     \centering
-    \begin{subfigure}[t]{0.45\linewidth}
+    \begin{subfigure}[t]{0.48\linewidth}
         \centering
         \includegraphics[width=\textwidth]{plots/i(Pgamma),A.tikz}
         \caption{Amorphe}
         \label{plot:5a}
     \end{subfigure}
-    \begin{subfigure}[t]{0.45\linewidth}
+    \begin{subfigure}[t]{0.48\linewidth}
         \centering
         \includegraphics[width=\textwidth]{plots/i(Pgamma),MP.tikz}
-        \caption{Mono et Poly}
+        \caption{Mono- et polycristallin}
         \label{plot:5b}
     \end{subfigure}
-    \caption{Coefficient i}
+    \caption{Grandeur caractéristique i pour différentes cellules}
     \label{plot:5}
 \end{figure}
 
@@ -112,17 +112,22 @@ Une autre caractéristique des cellules photovoltaïques à analyser est leur se
     \begin{subfigure}[t]{0.45\linewidth}
         \centering
         \includegraphics[width=\textwidth]{plots/i(filtre),MP.tikz}
-        \caption{Mono et Poly}
+        \caption{Mono- et polycristallin}
         \label{plot:6b}
     \end{subfigure}
-    \caption{Coefficient i}
+    \caption{Grandeur caractéristique i des cellules photovoltaïques pour différents spectres}
     \label{plot:6}
 \end{figure}
 
 \paragraph*{\(I_\gamma\) selon l'angle d'incidence \(\alpha\)}
-Finalement la mesure de l'influence de l'angle d'incidence sur le courant fourni \(I_\gamma\) a été effectué en faisant varier l'angle du panneau par rapport à l'axe avec la lampe de 0° à 90°. Les mesures sont rapportées dans la FIGURE7 et une régression sinusoïdale a été appliquée. Il n'est pas nécessaire de faire les mesures pour des angles négatifs (de l'autre côté) car la sinusoïde est symétrique.
+Finalement la mesure de l'influence de l'angle d'incidence sur le courant fourni \(I_\gamma\) a été effectué en faisant varier l'angle du panneau par rapport à l'axe avec la lampe de \(0^{\circ}\) à \(90^{\circ}\). Les mesures sont rapportées dans la Fig \ref{plot:7} et un fit sinusoïdal a été appliqué. Il n'est pas nécessaire de faire les mesures pour des angles négatifs (faire tourner la cellule photovoltaïque dans l'autre sens) car la sinusoïde est symétrique.
 
-
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/Igamma(theta),MP.tikz}
+    \caption{Intensité de sortie des cellules photovoltaïques en fonction de l'angle d'incidence.}
+    \label{plot:7}
+\end{figure}
 
 
 
