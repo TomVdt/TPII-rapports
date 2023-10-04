@@ -1,6 +1,6 @@
 \section{Résultats}
 
-\paragraph*{Relation \(P_\gamma\) et \(\frac{1}{d^2}\):}
+\paragraph*{Relation \(P_\gamma\) et \(\frac{1}{d^2}\)}
 Il y a une relation linéaire entre \(\frac{1}{d^2}\) et la puissance lumineuse par surface \(P\gamma\) sur le capteur mise en évidence dans la figure \ref{plot:1}. Une régression linéaire de la bibliothèque python numpy a été utilisée afin de souligner cette relation.
 Le choix a été fait de ne pas afficher les 5 dernières mesures et de ne pas prendre en compte pour la régression les 10 dernières car celles-ci divergeaient du comportement attendu par la théorie.
 % (  TODO:::::  La relation entre ces valeurs est Pgamma = alpha/d² avec alpha = (truc +/- machin)W.s^(-1)   )
@@ -12,7 +12,7 @@ Le choix a été fait de ne pas afficher les 5 dernières mesures et de ne pas p
     \label{plot:1}
 \end{figure}
 
-\paragraph*{Courbes caractéristiques \(I_r(U_D)\) et \(P(U_D)\):}
+\paragraph*{Courbes caractéristiques \(I_r(U_D)\) et \(P(U_D)\)}
 Afin de mettre en évidence les caractéristiques variées des 3 technologies de celulles photovoltaïques (A, M et P) plusieurs mesures variées peuvent être effectuées.
 Tout d'abord une mesure de l'intensité du courant inverse de la diode \(I_r\) en fonction de la tension \(U_D\) aux bornes d'une résistance \(R_C\) branchée aux bornes de la diode.
 Cette mesure a été effectué pour les 3 cellules à deux distances différentes, \(d_1\) et \(d_2\), en faisant varier les valeurs de \(R_C\). Cela a permis de tracer les courbes caractéristiques des Fig. \ref{plot:2a} et Fig. \ref{plot:2b}.
@@ -54,22 +54,62 @@ Ensuite connaissant \(I_r\) et \(U_D\) cela permet d'obtenir \(P = I_r U_D\) et 
     \label{plot:3}
 \end{figure}
 
-\paragraph*{\(P_{max}\) et \(\eta_{max}\):}
-La mesure de \(P_{max}\) se fait en regardant le pic de ces courbes des FIGURE3(a) et (b) et donne: PMAX 3 CELLULES. 
-Nous obtenons donc des valeurs de rendements maximums en connaissant les valeurs de \(P_\gamma\) à \(d_1\) et \(d_2\): \(P_\gamma (d_1) = 1.49\) \unit{watt}, \(P_\gamma (d_2) = 0.621\) \unit{watt}. On obtient: RENDEMENT MAX IL FAUT PMAX TOOOOOOOOOM.
+\paragraph*{\(P_{max}\) et \(\eta_{max}\)}
+La mesure de \(P_{max}\) se fait en regardant le maximum des données de la Fig. \ref{plot:3a} et Fig. \ref{plot:3b} et donne: PMAX 3 CELLULES. 
+Les valeurs de rendements maximums peuvent être obtenues en connaissant les valeurs de \(P_\gamma\) à \(d_1\) et \(d_2\): \(P_\gamma (d_1) = 1.49\) \unit{watt}, \(P_\gamma (d_2) = 0.621\) \unit{watt}. On obtient: RENDEMENT MAX IL FAUT PMAX TOOOOOOOOOM.
 COMPAREEEER LES RENDEMEEEEEEEENTS
 
-\paragraph*{\(I_\gamma\) et \(i\) selon \(d\):}
-En retirant toute résistance du circuit il est possible de mesurer \(I_\gamma\) le courant de court-circuit généré par la cellule photovoltaïque pour une distance (et donc une puissance lumineuse) donnée. Cela a été fait pour les trois cellules et a donné les FIGURE4(a) et (b). Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) est mise en évidence dans le graphe de la FIGURE4(b). \\
-Il est donc possible de trouver une grandeur caractéristique moyenne \(i = \frac{I_\gamma}{P_\gamma}\) pour chaque cellule photovoltaïque. Cela a été fait dans les graphes des FIGURE5(a), (b) et (c) pour les trois types de cellules. Une régression linéaire a été utilisée pour trouver cette valeur de \(i\) qui représente la pente de la courbe.
+\paragraph*{\(I_\gamma\) et \(i\) selon \(d\)}
+En retirant toute résistance du circuit il est possible de mesurer \(I_\gamma\) le courant de court-circuit généré par la cellule photovoltaïque pour une distance (et donc une puissance lumineuse) donnée. Les données montrent que l'intensité \(I_\gamma\) dépend fortment de la distance, avec des distances courtes ayant une influence beaucoup plus élevée que les distances plus longues, comme illustré à la Fig. \ref{plot:4}. \\
+Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) est peut être observée, et permet de trouver une grandeur caractéristique moyenne \(i = \frac{I_\gamma}{P_\gamma}\) pour chaque cellule photovoltaïque. Cela a été fait dans les graphes des FIGURE5(a), (b) et (c) pour les trois types de cellules. Une régression linéaire a été utilisée pour trouver cette valeur de \(i\) qui représente la pente de la courbe.
 
-\paragraph*{\(I_\gamma\) et \(i\) selon la composition de la lumière:}
-Une autre caractéristique des cellules photovoltaïques à analyser est leur sensibilité à la composition de la lumière. La première mesure qui a été effectuée est donc celle de la variation de la puissance reçue en fonction du filtre placé devant la lampe à mercure, à une distance arbitraire de \(d_3 = (42.0 \pm 0.2)\) \unit{\centi\meter}. Cela a été fait pour les 7 filtres du tableau en annexe VRAIEFIGURE3. Ensuite les mesures du courant de court-circuit \(I_\gamma\) pour chaque filtre et chaque cellule ont permis de déterminer la valeur de \(i\) pour chacune de ces compositions de la lumière comme présenté dans les FIGURE6(a) et (b). La plus basse valeur de \(i\) est donnée par le filtre 87C ne laissant passer que la lumière infrarouge. Le filtre 2B ne bloquant que les ultraviolets ne fait que peu baisser la valeur de \(i\).
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{plots/Igamma(d),AMP.tikz}
+    \caption{Courant photovoltaïque pour différentes cellules}
+    \label{plot:4}
+\end{figure}
 
-\paragraph*{les corpos tous des salauds}
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/i(Pgamma),A.tikz}
+        \caption{Amorphe}
+        \label{plot:5a}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/i(Pgamma),MP.tikz}
+        \caption{Mono et Poly}
+        \label{plot:5b}
+    \end{subfigure}
+    \caption{Coefficient i}
+    \label{plot:5}
+\end{figure}
 
+\paragraph*{\(I_\gamma\) et \(i\) selon la composition de la lumière}
+Une autre caractéristique des cellules photovoltaïques à analyser est leur sensibilité à la composition de la lumière. La première mesure qui a été effectuée est donc celle de la variation de la puissance reçue en fonction du filtre placé devant la lampe à mercure, à une distance arbitraire de \(d_3 = (42.0 \pm 0.2)\) \unit{\centi\meter}. Cela a été fait pour les 7 filtres du tableau en annexe \ref{tab:filters}. Les mesures du courant de court-circuit \(I_\gamma\) pour chaque filtre et chaque cellule permettent de déterminer la valeur de \(i\) pour chacune de ces compositions de la lumière comme présenté dans les Fig. \ref{plot:6a} et \ref{plot:6b}. La plus basse valeur de \(i\) est donnée par le filtre 87C ne laissant passer que la lumière infrarouge. Le filtre 2B ne bloquant que les ultraviolets ne fait que peu baisser la valeur de \(i\).
 
-\paragraph*{\(I_\gamma\) selon l'angle d'incidence \(\alpha\):}
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/i(filtre),A.tikz}
+        \caption{Amorphe}
+        \label{plot:6a}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/i(filtre),MP.tikz}
+        \caption{Mono et Poly}
+        \label{plot:6b}
+    \end{subfigure}
+    \caption{Coefficient i}
+    \label{plot:6}
+\end{figure}
+
+\paragraph*{\(I_\gamma\) selon l'angle d'incidence \(\alpha\)}
 Finalement la mesure de l'influence de l'angle d'incidence sur le courant fourni \(I_\gamma\) a été effectué en faisant varier l'angle du panneau par rapport à l'axe avec la lampe de 0° à 90°. Les mesures sont rapportées dans la FIGURE7 et une régression sinusoïdale a été appliquée. Il n'est pas nécessaire de faire les mesures pour des angles négatifs (de l'autre côté) car la sinusoïde est symétrique.
 
 

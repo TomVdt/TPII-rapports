@@ -1,0 +1,132 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{green01270}{RGB}{0,127,0}
+\definecolor{lightgray204}{RGB}{204,204,204}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={d [cm]},
+xmin=21.1, xmax=84.9,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={I\(\displaystyle _\gamma\) [mA]},
+ymin=-40, ymax=928,
+ytick style={color=black}
+]
+\addplot [draw=green01270, fill=green01270, mark=+, only marks]
+table{%
+x  y
+82 4
+80 4
+78 5
+76 5
+74 5
+72 5
+70 5
+68 6
+66 7
+64 7
+62 7
+60 7
+58 8
+56 8
+54 9
+52 9
+50 10
+48 11
+46 11
+44 12
+42 13
+40 14
+38 16
+36 17
+34 18
+32 20
+30 22
+28 24
+26 26
+25 27
+24 29
+};
+\addlegendentry{Amorphe}
+\addplot [draw=blue, fill=blue, mark=x, only marks]
+table{%
+x  y
+82 154
+80 161
+78 168
+76 174
+74 181
+72 192
+70 200
+68 210
+66 221
+64 232
+62 243
+60 256
+58 271
+56 287
+54 302
+52 321
+50 341
+48 364
+46 387
+44 414
+42 444
+40 476
+38 515
+36 551
+34 596
+32 650
+30 711
+28 762
+26 822
+25 855
+24 884
+};
+\addlegendentry{Monocristalline}
+\addplot [draw=red, fill=red, mark=*, only marks]
+table{%
+x  y
+82 100
+80 104
+78 108
+76 113
+74 118
+72 124
+70 130
+68 137
+66 143
+64 151
+62 158
+60 167
+58 176
+56 186
+54 197
+52 209
+50 223
+48 237
+46 253
+44 269
+42 288
+40 308
+38 328
+36 355
+34 383
+32 414
+30 446
+28 479
+26 515
+25 534
+24 555
+};
+\addlegendentry{Polycristalline}
+\end{axis}
+
+\end{tikzpicture}
