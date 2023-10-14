@@ -1,9 +1,18 @@
-colors = {
-    "A": "g",
-    "M": "b",
-    "P": "r"
+rcParams = {
+    "text.usetex": True,
+    "font.family": "serif",
+    "axes.labelsize": 14,
+    "font.size": 14,
+    "legend.fontsize": 14,
+    "xtick.labelsize": 14,
+    "ytick.labelsize": 14,
+    "figure.figsize": (6, 4),
+    "text.latex.preamble": "\n".join([
+        r"\usepackage[utf8]{inputenc}",
+        r"\usepackage[T1]{fontenc}",
+        r"\usepackage[detect-all,locale=FR]{siunitx}",
+    ]),
+    'lines.markersize': 3,
+    'lines.color': 'grey',
+    'errorbar.capsize': 3
 }
-
-barwidth = 0.25
-markersize = 150
-capsize = 3
