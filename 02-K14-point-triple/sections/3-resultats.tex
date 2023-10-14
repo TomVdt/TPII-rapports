@@ -1,0 +1,161 @@
+\section{Résultats}
+
+\paragraph*{Relation entre \(P_\gamma\) et \(\frac{1}{d^2}\)}
+La puissance totale sortant de la lampe \(P_{tot}\) est constante. Cette puissance est répartie également sur toute la surface de la sphère correspondante à chaque instant de la propagation. Ainsi
+\[P_{surf} = \frac{P_{tot}}{4 \pi r^2} = \frac{P_{tot}}{4 \pi} \frac{1}{d^2} \]
+donnant alors une relation linéaire entre \(P_\gamma = P_{surf} S\) et \(\frac{1}{d^2}\), où \(P_{surf}\) est la puissance reçue par unité de surface.
+Cette relation linéaire, pour des grandes valeurs de d, est mise en évidence dans la figure \ref{plot:1}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth, height=5cm]{plots/Pgamma(1d2).tikz}
+    \caption{Relation inversement quadratique entre distance et puissance lumineuse}
+    \label{plot:1}
+\end{figure}
+
+\paragraph*{Courbes caractéristiques \(I_r(U_D)\) et \(P(U_D)\)}
+La mesure de l'intensité du courant inverse de la diode \(I_R\) en fonction de la tension \(U_D\) aux bornes d'une résistance \(R_C\) elle-même branchée aux bornes de la diode permet de trouver la puissance de la cellule. Le courant \(I_R\) en fonction de \(U_D\) pour les différentes technologies de cellule est représenté à la Fig. \ref{plot:2}, pour deux conditions d'éclairement différentes.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm]{plots/Ir(U),A.tikz}
+        \caption{Amorphe}
+        \label{plot:2a}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm]{plots/Ir(U),MP.tikz}
+        \caption{Mono- et polycristallin}
+        \label{plot:2b}
+    \end{subfigure}
+    \caption{Caractéristique des cellules photovoltaïques}
+    \label{plot:2}
+\end{figure}
+
+\paragraph*{Puissance et rendement max}
+La puissance \(P\) fournie par la cellule est donnée par \(P = I_R U_D\). La valeur de \(P_{max}\) est obtenue en considérant le point extremum de la fonction \(P(U_D)\), illustré à la Fig. \ref{plot:3}. Les valeurs de \(P_{max}\) sous les différentes conditions sont données à la Fig. \ref{tab:pmax}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, height=6cm]{plots/P(U),A.tikz}
+        \caption{Amorphe}
+        \label{plot:3a}        
+    \end{subfigure}
+    \begin{subfigure}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, height=6cm]{plots/P(U),MP.tikz}
+        \caption{Mono- et polycristallin}
+        \label{plot:3b}        
+    \end{subfigure}
+    \caption{Puissance \(P\) fournie par les cellules photovoltaïques}
+    \label{plot:3}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{tabulary}{0.7\linewidth}{C C C}
+        \toprule
+        Cellule & \(d_1\) & \(d_2\) \\
+        \midrule
+        Amorphe & \((0.08 \pm 0.07)\) \unit{\watt} & \((0.03 \pm 0.07)\) \unit{\watt} \\
+        Monocristalline & \((0.069 \pm 0.007)\) \unit{\watt} & \((0.028 \pm 0.007)\) \unit{\watt} \\
+        Polycristalline & \((0.033 \pm 0.005)\) \unit{\watt} & \((0.013 \pm 0.003)\) \unit{\watt} \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de \(P_{max}\)}
+    \label{tab:pmax}
+\end{figure}
+
+Les rendements maximaux sont donnés par \(\eta_{max} = \frac{P_{max}}{P_\gamma}\), avec \(P_\gamma = (1,49 \pm 0.06)\) \unit{\watt} pour \(d_1\) et \(P_\gamma = (0.62 \pm 0.03)\) \unit{\watt} pour \(d_2\). La valeurs des rendements max sont donnés à la Fig. \ref{tab:rendementmax}. Les rendements maximums pour les même cellules sont similaires aux deux distances différentes. 
+
+
+\begin{figure}
+    \centering
+    \begin{tabulary}{0.7\linewidth}{C C C}
+        \toprule
+        Cellule & \(d_1\) & \(d_2\) \\
+        \midrule
+        Amorphe & \((5.0 \pm 0.3)\)\% & \((4.6 \pm 0.3)\)\% \\
+        Monocristalline & \((4.6 \pm 0.7)\)\% & \((4.5 \pm 1.0)\)\% \\
+        Polycristalline & \((2.2 \pm 0.4)\)\% & \((2.0 \pm 0.6)\)\% \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de \(\eta_{max}\)}
+    \label{tab:rendementmax}
+\end{figure}
+
+
+\paragraph*{Grandeur caractéristique moyenne \(i = I_\gamma/P_\gamma\)}
+Le courant court-circuit \(I_\gamma\) est mesuré en enlevant la resistance variable \(R_C\) du circuit. Le courant \(I_\gamma\) varie fortement selon la distance \(d\), comme illustré à la Fig. \ref{plot:4}. \\
+Une relation linéaire entre \(I_\gamma\) et \(P_\gamma\) peut être observée, et permet de trouver une grandeur caractéristique moyenne \(i = \frac{I_\gamma}{P_\gamma}\) pour chaque cellule photovoltaïque. La pente de la régression linéaire donne la valeur de \(i\) pour la cellule, les valeurs sont données dans la Fig. \ref{plot:5}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth, height=6cm]{plots/Igamma(d),AMP.tikz}
+    \caption{Courant photovoltaïque pour différentes cellules}
+    \label{plot:4}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm]{plots/i(Pgamma),A.tikz}
+        \caption{Amorphe}
+        \label{plot:5a}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm]{plots/i(Pgamma),MP.tikz}
+        \caption{Mono- et polycristallin}
+        \label{plot:5b}
+    \end{subfigure}
+    \caption{Grandeur caractéristique i pour différentes cellules}
+    \label{plot:5}
+\end{figure}
+
+\paragraph*{Role du spectre lumineux}
+En utilisant des filtres dont les caractéristique sont donnés à la Fig. \ref{tab:filters} en annexe, il est possible d'observer la réaction de la cellule à différents spectres de lumière. La figure \ref{plot:6} donne la valeur de \(i\) pour chaque filtre. Les mesures ont été réalisées avec \(d = (42.0 \pm 0.2)\) \unit{\centi\meter}. Les cellules ne réagissent que très peu à la lumière des filtres 25 et 87C, correspondant aux couleurs rouge et aux infrarouges, alors que la lumière jaune-orange des filtres 2B, 8 et 16 donnent des valeurs plus proches des valeurs en l'absence de filtre. La cellule amorphe est aussi beaucoup moins sensible aux couleurs différentes du jaune-orange que les cellules cristallines.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, height=6cm]{plots/i(filtre),A.tikz}
+        \caption{Amorphe}
+        \label{plot:6a}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm]{plots/i(filtre),MP.tikz}
+        \caption{Mono- et polycristallin}
+        \label{plot:6b}
+    \end{subfigure}
+    \caption{Grandeur caractéristique i des cellules photovoltaïques pour différents spectres}
+    \label{plot:6}
+\end{figure}
+
+\paragraph*{Role de l'angle d'incidence}
+Le courant \(I_\gamma\) traversant la cellule dépend aussi de l'angle d'incidence des rayons lumineux. Les mesures rapportées dans la figure \ref{plot:7} ont été réalisées en faisant varier l'angle de la cellule par rapport à l'axe avec la lampe de \(0^{\circ}\) à \(90^{\circ}\). Un fit sinusoïdal a été appliqué.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth, height=6cm]{plots/Igamma(theta),MP.tikz}
+    \caption{Réaction des cellules cristallines au changement d'angle d'incidence.}
+    \label{plot:7}
+\end{figure}
+
+
+% Présentation des résultats des mesures avec conditions dans lesquelles les mesures ont
+%  été effectuées, calculs des grandeurs dérivées et des incertitudes.
+% — Tableaux et graphiques avec légendes incorporés au texte, unités physiques, rectangles
+% d’erreurs.
+% — La section résultats est purement descriptive : elle liste clairement les résultats obtenus :
+% graphiques/tableaux avec les paramètres utilisés pour leur obtention (un externe doit
+% pouvoir reproduire toutes vos mesures avec votre rapport).
+% — Si certains points ne sont pas pris en compte, pour une raison justifiée, cela doit aussi
+% être précisé

@@ -1,0 +1,32 @@
+\documentclass[a4paper, 12pt, oneside]{article}
+
+\input{config/imports.tex}
+\input{config/pgfplot.tex}
+\input{config/biblatex.tex}
+
+\begin{document}
+
+\title{Rapport de Laboratoire\\Groupe N$^\circ$9\\Expérience J7 - Photovoltaïsme}
+\author{Martin \textsc{Godet} \and Tom \textsc{Vadot}}
+\date{\today}
+
+\maketitle
+
+\input{sections/0-introduction.tex}
+\input{sections/1-theorie.tex}
+\input{sections/2-demarche.tex}
+\input{sections/3-resultats.tex}
+\input{sections/4-discussion.tex}
+\input{sections/5-conclusion.tex}
+
+% Bibliography
+\nocite{*}  % While writing report, ignore unused citations
+\printbibliography
+
+\newpage
+
+\begin{appendices}
+\input{sections/6-annexe.tex}
+\end{appendices}
+
+\end{document}
