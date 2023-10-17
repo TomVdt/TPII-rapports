@@ -1,1 +1,55 @@
 \section{Calcul d'erreurs}
+
+Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C C C}
+        \toprule
+        Variable & Valeur & Erreur & Commentaire \\
+        \midrule
+        \(V\) [\unit{\liter}] & 5.5 & 0.5 & Estimation basée sur la valeur indiquée \\
+        \(p_\textrm{Bourdon}\) [\unit{\milli\bar}] & \(\emptyset\) & 10 & Moitié d'une graduation \\
+        \(p_\textrm{Piranni}\) [\unit{\milli\bar}] & \(\emptyset\) & \(0.5 \times 10^\textrm{gamme}\) & Moitié d'une graduation pour une gamme \\
+        \(p_\textrm{Penning}\) [\unit{\milli\bar}] & \(\emptyset\) & \(0.5 \times 10^\textrm{gamme}\) & Moitié d'une graduation pour une gamme \\
+        \(p_\textrm{lim,1}\) [\unit{\milli\bar}] & \(1.0 \cdot 10^{-2}\) & \(0.5 \cdot 10^{-2}\) & Obtenu en considérant la valeur lue après 15min \\
+        \(p_\textrm{lim,2}\) [\unit{\milli\bar}] & \(1.2 \cdot 10^{-5}\) & \(0.5 \cdot 10^{-5}\) & Obtenu en considérant la valeur lue après 15min \\
+        \midrule
+        \(T\) [\unit{\kelvin}] & \(\emptyset\) & 0.1 & Dernier chiffre significatif sur l'affichage \\
+        \(P\) [\unit{\milli\bar}] & \(\emptyset\) & 1 & Dernier chiffre significatif sur l'affichage \\
+        \(t\) [\unit{\second}] & \(\emptyset\) & 0 & Mesures prises en avancant \textit{frame by frame} \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Erreurs estimées sur les mesures}
+    \label{tab:erreurs}
+\end{table}
+
+\paragraph*{Regression linéaire}
+Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par l'\autoref{eq:erreur:fit} \cite{erreursmesure}:
+
+\begin{equation}
+    \label{eq:erreur:fit}
+    \begin{aligned}
+        (\Delta a)^2 &= \frac{\sum_{i=1}^{n}(y_i - (a x_i + b))^2}{(n-2) \sum_{i=1}^{n}(x_i - \bar{x})^2}\\
+        \Delta b &= \bar{x} \Delta a + a \Delta \bar{x}
+    \end{aligned}
+\end{equation}
+
+En pratique, ces valeurs sont calculées par la bilbiothèque \texttt{numpy}.
+
+\paragraph*{Debit de pompage}
+L'erreur sur le débit de pompage est donné par l'\autoref{eq:erreur:debit}:
+
+\begin{equation}
+    \Delta S = \frac{\Delta a}{V} + \frac{a}{V^2} \Delta V
+    \label{eq:erreur:debit}
+\end{equation}
+
+où \(a\) et \(\Delta a\) viennent du fit linéaire de \(\ln{\frac{P - P_0}{P_1 - P_0}}\). L'erreur sur ces valeurs est donné par l'\autoref{eq:erreur:pression}:
+
+\begin{equation}
+    \Delta \ln{\frac{P - P_0}{P_1 - P_0}} = \left[\frac{\Delta P - \Delta P_0}{P_1 - P_0} + \frac{P - P_0}{(P_1 - P_0)^2}(\Delta P_1 + \Delta P_0)\right] \frac{P_1 - P_0}{P - P_0}
+    \label{eq:erreur:pression}
+\end{equation}
+
+Toutes ces valeurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
