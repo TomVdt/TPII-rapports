@@ -1,18 +1,30 @@
 \section{Résultats}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{figures/cinetique_palettes.pdf}
-    \caption{Suce ma pompe}
-    \label{fig:cinetique_palette}
-\end{figure}
 
-\paragraph*{Cinétique pompe à palettes}
-La pression dans la chambre de volume \(V = (5.5 \pm 0.5)\) \si{\milli\bar} en fonction du temps est donné dans la \autoref{fig:cinetique_palette}. Une régression linéaire sur les points 12 à 40 permet d'obtenir une valeur moyenne sur \(\ln{\frac{P - P_0}{P_1 - P_0}}\) avec laquelle il est possible d'obtenir avec l'\autoref{eq:cinetique} le débit effectif \(S = (1.12 \pm 0.01)\) \si{\liter \per \second}.
+\begin{minipage}{\textwidth}
+    \begin{wrapfigure}{R}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/cinetique_palettes.pdf}
+        \caption{Pression dans la chambre pour la pompe à palettes en fonction du temps}
+        \label{fig:cinetique_palette}
+    \end{wrapfigure}
+    
+    \paragraph*{Débit de la pompe à palettes}
+    La pression dans la chambre de volume \(V = (5.5 \pm 0.5)\) \si{\milli\bar} en fonction du temps pour la pompe primaire est donné dans la \autoref{fig:cinetique_palette}. Une régression linéaire sur les points entre \(t = 6\) \si{\second} et \(t = 28\) \si{\second} permet d'obtenir une valeur moyenne sur \(\ln{\frac{P - P_0}{P_1 - P_0}}\), où \(P_1 = 620 \pm 10\) \si{\milli\bar}. La pente de cette droite permet d'obtenir avec l'\autoref{eq:cinetique} le débit effectif de la pompe à palettes \(S = (1.12 \pm 0.01)\) \si{\liter \per \second}. La pression limite \(P_0 = P_\textrm{lim,1}\) est obtenue au bout de 15 \si{\minute} de pompage et vaut \(P_0 = (1.0 \pm 0.5) \times 10^{-2}\) \si{\milli\bar}.
+\end{minipage}
 
-\paragraph*{Cinétique pompe à diffusion}
+\begin{minipage}{\textwidth}
+    \begin{wrapfigure}{R}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/cinetique_diffusion.pdf}
+        \caption{Pression dans la chambre pour la pompe à diffusion en fonction du temps}
+        \label{fig:cinetique_diffusion}
+    \end{wrapfigure}
+    
+    \paragraph*{Débit de la pompe à diffusion}
+    La pompe à diffusion permet d'atteindre le vide secondaire dans la chambre. L'évolution de la pression en fonction du temps est donnée sur la \autoref{fig:cinetique_diffusion}. La régression linéaire a été réalisée sur les points entre \(t = 2\) \si{\second} et \(t = 7\) \si{\second}. La pression de référence \(P_1 = (0.049 \pm 0.005)\) \si{\milli\bar} à été utilisée. L'\autoref{eq:cinetique} donne alors un débit effectif pour la pompe à diffusion de \(D = (9 \pm 1)\) \si{\liter \per \second}. Au bout de 15 \si{\minute}, une pression limite \(P_0 = P_\textrm{lim,2} = (1.2 \pm 0.5) \times 10^{-5}\) \si{\milli\bar} est atteinte.
+\end{minipage}
 
- 
 
 
 

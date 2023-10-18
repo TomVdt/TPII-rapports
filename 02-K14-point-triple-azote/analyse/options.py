@@ -3,10 +3,10 @@ rcParams = {
     "font.family": "serif",
     "axes.labelsize": 14,
     "font.size": 14,
-    "legend.fontsize": 14,
+    "legend.fontsize": 12,
     "xtick.labelsize": 14,
     "ytick.labelsize": 14,
-    "figure.figsize": (6, 4),
+    "figure.figsize": (4, 3),
     "text.latex.preamble": "\n".join([
         r"\usepackage[utf8]{inputenc}",
         r"\usepackage[T1]{fontenc}",
