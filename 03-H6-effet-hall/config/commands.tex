@@ -3,6 +3,10 @@
 \let\oldautoref=\autoref
 \renewcommand{\autoref}[1]{\textsc{\oldautoref{#1}}}
 
+% Legendes correctes
+\captionsetup[figure]{name=Figure}
+\captionsetup[table]{name=Tableau}
+
 % Template de mes couilles
 \makeatletter
 \renewcommand{\section}{\@startsection {section}{1}{\z@}

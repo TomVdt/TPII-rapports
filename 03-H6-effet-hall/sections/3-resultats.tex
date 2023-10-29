@@ -1,3 +1,57 @@
 \section{Résultats}
 
-Truc 4
+\paragraph*{Mesure des tensions résiduelles pour InP}
+Blabla regarde tension résiduelle pour un courant nul \autoref{tab:tension_residuelle}
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C C C}
+        \toprule
+        Configuration \si{\micro\meter} & Tension (\(a = 1\) \si{\micro\meter}) [\si{\milli\volt}] & Tension (\(a = 2\) \si{\micro\meter}) [\si{\milli\volt}] \\
+        \midrule
+        \(I_{13}U_{24}\) & \(68.74 \pm 0.01\) & \(27.02 \pm 0.01\) \\
+        \(I_{31}U_{42}\) & \(68.69 \pm 0.01\) & \(27.12 \pm 0.01\) \\
+        \(I_{24}U_{13}\) & \(39.93 \pm 0.01\) & \(24.78 \pm 0.01\) \\
+        \(I_{42}U_{31}\) & \(40.12 \pm 0.01\) & \(24.76 \pm 0.01\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Tension résiduelle pour différentes configuration et 2 épaisseurs de l'échantillon InP}
+    \label{tab:tension_residuelle}
+\end{table}
+
+\paragraph*{Détermination de la constante de Hall pour InP}
+Regarde ces belles relations linéaires uwu
+
+On trouve pour 1µm \(R_H = (2.40 \pm 0.05) \cdot 10^{-3}\) \si{\meter\cubed\per\coulomb} et \(N = (2.60 \pm 0.05) \cdot 10^{21}\) \si{\per\meter\cubed}
+
+On trouve pour 2µm \(R_H = (1.47 \pm 0.03) \cdot 10^{-3}\) \si{\meter\cubed\per\coulomb} et \(N = (4.25 \pm 0.08) \cdot 10^{21}\) \si{\per\meter\cubed}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/U(I),InP1micro.pdf}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/U(I),InP2micro.pdf}
+        \caption{}
+    \end{subfigure}
+    \caption{Tension en fonction de l'intensité pour l'échantillon InP d'épaisseur (a) 1 \si{\micro\meter} (b) 2 \si{\micro\meter}}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/U(B),InP1micro.pdf}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/U(B),InP2micro.pdf}
+        \caption{}
+    \end{subfigure}
+    \caption{Tension en fonction de la norme signée du champ magnétique pour l'échantillon InP d'épaisseur (a) 1 \si{\micro\meter} (b) 2 \si{\micro\meter}}
+\end{figure}

@@ -12,7 +12,8 @@ rcParams = {
         r"\usepackage[T1]{fontenc}",
         r"\usepackage[detect-all,locale=FR]{siunitx}",
     ]),
-    'lines.markersize': 3,
+    'lines.markersize': 10,
     'lines.color': 'grey',
+    'scatter.marker': '+',
     'errorbar.capsize': 3
 }
