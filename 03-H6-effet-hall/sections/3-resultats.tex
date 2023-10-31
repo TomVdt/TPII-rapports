@@ -1,23 +1,21 @@
 \section{Résultats}
 
 \begin{minipage}{\textwidth}
-    \begin{wrapfigure}{R}{0.6\textwidth}
+    \begin{wrapfigure}{R}{0.55\textwidth}
         \includegraphics[width=\linewidth]{figures/calibration.pdf}
-        \caption{Variation de l'amplitude du champ magnétique en fonction du courant sur un cycle \(I_\textrm{max} -> \)}
+        \caption{Variation de l'amplitude du champ magnétique en fonction du courant sur un cycle \(I_\textrm{max} \rightarrow 0 \rightarrow -I_\textrm{max} \rightarrow 0 \rightarrow I_\textrm{max}\).}
+        \label{fig:callibration}
     \end{wrapfigure}
 
     \paragraph*{Étalonnage du champ d'induction}
-    Regarde c'est pas hyper linéaire
+    La \autoref{fig:callibration} montre comment varie le champ magnétique en fonction du courant. Ici, \(I_\textrm{max} = 6\) \si{\ampere}. Par souci de clarté, les erreurs sur les mesures ne sont pas affichées dans cette figure et sont de l'ordre de 2\%. Les points bleus correspondent à la partie descendante du cycle et les points oranges à la partie montante. Deux fit linéaire on été réalisés sur la partie linéaire (entre -3 \si{\ampere} et 3 \si{\ampere}), 1 pour chaque sens, et mettent en évidence une légère hystérèse, puisque les deux droites sont décalées, d'ordonnée à l'origine \(\beta_1 = (1.5 \pm 2.4)\) pour la partie descendante contre \(\beta_2 = (-11.7 \pm 5.6)\) pour la partie montante.
 
-    Eu voluptate nisi esse cupidatat excepteur consequat ea laboris ad eu. Incididunt duis excepteur Lorem elit aliquip Lorem dolore velit labore esse. Eiusmod deserunt elit non nisi excepteur id quis aliqua ut amet ea dolor labore velit. Non dolore velit ex qui aliqua elit consequat. Dolore elit fugiat irure incididunt ex est. Magna anim mollit esse officia occaecat Lorem minim incididunt veniam et velit adipisicing incididunt in.
-
-    Ad aliqua pariatur aliquip mollit est in nulla veniam. Qui dolor commodo aute laborum irure officia est. Adipisicing quis occaecat esse adipisicing exercitation nulla sint culpa ad veniam. Excepteur est Lorem Lorem irure nostrud eiusmod. Minim culpa non anim commodo aute in dolor. Duis Lorem dolore incididunt ullamco amet sit.
-
-    Occaecat ipsum adipisicing aute sit Lorem. Ea nisi mollit velit cillum incididunt duis. Labore pariatur tempor et tempor anim sit aute commodo mollit deserunt sunt est non mollit. Occaecat aliqua nostrud do sit duis nostrud.
+    \paragraph*{Mesure des tensions résiduelles pour InP}
+    Blabla regarde tension résiduelle pour un courant nul \autoref{tab:tension_residuelle}
+    % Mettre le début de ce paragraphe dans la minipage puis sortir pour esquiver la légende de la figure...
 \end{minipage}
 
-\paragraph*{Mesure des tensions résiduelles pour InP}
-Blabla regarde tension résiduelle pour un courant nul \autoref{tab:tension_residuelle}
+% Suite du paragraphe tensions résiduelles
 
 \begin{table}[h]
     \centering
