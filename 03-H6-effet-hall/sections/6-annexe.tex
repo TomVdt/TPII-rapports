@@ -1,6 +1,47 @@
 \section{Calcul d'erreurs}
 \label{sec:erreurs}
 
+\begin{figure}{R}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\linewidth]{figures/Ag_I.pdf}
+        \caption{}
+        \label{fig:Ag_I}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\linewidth]{figures/Cu_I.pdf}
+        \caption{}
+        \label{fig:Cu_I}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\linewidth]{figures/Bi_I.pdf}
+        \caption{}
+        \label{fig:Bi_I}
+    \end{subfigure}
+    \caption{Régression de \(V_H\) en fonction de \(I\) à \(B\) constant pour (a) Ag, (b) Cu et (c) Bi}
+    \label{fig:5branch_I}
+    \vspace*{1cm}
+\end{figure}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C C C}
+        \toprule
+        échantillon & \(\alpha_I = \frac{V_H}{I}\) & \(R_H = -\frac{\alpha_I a}{B}\) & N \\
+        \midrule
+        Ag & \((9.9 \pm 0.1) \times 10^{-3}\) &  &  \\
+        \(B\) [\si{\milli\tesla}] & \(1\% + 3\textrm{ lsd}\) & Indiqué sur le manuel du teslamètre \\
+        \(V\) [\si{\milli\volt}] & \(0.01\) & Estimation basée sur la variation des valeurs affichées \\
+        \(I\) [\si{\milli\ampere}] & \(0.001\) & Estimation basée sur la variation des valeurs affichées \\
+        \(I\) [\si{\ampere}] & \(0.01\) & Estimation basée sur la variation des valeurs affichées \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de \(R_H\) et \(N\) obetnues pour les échantillons à 5 branchements à \(B\) constant}
+    \label{tab:5branch_I}
+\end{table}
+
+
 Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 
 \begin{table}[h]
@@ -34,7 +75,7 @@ Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) 
 En pratique, ces valeurs sont calculées par la bilbiothèque python \texttt{numpy}.
 
 \paragraph*{Equation 1}
-Les erreurs sur $R_H$ et $N$ sont données par les équations suivantes:
+Les erreurs sur \(R_H\) et \(N\)sont données par les équations suivantes:
 
 \begin{equation}
     \label{eq:erreur:Rh_B}
