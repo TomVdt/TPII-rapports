@@ -32,22 +32,23 @@ Le \autoref{tab:tension_residuelle} montre les tensions résiduelle dans deux é
 \end{table}
 
 \paragraph*{Détermination de la constante de Hall}
-Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au Si, un champ magnétique constant de \(B = (348 \pm 6)\) \si{\milli\tesla} et (\(B = 383 \pm 7\)) \si{\milli\tesla} à été appliqués aux échantillons de 1 \si{\micro\meter} et 2 \si{\micro\meter} respectivement. Les \autoref{fig:inpV(I)} et \autoref{fig:inpV(B)} (\autoref{sec:supp}) montrent la variation de la tension de Hall en fonction du courant dans l'échantillon et du champ magnétique respectivement. Les coefficients des regressions linéaires permettent de déterminer à l'aide de l'\autoref{eq:R_H} les valeurs du coefficient de Hall \(R_H\) et avec l'\autoref{eq:N} la densité de porteurs de charge \(N\). Les résultats sont reportés dans le \autoref{tab:RH_N}.
+Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au Si, un champ magnétique constant de \(B = (348 \pm 6)\) \si{\milli\tesla} et (\(B = 383 \pm 7\)) \si{\milli\tesla} à été appliqués aux échantillons de 1 \si{\micro\meter} et 2 \si{\micro\meter} respectivement. Les \autoref{fig:inpV(I)} et \autoref{fig:inpV(B)} montrent la variation de la tension de Hall en fonction du courant dans l'échantillon et du champ magnétique respectivement. Les coefficients des regressions linéaires permettent de déterminer à l'aide de l'\autoref{eq:R_H} les valeurs du coefficient de Hall \(R_H\) et avec l'\autoref{eq:N} la densité de porteurs de charge \(N\). Les résultats sont reportés dans le \autoref{tab:RH_N}.
 
 \begin{figure}[h]
     \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figures/U(I),InP1micro.pdf}
+        \includegraphics[width=\textwidth]{figures/U(I).pdf}
         \caption{}
+        \label{fig:inpV(I)}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figures/U(I),InP2micro.pdf}
+        \includegraphics[width=\textwidth]{figures/U(B).pdf}
         \caption{}
+        \label{fig:inpV(B)}
     \end{subfigure}
-    \caption{Tension en fonction de l'intensité pour l'échantillon InP d'épaisseur (a) 1 \si{\micro\meter} (b) 2 \si{\micro\meter}}
-    \label{fig:inpV(I)}
+    \caption{Tension en fonction de (a) l'intensité \(I\) avec \(B\) constant (b) le champ magnétique \(B\) avec \(I\) constant pour des échantillons d'InP d'épaisseurs 1 \si{\micro\meter} en bleu et 2 \si{\micro\meter} en orange}
 \end{figure}
 
 \begin{table}[h]
@@ -72,17 +73,17 @@ Les résultats de la deuxième méthode à \(B\) constants sont visibles dans la
 
 \begin{figure}[h]
     \centering
-    \begin{subfigure}{0.33\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\linewidth]{figures/Ag_B.pdf}
         \caption{}
         \label{fig:Ag_B}
     \end{subfigure}%
-    \begin{subfigure}{0.33\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\linewidth]{figures/Cu_B.pdf}
         \caption{}
         \label{fig:Cu_B}
-    \end{subfigure}%
-    \begin{subfigure}{0.33\textwidth}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\linewidth]{figures/Bi_B.pdf}
         \caption{}
         \label{fig:Bi_B}
