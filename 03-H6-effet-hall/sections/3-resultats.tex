@@ -36,12 +36,12 @@ Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au S
 
 \begin{figure}[h]
     \centering
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/U(I),InP1micro.pdf}
         \caption{}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/U(I),InP2micro.pdf}
         \caption{}
@@ -64,49 +64,31 @@ Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au S
     \label{tab:RH_N}
 \end{table}
 
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/U(B),InP1micro.pdf}
-        \caption{}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/U(B),InP2micro.pdf}
-        \caption{}
-    \end{subfigure}
-    \caption{Tension en fonction de la norme signée du champ magnétique pour l'échantillon InP d'épaisseur (a) 1 \si{\micro\meter} (b) 2 \si{\micro\meter}}
-    \label{fig:inpV(B)}
-\end{figure}
-
-
 \paragraph*{Echantillons à 5 contacts}
 
 La deuxième partie de l'expérience consiste à trouver ces valeurs \(R_H\) et \(N\) pour 3 échantillons à 5 contacts. Pour ce faire la même méthode a été utilisée de mesurer la tension de Hall \(V_H\) en fonction du champ magnétique \(B\) à \(I\) constant et en fonction du courant \(I\) à \(B\) constant. Les résultat de la première méthode sont visibles dans la \autoref{fig:5branch_B} pour les régressions linéaires et dans le \autoref{tab:5branch_B} avec les valeurs obtenues et leurs incertitudes. La valeur de \(R_H\) est obtenue à partir de l'épaisseur \(a\) de l'intensité constante \(I\) et de la valeur du coefficient \(\alpha_I\) obtenu par régression linéaire sur les mesures de \(V_H\) en fonction de \(B\). La valeur de \(N\) est elle calculée à partir de \(R_H\) et de la valeur de la charge élémentaire des électrons \(q_- = -1.602176634\times10^{-19}\) \si{\coulomb} qui est considérée sans incertitude ici puisqu'il s'agit d'une valeur tabulée issue de la littérature. Il est nécessaire d'utilisé \(q_-\) négatif ici car il est connu que \(R_H\) a le même signe que la charge des porteurs de charge et toutes les valeurs de \(R_H\) obtenues sont négatives.
 
 Les résultats de la deuxième méthode à \(B\) constants sont visibles dans la \autoref{fig:5branch_I} en \autoref{sec:supp} avec les valeurs dans le \autoref{tab:5branch_I} et résultent du même procédé d'analyse des mesures.
 
-\begin{figure}{}
+\begin{figure}[h]
     \centering
-    \begin{subfigure}{0.3\textwidth}
+    \begin{subfigure}{0.33\textwidth}
         \includegraphics[width=\linewidth]{figures/Ag_B.pdf}
         \caption{}
         \label{fig:Ag_B}
     \end{subfigure}%
-    \begin{subfigure}{0.3\textwidth}
+    \begin{subfigure}{0.33\textwidth}
         \includegraphics[width=\linewidth]{figures/Cu_B.pdf}
         \caption{}
         \label{fig:Cu_B}
     \end{subfigure}%
-    \begin{subfigure}{0.3\textwidth}
+    \begin{subfigure}{0.33\textwidth}
         \includegraphics[width=\linewidth]{figures/Bi_B.pdf}
         \caption{}
         \label{fig:Bi_B}
     \end{subfigure}
     \caption{Régressions de \(V_H\) en fonction de \(B\) à \(I\) constant pour (a) Ag, (b) Cu et (c) Bi}
     \label{fig:5branch_B}
-    \vspace*{1cm}
 \end{figure}
 
 \begin{table}[h]
