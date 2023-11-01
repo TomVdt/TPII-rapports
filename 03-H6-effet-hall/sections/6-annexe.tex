@@ -33,6 +33,22 @@ Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) 
 En pratique, ces valeurs sont calculées par la bilbiothèque python \texttt{numpy}.
 
 \paragraph*{Equation 1}
-Blabla
+Les erreurs sur $R_H$ et $N$ sont données par les équations suivantes:
 
+\begin{equation}
+    \label{eq:erreur:Rh_B}
+    \Delta R_H = |\frac{a}{I}|\Delta \alpha_B + |\frac{a \alpha_B}{I^2}|\Delta I + |\frac{\alpha_B}{I}|\Delta a
+\end{equation}
+
+\begin{equation}
+    \label{eq:erreur:Rh_I}
+    \Delta R_H = |\frac{a}{B}|\Delta \alpha_I + |\frac{a \alpha_I}{B^2}|\Delta B + |\frac{\alpha_I}{B}|\Delta a
+\end{equation}
+
+\begin{equation}
+    \label{eq:erreur:N}
+    \Delta N = |\frac{1}{q R_H^2}|\Delta R_H
+\end{equation}
+
+En supposant qu'il n'y a aucune erreur sur q la charge élémentaire d'un électron qui est une valeur tabulée.
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
