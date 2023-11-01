@@ -1,3 +1,38 @@
 \section{Demarche Expérimentale}
 
-Truc 3
+
+\begin{minipage}{\textwidth}
+    \begin{wrapfigure}{R}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/montage.png}
+        \caption{Dispositif expérimental utilisé pour constater l'effet Hall \cite{notice}}
+        \label{fig:montage}
+        \vspace*{1cm}
+    \end{wrapfigure}
+
+    Le montage expérimental utilisé dans cette expérience est composé de deux bobines en cuivre dans lequel un générateur permet de faire passer un courant continu créant ainsi un champ magnétique dans l'entrefer. Un échantillon peut être placé au niveau de celui-ci et ainsi permet de mesurer une tension de Hall quand un courant le traverse. Deux multimètre sont utilisés pour mesurer le courant entrant dans l'échantillon et pour mesurer la tension de Hall. La résistance interne du multimètre pris comme microvoltmètre est supposée suffisament grande pour ne pas affecter les mesures.
+\end{minipage}
+
+Les mesures du champ magnétique seront elles effectuées à l'aide d'un teslamètre qu'il convient de mettre à zéro avant le début des mesures. Il est important de ne pas trop faire bouger la tête de mesure durant les mesures car l'intensité du champ magnétique mesurée dépend fortement de la position et de l'orientation.
+
+\begin{minipage}
+    \begin{wrapfigure}{R}{0.5\textwidth}
+        \centering
+        \begin{subfigure}{0.25\textwidth}
+            \includegraphics[width=\linewidth]{figures/circuit_4branch.png}
+            \caption{(a)}
+            \label{subfigure:a}
+        \end{subfigure}
+        \begin{subfigure}{0.25\textwidth}
+            \includegraphics[width=\linewidth]{figures/circuit_5branch.png}
+            \caption{(b)}
+            \label{subfigure:b}
+        \end{subfigure}
+        \caption{Méthodes de mesure de la tension de Hall à 4 contacts \autoref{subfigure:a} et à 5 contacts \autoref{subfigure:b} \cite{notice}}
+        \label{fig:circuit}
+        \vspace*{1cm}
+    \end{wrapfigure}
+
+    Afin de mesurer la tension de Hall deux types de branchements sont possibles. Le premier à 4 contacts \autoref{fig:circuit:a} permet de prendre plusieurs mesures aisément mais est affecté par une tension résiudelle présente même avec un champ magnétique nul. Le deuxième à 5 contacts \autoref{fig:circuit:b} dispose d'un potentiomètre branché en parallèle afin de se débarasser de cette tension résiduelle.
+    
+\end{minipage}
