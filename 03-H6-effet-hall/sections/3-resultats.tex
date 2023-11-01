@@ -59,7 +59,7 @@ Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au S
         2 \si{\micro\meter} & \((-1.47 \pm 0.03) \cdot 10^{-3}\) & \((-1.62 \pm 0.01) \cdot 10^{-3}\) & \((4.25 \pm 0.08) \cdot 10^{21}\) & \((3.84 \pm 0.02) \cdot 10^{21}\) \\
         \bottomrule
     \end{tabulary}
-    \caption{Valeurs de la constante de Hall \(R_H\) et densité de porteurs de charges \(N\) pour les échantillons d'épaisseur différente}
+    \caption{Constante de Hall \(R_H\) et densité de porteurs de charges \(N\) pour les différents échantillons}
     \label{tab:RH_N}
 \end{table}
 
@@ -80,33 +80,47 @@ Afin de déterminer la constante de Hall des deux échantillon d'InP dopés au S
 \end{figure}
 
 
-\begin{figure}{R}
+\begin{figure}{}
     \centering
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \includegraphics[width=\linewidth]{figures/Ag_B.pdf}
         \caption{}
         \label{fig:Ag_B}
     \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \includegraphics[width=\linewidth]{figures/Cu_B.pdf}
         \caption{}
         \label{fig:Cu_B}
     \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \includegraphics[width=\linewidth]{figures/Bi_B.pdf}
         \caption{}
         \label{fig:Bi_B}
     \end{subfigure}
-
     \caption{Régression de \(V_H\) en fonction de \(B\) à \(I\) constant pour (a) Ag, (b) Cu et (c) Bi}
     \label{fig:5branch_B}
     \vspace*{1cm}
 \end{figure}
 
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C C C}
+        \toprule
+        échantillon & \(\alpha_B = \frac{V_H}{B}\) & \(R_H = -\frac{\alpha_B a}{I}\) & N \\
+        \midrule
+        Ag & \((8.0 \pm 0.2) \times 10^{-5}\) & \((-7.7 \pm 0.2) \times 10^{-11}\) & \((8.1 \pm 0.2) \times 10^{28}\) \\
+        Cu & \((4.54 \pm 0.04) \times 10^{-5}\) & \((-3.65 \pm 0.03) \times 10^{-11}\) & \((1.71 \pm 0.02) \times 10^{29}\) \\
+        Bi & \((2.38 \pm 0.04) \times 10^{-4}\) & \((-3.62 \pm 0.07) \times 10^{-7}\) & \((1.72 \pm 0.03) \times 10^{25}\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de \(R_H\) et \(N\) obetnues pour les échantillons à 5 branchements à \(I\) constant}
+    \label{tab:5branch_B}
+\end{table}
+
 \paragraph*{Echantillons à 5 contacts}
 
-La deuxième partie de l'expérience consiste à trouver ces valeurs \(R_H\) et \(N\) pour 3 échantillons à 5 contacts. Pour ce faire la même méthode a été utilisée de mesurer la tension de Hall \(V_H\) en fonction du champ magnétique \(B\) à \(I\) constant et en fonction du courant \(I\) à \(B\) constant. Les résultat de la première méthode sont visibles dans la \autoref{fig:5branch_B}.
+La deuxième partie de l'expérience consiste à trouver ces valeurs \(R_H\) et \(N\) pour 3 échantillons à 5 contacts. Pour ce faire la même méthode a été utilisée de mesurer la tension de Hall \(V_H\) en fonction du champ magnétique \(B\) à \(I\) constant et en fonction du courant \(I\) à \(B\) constant. Les résultat de la première méthode sont visibles dans la \autoref{fig:5branch_B} pour la régression linéaire et dans le \autoref{tab:5branch_B} avec les valeurs obtenues et leurs incertitudes. La valeur de R_H est obtenue à partir de l'épaisseur \(a\) de l'intensité constance \(I\) et de la valeur du coefficient \(\alpha_I\) obtenu par régression linéaire sur les mesures de \(V_H\) en fonction de \(B\). La valeur de \(N\) est elle calculée à partir de \(R_H\) et de la valeur de la charge élémentaire des électrons \(q_- = -1.602176634\times10^{-19}\) \si{\coulomb} qui est considérée sans incertitude ici puisqu'il s'agit d'une valeur tabulée issue de la littérature. Il est nécessaire d'utilisé \(q_-\) négatif ici car il est connu que \(R_H\) a le même signe que la charge des porteurs de charge et toutes les valeurs de \(R_H\) obtenues sont négatives.
 
-Les résultats de la deuxième méthode à \(B\) constants sont visibles dans la \autoref{fig:5branch_I} en annexe avec le.
-
+Les résultats de la deuxième méthode à \(B\) constants sont visibles dans la \autoref{fig:5branch_I} en annexe \autoref{sec:supp} avec les valeurs dans le \autoref{tab:5branch_I} et résultent du même procédé d'analyse des mesures.
 
