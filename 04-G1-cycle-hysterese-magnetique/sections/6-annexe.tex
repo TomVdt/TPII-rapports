@@ -30,6 +30,18 @@ Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) 
 En pratique, ces valeurs sont calculées par la bilbiothèque python \texttt{numpy}.
 
 \paragraph*{Formules d'erreurs}
-Les erreurs sur truc
+L'erreur sur la pente moyenne \(\bar{\beta}\) du domaine linéaire est donnée par
+
+\begin{equation}
+    \Delta \bar{\beta} = \left|\Delta \beta_1\right| + \left|\Delta \beta_2\right|
+\end{equation}
+
+L'erreur sur \(\mu_r = \frac{\bar{\beta}}{\alpha}\) est donnée par
+
+\begin{equation}
+    \Delta\mu_r = \left|\frac{\Delta\bar{\beta}}{\alpha}\right| + \left|\frac{\bar{\beta}}{\alpha^2} \Delta\alpha\right|
+\end{equation}
+
+où \(\alpha\) est la pente de la caractéristique du générateur à vide.
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
