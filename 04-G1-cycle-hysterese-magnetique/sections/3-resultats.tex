@@ -26,15 +26,17 @@ Les différents matériaux mesurés ont présenté des comportements magnétique
 \begin{table}[h]
     \vspace{5pt}
     \centering
-    \begin{tabulary}{\linewidth}{c c c c c c c}
-        \toprule
-        & Acier doux & Aluminium & Cuivre & Acier-Ag-Cr & Nickel-200 & Laiton \\
-        \midrule
-        \(\mu_r\) pour PHYWE & \(1.16 \pm 0.04\) & \(1.08 \pm 0.01\) & \(1.08 \pm 0.01\) & - & - & - \\
-        \(\mu_r\) pour Cylindre & \(2.48 \pm 0.08\) & \(0.99 \pm 0.01\) & \(0.98 \pm 0.01\) & \(2.1 \pm 0.1\) & \(1.11 \pm 0.01\) & \(1.008 \pm 0.004\) \\
-        Magnétisme & Ferro- & - & - & Ferro- & Ferro- & Para- \\
-        \bottomrule
-    \end{tabulary}
+    \begin{adjustbox}{width=\textwidth}
+        \begin{tabulary}{\linewidth}{|c c c c c c c|}
+            \toprule
+            & Acier doux & Aluminium & Cuivre & Acier-Ag-Cr & Nickel-200 & Laiton \\
+            \midrule
+            \(\mu_r\) pour PHYWE & \(1.16 \pm 0.04\) & \(1.08 \pm 0.01\) & \(1.08 \pm 0.01\) & - & - & - \\
+            \(\mu_r\) pour Cylindre & \(2.48 \pm 0.08\) & \(0.99 \pm 0.01\) & \(0.98 \pm 0.01\) & \(2.1 \pm 0.1\) & \(1.11 \pm 0.01\) & \(1.008 \pm 0.004\) \\
+            Magnétisme & Ferro- & - & - & Ferro- & Ferro- & Para- \\
+            \bottomrule
+        \end{tabulary}
+    \end{adjustbox}
     \caption{Valeurs de \(\mu_r\) pour différents échantillons dans chaque transformateur et leurs types de magnétisme (Ferro-, Para- et Dia- magnétisme)}
     \label{tab:mu_r}
 \end{table}
@@ -46,11 +48,13 @@ Les différents matériaux mesurés ont présenté des comportements magnétique
         \caption{Cycle d'hystérèse du bloc PHYWE}
         \label{fig:calibr_phywe}
     \end{wrapfigure}
-
+    
     \paragraph{Callibration des axes}
     A partir des équations \autoref{eq:calibr_H} et \autoref{eq:calibr_B} il est possible de calculer les constantes pour pouvoir changer de variables et obtenir une induction magnétique en fonction d'un champ magnétique. En prenant pour le transformateur PHYWE \mbox{\(L = 6.4 \pm 0.1\) \si{\centi \meter}} et \(N = 600\) le nombre de spire du primaire, les coefficients obtenus lorsque le bloc PHYWE est utilisé sont: \mbox{\(H = (4.6\pm0.1)\times10^3 V_i\)} et \mbox{\(B = (8.3\pm0.2)\times10^{-2} V_f\)}. La figure avec les axes calibrés est visible en \autoref{fig:calibr_phywe}.
     Ces nouveaux graphiques permettent de mieux visualiser le système physique et les caractéristiques principales de son hystérèse à savoir les valeurs des \(H_c\), \(H_S\), \(B_r\) et \(B_S\). Pour le bloc PHYWE la valeur du champ coercitif après saturation est donc très proche de 0 \si{\kilo\ampere\per\meter}. Les valeurs de saturation  du champ magnétique et de l'induction respectivement peuvent être lues dans l'ordre de grandeur de 10 \si{\kilo\ampere\per\meter} et 200 \si{\milli\tesla}.
 \end{minipage}
+
+Ces nouveaux graphiques permettent de mieux visualiser le système physique et les caractéristiques principales de son hystérèse à savoir les valeurs des \(H_c\), \(H_S\), \(B_r\) et \(B_S\). Pour le bloc PHYWE la valeur du champ coercitif après saturation est donc très proche de 0 \si{\kilo\ampere\per\meter}. Les valeurs de saturation  du champ magnétique et de l'induction respectivement peuvent être lues aux alentour de 10 \si{\kilo\ampere\per\meter} et 200 \si{\milli\tesla}.
 
 \paragraph{Échantillons empilés}
 La \autoref{fig:combo} est obtenue en empillant deux échantillons du même matériau. Les épaisseurs des échantillons sont dans le \autoref{tab:thiccness} en \autoref{sec:resultats_bonus}. Pour les matériaux ferromagnétiques comme l'acier à la \autoref{fig:acier_combo}, la tension de sortie est presque doublée entre une simple et une double couche. Leur réponse au champ magnétique varie donc en fonction de l'épaisseur du matériau.Cependant, les autres échantillons, comme l'aluminium à la \autoref{fig:alu_combo} ne réagissent pas différement si l'épaisseur est changée.
