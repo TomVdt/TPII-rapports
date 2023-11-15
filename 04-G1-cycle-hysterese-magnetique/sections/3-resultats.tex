@@ -1,7 +1,7 @@
 \section{Résultats}
 
 \paragraph{Étalonnage des transformateurs}
-Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que \(V_y = \alpha V_x\). Une régression linéaire sur le cycle du transformateur PHYWE à la \autoref{fig:phywe_vide} permet d'obtenir \(V_y = (truc) V_x\). Une régression linéaire sur le cycle du transformateur cylindrique à la \autoref{fig:cylindre_vide} donne \(V_y = (truc) V_x\). Le transformateur cylindrique ne présente pas d'hystérèse à vide, alors que le transformateur PHYWE possède une légère hystérèse, mais l'écart entre les courbes en montée et en descente est très faible, et les courbes restent linéaires sur une majeure partie du graphe.
+Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que \(V_f = \alpha V_i\). Une régression linéaire sur le cycle du transformateur PHYWE à la \autoref{fig:phywe_vide} permet d'obtenir \(V_f = (truc) V_i\). Une régression linéaire sur le cycle du transformateur cylindrique à la \autoref{fig:cylindre_vide} donne \(V_f = (truc) V_i\). Le transformateur cylindrique ne présente pas d'hystérèse à vide, alors que le transformateur PHYWE possède une légère hystérèse, mais l'écart entre les courbes en montée et en descente est très faible, et les courbes restent linéaires sur une majeure partie du graphe.
 
 \begin{figure}[h]
     \centering
@@ -23,8 +23,22 @@ Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que 
 \paragraph{Propriétés des matériaux}
 MARTIN
 
-\paragraph{Callibration des axes}
-A VOIR @MARTIN
+\begin{minipage}{\linewidth}
+    \begin{wrapfigure}{R}{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/G1-phywe-avec-bloc_chang.pdf}
+        \caption{Cycle d'hystérèse du bloc PHYWE}
+        \label{fig:calibr_phywe}
+    \end{wrapfigure}
+
+    \paragraph{Callibration des axes}
+    A partir des équations \autoref{eq:calibr_H} et \autoref{eq:calibr_B} il est possible de calculer les constantes pour pouvoir changer de variables et obtenir une induction magnétique en fonction d'un champ. En prenant pour le transformateur PHYWE \(L = 6.4 \pm 0.1\) \si{\centi \meter} et \(N = 600\) le nombre de spire du primaire les coefficients obtenus lorsque le bloc PHYWE est utilisé sont: \(H = (4.6\pm0.1)\times10^3 V_i\) et \(B = (8.3\pm0.2)\times10^{-2} V_f\). La figure avec les axes calibrés est visible en \autoref{fig:calibre_phywe}.
+    Il est également possible d'appliquer ce changement aux différentes valeurs d'intérêt d'un cycle d'hystérèse. 
+\end{minipage}
+
+
+
+
+
 
 \paragraph{Trucs supplémentaires}
 Titre à revoir, en gros les différents cycle d'hystérèse, les différentes épaisseurs, les plaques amagnétiques...

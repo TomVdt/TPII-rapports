@@ -2,11 +2,11 @@
 
 Lorsqu'un courant intense traverse un transformateur composé de nombreuses spires il se crée une induction magnétique dont l'intensité s'exprime par l'équation \cite{assistant}:
 \begin{equation}
-    B = \mu_0 I \frac{N}{L} = \mu_0 \frac{V}{R} \frac{N}{L}
+    B = \mu_0 I \frac{N}{L} = \mu_0 \frac{V_i}{R} \frac{N}{L}
     \label{eq:B_I}
 \end{equation}
-Dans laquelle \(B\) est l'intensité de l'induction magnétique considérée, \(I\) est le courant qui traverse le transformateur, \(N\) le nombre de spires et \(L\) la longueur du transformateur. La deuxième équation est obtenue en sachant que l'intensité est constante dans tout le circuit et par la loi d'Ohm \(V = RI\) avec \(R\) la résistance placée à l'entrée du transformateur et \(V\) la tension mesurée à ses bornes.
-De la même manière l'induction \(B\) est proportionelle à la tension mesurée en sortie \(V_f\). Il est donc possible d'écrire une relation de proportionalité: \(V = \beta V_f\). Il est notamment possible de trouver \(\alpha\) la valeur du coefficient \(\beta\) pour le vide sans échantillon présent.
+Dans laquelle \(B\) est l'intensité de l'induction magnétique considérée, \(I\) est le courant qui traverse le transformateur, \(N\) le nombre de spires du primaire du transformateur et \(L\) la longueur du transformateur. La deuxième équation est obtenue en sachant que l'intensité est constante dans tout le circuit et par la loi d'Ohm \(V_i = RI\) avec \(R\) la résistance placée à l'entrée du transformateur et \(V_i\) la tension mesurée à ses bornes.
+De la même manière l'induction \(B\) est proportionelle à la tension mesurée en sortie \(V_f\). Il est donc possible d'écrire une relation de proportionalité: \(V_i = \beta V_f\). Il est notamment possible de trouver \(\alpha\) la valeur du coefficient \(\beta\) pour le vide sans échantillon présent.
 
 Dans un matériau donné la relation entre l'induction magnétique et le champ magnétique présent est donné par:
 \begin{equation}
@@ -19,7 +19,7 @@ Avec \(B\) et \(H\) l'induction et le champ magnétique, \(\chi_m\) la susceptib
 En combinant les équations \autoref{eq:B_I} et \autoref{eq:B_H} il est possible de trouver que:
 
 \begin{equation}
-    H = \frac{N}{\mu_r L} V
+    H = \frac{N}{\mu_r L} V_i
     \label{eq:calibr_H}
 \end{equation}
 
@@ -28,6 +28,6 @@ En combinant les équations \autoref{eq:B_I} et \autoref{eq:B_H} il est possible
     \label{eq:calibr_B}
 \end{equation}
 
-Ce qui donne finalement que \(V_f = \beta V = \alpha \mu_r V\). Ainsi il est possible de trouver la valeur de \(\mu_r = \frac{\beta}{\alpha}\) en connaissant les coefficients de proportionnalité seulement des tensions qui est ce qui est mesuré.
+Ce qui donne finalement que \(V_f = \beta V_i = \alpha \mu_r V_i\). Ainsi il est possible de trouver la valeur de \(\mu_r = \frac{\beta}{\alpha}\) en connaissant les coefficients de proportionnalité seulement des tensions qui est ce qui est mesuré.
 
-
+CYCLE D HYSTÉRÈSE HC HS BR BS blabla no jutsu
