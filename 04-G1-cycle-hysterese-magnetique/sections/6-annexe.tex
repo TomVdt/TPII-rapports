@@ -1,3 +1,8 @@
+\section{Résultats supplémentaires}
+\label{sec:resultats_bonus}
+
+%% TODO %%
+
 \section{Calcul d'erreurs}
 \label{sec:erreurs}
 
@@ -9,7 +14,10 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur & Commentaire \\
         \midrule
-        \(var\) [\si{\micro\meter}] & val & com \\
+        \(V_x\) [\si{\volt}] & 0.0001 & Basé sur les chiffres significatifs de la mesure \\
+        \(V_y\) [\si{\volt}] & 0.0001 & Basé sur les chiffres significatifs de la mesure \\
+        \(R\) [\si{\ohm}] & 0.01 & Indiqué sur la resistance \\
+        \(N\) & 0 & Nombre de spires supposé exact \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -17,7 +25,7 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 \end{table}
 
 \paragraph*{Regression linéaire}
-Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par l'\autoref{eq:erreur:fit} \cite{erreursmesure}:
+Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par l'équation \cite{erreursmesure}:
 
 \begin{equation}
     \label{eq:erreur:fit}
