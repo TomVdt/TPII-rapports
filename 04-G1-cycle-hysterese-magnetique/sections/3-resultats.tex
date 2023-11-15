@@ -35,11 +35,43 @@ MARTIN
     Il est également possible d'appliquer ce changement aux différentes valeurs d'intérêt d'un cycle d'hystérèse. 
 \end{minipage}
 
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\linewidth}{c c c c c c c}
+        \toprule
+        & Acier doux & Aluminium & Cuivre & Acier-Ag-Cr & Nickel-200 & Monel-400 \\
+        \midrule
+        \(\mu_r\) PHYWE & \(1.16 \pm 0.04\) & \(1.08 \pm 0.01\) & \(1.08 \pm 0.01\) & - & - & - \\
+        \(\mu_r\) Cylindre & \(2.48 \pm 0.08\) & \(0.99 \pm 0.01\) & \(0.98 \pm 0.01\) & \(2.1 \pm 0.1\) & \(1.11 \pm 0.01\) & \(1.09 \pm 0.01\) \\
+        Magnétisme & Ferro- & - & - & Ferro- & Para- & Para- \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de \(\mu_r\) pour différents échantillons dans chaque transformateur et leurs types de magnétisme (Ferro-, Para- et Dia- magnétisme)}
+    \label{tab:mu_r}
+\end{table}
 
-
-
-
+\paragraph{Callibration des axes}
+A VOIR @MARTIN
 
 \paragraph{Trucs supplémentaires}
 Titre à revoir, en gros les différents cycle d'hystérèse, les différentes épaisseurs, les plaques amagnétiques...
 
+
+\begin{minipage}{\linewidth}
+    \paragraph{Échantillons empilés}
+    La \autoref{fig:combo} est obtenue en empillant deux échantillons du même matériau. Les épaisseurs des échantillons sont dans le \autoref{tab:thiccness} en \autoref{sec:resultats_bonus}. La réponse au champ magnétique varie en fonction de l'épaisseur du matériau.
+
+    \begin{wrapfigure}{R}{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/separateurs_amagnetique.pdf}
+        \caption{Réponse du bloc PHYWE après insertion de 1, 2 et 6 séparateurs amagnétiques}
+        \label{fig:amagnetique}
+    \end{wrapfigure}
+
+    \paragraph{Plaques amagnétiques}
+    L'insertion de plaques amagnetique entre le transformateur et le bloc PHYWE change aussi la réponse du bloc, comme le montre la \autoref{fig:amagnetique}. Un nombre plus grand, correspondant à une plus grande épaisseur, de plaques magnétique diminue et même élimine le cycle d'hystérèse du bloc, qui répond alors linéairement au changement de champ magnétique.
+
+    \paragraph{Orientation du bloc PHYWE}
+    belle bite shinji
+\end{minipage}
+    
