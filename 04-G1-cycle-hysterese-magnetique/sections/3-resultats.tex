@@ -1,7 +1,7 @@
 \section{Résultats}
 
 \paragraph{Étalonnage des transformateurs}
-Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que \(V_f = \alpha V_i\). Une régression linéaire sur le cycle du transformateur PHYWE à la \autoref{fig:phywe_vide} permet d'obtenir \mbox{\(V_f = (6.9 \pm 0.3)\times 10^{-2} V_i\)}. Une régression linéaire sur le cycle du transformateur cylindrique à la \autoref{fig:cylindre_vide} donne \mbox{\(V_f = (1.91 \pm 0.01)\times 10^{-2} V_i\)}. Pour ces régressions linéaires, l'ordonnée à l'origine a été négligée car elle était de l'ordre de \(10^{-4}\). Le transformateur cylindrique ne présente pas d'hystérèse à vide, alors que le transformateur PHYWE possède une légère hystérèse, cependant la courbe reste linéaire sur la majorité du graphique.
+Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que \(V_f = \alpha V_i\). Une régression linéaire sur le cycle du transformateur PHYWE à la \autoref{fig:phywe_vide} permet d'obtenir \mbox{\(V_f = (6.9 \pm 0.3)\times 10^{-2} V_i\)}. Une régression linéaire sur le cycle du transformateur cylindrique à la \autoref{fig:cylindre_vide} donne \mbox{\(V_f = (1.91 \pm 0.01)\times 10^{-2} V_i\)}. Pour ces régressions linéaires, l'ordonnée à l'origine a été négligée car elle était de l'ordre de \(10^{-4}\). Les erreurs ne sont pas représentées ici, mais le calcul d'erreurs se trouve en \autoref{sec:erreurs}. Le transformateur cylindrique ne présente pas d'hystérèse à vide, alors que le transformateur PHYWE possède une légère hystérèse, cependant la courbe reste linéaire sur la majorité du graphique.
 
 \begin{figure}[h]
     \centering
@@ -41,6 +41,8 @@ Les valeurs de \(\mu_r\) pour les différents échantillons étudiés ont été 
     \label{tab:mu_r}
 \end{table}
 
+\paragraph{Callibration des axes}
+A partir des équations \autoref{eq:calibr_H} et \autoref{eq:calibr_B} il est possible de calculer les constantes pour pouvoir changer de variables et obtenir une induction magnétique en fonction d'un champ magnétique. En prenant pour le transformateur PHYWE \mbox{\(L = 6.4 \pm 0.1\) \si{\centi \meter}} et \mbox{\(N = 600\)} le nombre de spires du primaire, les coefficients obtenus lorsque le bloc PHYWE est utilisé sont: \mbox{\(H = (4.6\pm0.1)\times10^3 V_i\)} et \mbox{\(B = (8.3\pm0.2)\times10^{-2} V_f\)}. La figure avec les axes calibrés est visible en \autoref{fig:calibr_phywe}. La même stratégie peut être appliquée à des cycles d'hystérèse différents, visibles à la \autoref{fig:autres_cycles} en \autoref{sec:resultats_bonus}.
 
 \begin{minipage}{\linewidth}
     \begin{wrapfigure}{R}{0.5\linewidth}
@@ -48,14 +50,13 @@ Les valeurs de \(\mu_r\) pour les différents échantillons étudiés ont été 
         \caption{Cycle d'hystérèse du bloc PHYWE}
         \label{fig:calibr_phywe}
     \end{wrapfigure}
-    
-    \paragraph{Callibration des axes}
-    A partir des équations \autoref{eq:calibr_H} et \autoref{eq:calibr_B} il est possible de calculer les constantes pour pouvoir changer de variables et obtenir une induction magnétique en fonction d'un champ magnétique. En prenant pour le transformateur PHYWE \mbox{\(L = 6.4 \pm 0.1\) \si{\centi \meter}} et \mbox{\(N = 600\)} le nombre de spires du primaire, les coefficients obtenus lorsque le bloc PHYWE est utilisé sont: \mbox{\(H = (4.6\pm0.1)\times10^3 V_i\)} et \mbox{\(B = (8.3\pm0.2)\times10^{-2} V_f\)}. La figure avec les axes calibrés est visible en \autoref{fig:calibr_phywe}.
+
     Ces nouveaux graphiques permettent de mieux visualiser le système physique et les caractéristiques principales de son hystérèse à savoir les valeurs des \(H_c\), \(H_S\), \(B_r\) et \(B_S\). Pour le bloc PHYWE la valeur du champ coercitif après saturation est donc très proche de 0 \si{\kilo\ampere\per\meter}. Les valeurs de saturation  du champ magnétique et de l'induction respectivement peuvent être lues dans l'ordre de grandeur de 10 \si{\kilo\ampere\per\meter} et 200 \si{\milli\tesla}.
+
+    \paragraph{Échantillons empilés}
+    La \autoref{fig:combo} est obtenue en empilant deux échantillons du même matériau. Les épaisseurs des échantillons sont dans le \autoref{tab:thiccness} en \autoref{sec:resultats_bonus}. Pour les matériaux ferromagnétiques comme l'acier à la \autoref{fig:acier_combo}, la tension de sortie est presque doublée entre une simple et une double couche. Leur réponse au champ magnétique varie donc en fonction de l'épaisseur du matériau. Cependant, les autres échantillons, comme l'aluminium à la \autoref{fig:alu_combo} ne réagissent pas différement si l'épaisseur est changée.
 \end{minipage}
 
-\paragraph{Échantillons empilés}
-La \autoref{fig:combo} est obtenue en empilant deux échantillons du même matériau. Les épaisseurs des échantillons sont dans le \autoref{tab:thiccness} en \autoref{sec:resultats_bonus}. Pour les matériaux ferromagnétiques comme l'acier à la \autoref{fig:acier_combo}, la tension de sortie est presque doublée entre une simple et une double couche. Leur réponse au champ magnétique varie donc en fonction de l'épaisseur du matériau. Cependant, les autres échantillons, comme l'aluminium à la \autoref{fig:alu_combo} ne réagissent pas différement si l'épaisseur est changée.
 
 \begin{figure}[h]
     \centering
