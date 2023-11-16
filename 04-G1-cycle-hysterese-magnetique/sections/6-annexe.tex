@@ -18,6 +18,22 @@
 \begin{figure}[h]
     \begin{minipage}{0.48\linewidth}
         \centering
+        \includegraphics[width=\linewidth]{figures/G1-cylindre-nickel200.pdf}
+        \caption{Caractéristique du nickel-200 dans le transformateur cylindrique}
+        \label{fig:nickel-200}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/vertical_vs_horizontal.pdf}
+        \caption{Comportement du bloc PHYWE en fonction de l'orientation des lamelles}
+        \label{fig:orientation_bloc}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{minipage}{0.48\linewidth}
+        \centering
         \includegraphics[width=\linewidth]{figures/phywe_autres_cycles.pdf}
         \caption{Différents cycles d'hystérèse du bloc PHYWE}
         \label{fig:autres_cycles}
@@ -31,28 +47,12 @@
     \end{minipage}
 \end{figure}
 
-\begin{figure}[h]
-    \begin{minipage}{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/vertical_vs_horizontal.pdf}
-        \caption{Comportement du bloc PHYWE en fonction de l'orientation des lamelles}
-        \label{fig:orientation_bloc}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/G1-cylindre-nickel200.pdf}
-        \caption{Caractéristique du nickel-200 dans le transformateur cylindrique}
-        \label{fig:nickel-200}
-    \end{minipage}
-\end{figure}
-
 \section{Calcul d'erreurs}
 \label{sec:erreurs}
 
 Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 
-\begin{table}[h]
+\begin{table}
     \centering
     \begin{tabulary}{\textwidth}{C C C}
         \toprule
@@ -82,7 +82,7 @@ Les erreurs sur les fits linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) 
 En pratique, ces valeurs sont calculées par la bilbiothèque python \texttt{numpy}.
 
 \paragraph*{Formules d'erreurs}
-L'erreur sur la pente moyenne \(\bar{\beta}\) du domaine linéaire est donnée par
+L'erreur sur la pente moyenne \(\bar{\beta}\) des deux domaines linéaires des graphiques d'hystérèse est donnée par
 
 \begin{equation}
     \Delta \bar{\beta} = \left|\Delta \beta_1\right| + \left|\Delta \beta_2\right|
