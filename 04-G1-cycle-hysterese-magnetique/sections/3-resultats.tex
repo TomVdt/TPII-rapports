@@ -21,7 +21,7 @@ Les cycles à vide des transformateurs permettent de trouver \(\alpha\) tel que 
 \end{figure}
 
 \paragraph{Propriétés des matériaux}
-Les valeurs de \(\mu_r\) pour les différents échantillons étudiés ont été obtenues par l'\autoref{eq:mu_r} à l'aide des régressions linéaires sur les transformateurs à vide et sur les parties linéaires des graphiques des différents matériaux. Pour les matériaux diamagnétiques et paramagnétiques présentant un comportement purement linéaire cela représente l'entièreté des points relevés. Pour ceux présentant un cycle d'hystérèse seule la partie linéaire aux extremités du graphe a été utilisée pour la régression. La classification obtenue avec les valeurs des \(\mu_r\) est présentée dans le \autoref{tab:mu_r}.
+Les valeurs de \(\mu_r\) pour les différents échantillons étudiés ont été obtenues par l'\autoref{eq:mu_r} à l'aide des régressions linéaires sur les transformateurs à vide et sur les parties linéaires des graphiques des différents matériaux. Pour les matériaux diamagnétiques et paramagnétiques présentant un comportement purement linéaire cela représente l'entièreté des points relevés. Pour ceux présentant un cycle d'hystérèse, comme le nickel-200 visible à la \autoref{fig:nickel-200} en \autoref{sec:resultats_bonus}, seule la partie linéaire aux extremités du graphe a été utilisée pour la régression. La classification obtenue avec les valeurs des \(\mu_r\) est présentée dans le \autoref{tab:mu_r}.
 
 \begin{table}[h]
     \vspace{5pt}
@@ -86,22 +86,5 @@ A partir des équations \autoref{eq:calibr_H} et \autoref{eq:calibr_B} il est po
 \paragraph{Plaques amagnétiques}
 L'insertion de plaques amagnetique entre le transformateur et le bloc PHYWE change aussi la réponse du bloc, comme le montre la \autoref{fig:amagnetique}. Un nombre plus grand, correspondant à une plus grande épaisseur, de plaques amagnétiques diminue et même élimine le cycle d'hystérèse du bloc, qui répond alors linéairement au changement de champ magnétique.
 
-% \paragraph{Orientation du bloc PHYWE}
-% Le bloc PHYWE est composé de plusieurs couches de fer \cite{bloc_phywe}. La \autoref{fig:orientation_bloc} donne la réponse du bloc PHYWE en fonction de l'orientation des lamelles. Lorsque les lamelles sont orientées dans un sens différent que prévu, ici verticalement, le champ magnétique est moins fort que pour l'orientation prévue, avec les lamelles horizontales.
-
-% \begin{figure}[h]
-%     \begin{minipage}{0.48\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{figures/separateurs_amagnetique.pdf}
-%         \caption{Réponse du bloc PHYWE après insertion de 1, 2 et 6 séparateurs amagnétiques}
-%         \label{fig:amagnetique}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{figures/vertical_vs_horizontal.pdf}
-%         \caption{Comportement du bloc PHYWE en fonction de l'orientation des lamelles}
-%         \label{fig:orientation_bloc}
-%     \end{minipage}
-% \end{figure}
-    
+\paragraph{Orientation du bloc PHYWE}
+Le bloc PHYWE est composé de plusieurs couches de fer \cite{bloc_phywe}. La \autoref{fig:orientation_bloc} en \autoref{sec:resultats_bonus} donne la réponse du bloc PHYWE en fonction de l'orientation des lamelles. Lorsque les lamelles sont orientées dans un sens différent que prévu, ici verticalement, le champ magnétique est moins fort que pour l'orientation prévue, avec les lamelles horizontales: il y a une perte d'efficacité.
