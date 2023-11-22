@@ -1,0 +1,39 @@
+\section{Calcul d'erreurs}
+\label{sec:erreurs}
+
+Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C}
+        \toprule
+        Variable & Erreur \\
+        \midrule
+        \(truc\) [\si{\volt}] & 0.0001 \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Erreurs estimées sur les mesures}
+    \label{tab:erreurs}
+\end{table}
+
+\paragraph*{Regression linéaire}
+Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par l'équation \cite{erreursmesure}:
+
+\begin{equation}
+    \label{eq:erreur:fit}
+    \begin{aligned}
+        (\Delta a)^2 &= \frac{\sum_{i=1}^{n}(y_i - (a x_i + b))^2}{(n-2) \sum_{i=1}^{n}(x_i - \bar{x})^2}\\
+        \Delta b &= \bar{x} \Delta a + a \Delta \bar{x}
+    \end{aligned}
+\end{equation}
+
+En pratique, ces valeurs sont calculées par la bilbiothèque python \texttt{numpy}.
+
+\paragraph*{Formules d'erreurs}
+Truc
+
+\begin{equation}
+    \Delta truc = bidule
+\end{equation}
+
+Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
