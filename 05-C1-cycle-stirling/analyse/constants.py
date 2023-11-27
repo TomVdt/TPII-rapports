@@ -2,7 +2,7 @@ from uncertainties import ufloat
 from numpy import pi
 
 # Taille du cylindre du moteur
-r_cylindre = ufloat(4, 0.1) # cm
+r_cylindre = ufloat(4, 0.5) # cm
 h_max = ufloat(7.4, 0.5) # cm
 h_min = ufloat(2.04, 0.25) # cm
 V_max = pi * (r_cylindre ** 2) * h_max # cm³
@@ -31,4 +31,4 @@ T_fil = ufloat(1143, 69) # K
 debit_eau = ufloat(280, 5) # mL / min
 # https://fr.wikipedia.org/wiki/Capacit%C3%A9_thermique_massique
 C_m_eau = ufloat(4_185, 0.1) # J / K / kg
-rho_eau = ufloat(1_000, 0.001) # kg / m^3
+rho_eau = ufloat(1_000, 0.1) # kg / m^3
