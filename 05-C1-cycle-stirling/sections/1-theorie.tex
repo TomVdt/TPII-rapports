@@ -1,6 +1,5 @@
 \section{Théorie}
 
-
 \begin{minipage}{\linewidth}
     \begin{wrapfigure}{R}{0.55\linewidth}
         \includegraphics*[width=\linewidth]{figures/cycle-stirling.png}
@@ -9,7 +8,7 @@
     \end{wrapfigure}
 
     \paragraph*{Etude du cycle de Stirling}
-    Le cycle de Stirling est un type de machine thermique ditherme, qui prend donc un flux de chaleur \(\phi_2\) d'une source de chaleur à température \(T_2\) et produit une puissance mécanique \(P_m\) en expulsant également un flux de chaleur \(\phi_1\) vers sa source froide à \(T_1\). Le cycle de Stirling en particulier est composé de 4 transformations, 2 isothermes et 2 isochores entre \(V_1\) et \(V_2\) tel qu'illustré en \autoref{fig:cycle-pv}. Le rendement théorique de ce cycle est obtenu en étudiant les échanges de chaleur et de travail sur ces transformations. Tout d'abord, sur les transformations isochores \(W_{2\to3} = W_{4\to1} = -p \, dV = 0\). De plus le cycle de Stirling utilise un régénérateur permettant de restituer la chaleur de \(2\to3\) pendant \(4\to1\), ainsi \(Q_{2\to3} = -Q_{4\to1}\).
+    Le cycle de Stirling est un type de machine thermique ditherme, qui prend donc un flux de chaleur \(\phi_2\) d'une source de chaleur à température \(T_2\) et produit une puissance mécanique \(P_m\) en expulsant également un flux de chaleur \(\phi_1\) vers sa source froide à \(T_1\). Le cycle de Stirling en particulier est composé de 4 transformations, 2 isothermes et 2 isochores entre \(V_1\) et \(V_2\) tel qu'illustré en \autoref{fig:cycle-pv}. Le rendement théorique de ce cycle est obtenu en étudiant les échanges de chaleur et de travail sur ces transformations. Tout d'abord, sur les transformations isochores \hbox{\(W_{2\to3} = W_{4\to1} = -p \, dV = 0\)}. De plus le cycle de Stirling utilise un régénérateur permettant de restituer la chaleur de \(2\to3\) pendant \(4\to1\), ainsi \(Q_{2\to3} = -Q_{4\to1}\).
 \end{minipage}
 
 Cela permet de déterminer \(Q_{1\to2} = Q_2\) et \(W_{cycle} = W = -Q_1 - Q_2\) avec \(Q_1 = Q_{3\to4}\), car il s'agit d'un cycle avec une variation d'énergie interne totale nulle. Cela donne pour \(W\) en considérant les gazs du système comme parfait:
@@ -29,8 +28,9 @@ De plus le cycle garantit que \(\Delta S = 0\) donc \(S_{1\to2} = S_{3\to4}\) av
 Finalement le rendement est obtenu par:
 \begin{equation}
     \eta = \left|\frac{W_{cycle}}{Q_2}\right| = \frac{T_2 - T_1}{T_2} = 1 - \frac{T_1}{T_2}
+    \label{eq:rend-theorie}
 \end{equation}
-qui est le rendement d'un cycle de Carnot, le cycle de Stirling est donc en théorie réversible.
+qui est le rendement d'un cycle de Carnot, le cycle de Stirling est donc en théorie réversible \cite{cours-thermo}.
 
 
 

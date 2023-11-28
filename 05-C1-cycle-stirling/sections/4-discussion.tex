@@ -1,1 +1,20 @@
 \section{Discussion}
+
+
+
+
+\paragraph*{Influence de la vitesse angulaire}
+Les diagrammes \autoref{fig:couple-regime} et \autoref{fig:rend-regime} obtenus montrent un lien entre la vitesse angulaire et respectivement le couple avec le disque de freinage et le rendement du moteur. Tout d'abord la diminution de la distance des aimants du frein avec l'arbre de rotation a entrainé logiquement une augmentation du couple avec une force magnétique d'autant plus forte que la distance était faible. Ce couple plus grand correspond à un freinage plus important ce qui donne de manière cohérente une vitesse angulaire plus faible. Ainsi le couple correspond à l'intensité du freinage appliqué. De la même manière le rendement dépend de la puissance mécanique disponible est celle-ci est mesurée par la force appliquée sur le frein. Le diagramme rendement-régime permet de constater que l'augmentation de la force appliquée amène une augmentation du rendement plus importante que la diminution venant du ralentissement. Un moteur tournant plus lentement sera ici plus efficace ce qui est une bonne indication pour une utilisation optimisée.
+
+\paragraph*{Fonctionnement frigorifique}
+A la différence du cas moteur le résultat obtenu dans la \autoref{fig:rend-frigo} permet de conclure qu'un cycle frigorifique est plus efficace quand il fonctionne à de plus hautes vitesses de rotation. Ainsi il est plus efficace de faire tourner le moteur à haute puissance, ce qui correspond à une rotation plus rapide, pour évacuer plus de chaleur plus rapidement.
+
+
+\paragraph*{Gestion des erreurs}
+De très grandes erreurs ont été obtenues lors de ces expériences. Il est donc important de relever les principales approximations qui ont été faites et les sources d'incertitude.
+
+Tout d'abord dans l'estimation du rendement théorique, la détermination de la température \(T_2\) est très imprécise par absence de système de mesure directe dans le montage. Ainsi la valeur obtenue en observant la couleur donne une bonne estimation du rendement théorique qui ne sera de toute manière pas atteint mais ne peut pas être la base d'une quelconque analyse plus poussée.
+
+Dans le cadre du fonctionnement moteur, plusieurs approximations ont été faites. Tout d'abord lors de la mesure par l'aire dans le diagramme (P,V) la manière très approximative de tracer celui-ci pose des doutes sur la fiabilité de cette méthode. Cependant la calibration par les valeurs minimales et maximales permet une bonne utilisation de cette aire obtenue. Pour la mesure par freinage, la disposition du système utilisé présentait un angle \(\alpha\) très faible ce qui a mené à l'approximation dans tous les calculs que \(\cos(\alpha) \approx 1\). Cette approximation semble justifiée par le fait que l'erreur sur la mesure de la force, toujours couplée à \(\cos(\alpha)\), était significativement plus grande de l'ordre de 15\%, voir \autoref{tab:erreurs} en \autoref{sec:erreurs}.
+
+Finalement une source d'erreur importante pour plusieurs expériences a été la mesure du nombre de tours par minutes. L'appareil de mesure était en effet sensible à sa position et son orientation par rapport à l'arbre de rotation. L'appareil étant tenu à la main et bougé entre chaques mesures, cette sensibilité ne permettait donc pas d'assurer une bonne précision ce qui a pu résulter en de grandes barres d'erreurs telles que celles visibles en \autoref{fig:couple-regime}.
