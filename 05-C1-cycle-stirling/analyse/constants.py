@@ -17,15 +17,15 @@ P_min = ufloat(0.1, 0.1) # bar
 r_disque = ufloat(4, 0.001) # cm
 
 # Puissance fil
-U_fil = ufloat(13.41, 0.01) # V
-I_fil = ufloat(12.82, 0.01) # A
+U_fil = ufloat(13.41, 0.05) # V
+I_fil = ufloat(12.82, 0.05) # A
 
 # Temperatures
 T_eau_in = ufloat(20, 0.1) + 273 # K
 delta_T_eau = ufloat(3.9, 0.1) # K
 T_eau_out = T_eau_in + delta_T_eau # K
 
-T_fil = ufloat(1143, 69) # K
+T_fil = ufloat(1143, 70) # K
 
 # Débit
 debit_eau = ufloat(280, 5) # mL / min
