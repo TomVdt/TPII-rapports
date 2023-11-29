@@ -15,7 +15,7 @@ Le dispositif expérimental à la \autoref{fig:montage} est connecté à un syst
     P_\textrm{m,PV} = c A \frac{\omega}{2 \pi}
     \label{eq:pm_pv}
 \end{equation}
-où \(c\) est une trouvée avec l'étalonnage du graphique et \(A\) est l'aire sous la courbe.
+où \(c\) est une constante trouvée avec l'étalonnage du graphique et \(A\) est l'aire sous la courbe.
 
 %% Pour bien placer le montage
 \begin{wrapfigure}{L}{0.5\linewidth}
@@ -26,16 +26,17 @@ où \(c\) est une trouvée avec l'étalonnage du graphique et \(A\) est l'aire s
     \vspace{1cm}
 \end{wrapfigure}
 
-Un disque de freinage, composé de plusieurs aimants placés à equidistance sur le bord du disque, permet de freiner le volant d'inertie en utilisant l'induction magnétique. La distance entre le disque et le volant peut être variée. La force sur le disque de freinage est mesurée sur le bord du disque par un dynamomètre accroché au dessus du disque. Le moment des forces sur le disque est alors donné par
+Un disque de freinage, composé de plusieurs aimants placés à équidistance sur le bord du disque, permet de freiner le volant d'inertie en utilisant l'induction magnétique. La distance entre le disque et le volant peut être variée. La force sur le disque de freinage est mesurée sur le bord du disque par un dynamomètre accroché au dessus. Le moment des forces sur le disque est alors donné par
 \begin{equation}
-    \vec{M} = \vec{R} \times \vec{F} = RF \cos{\alpha}
+    ||\vec{M}|| = ||\vec{R} \times \vec{F}|| = RF \cos{\alpha}
+    \label{eq:couple}
 \end{equation}
-où \(\vec{R}\) est le vecteur entre le centre du disque et le point d'application de la force et \(\alpha\) est l'angle entre l'aimant où la force est mesurée et l'horizontale. La puissance mécanique est alors donnée par
+où \(\vec{R}\) est le vecteur de norme \(R\) entre le centre du disque et le point d'application de la force \(F\) et \(\alpha\) est l'angle entre l'aimant où la force est mesurée et l'horizontale. Le moment des forces est ici égal au couple mécanique: \(||\vec{M}|| = C\). La puissance mécanique est alors donnée par
 \begin{equation}
     P_\textrm{m,frein} = ||\vec{M}||\frac{\omega}{2 \pi} = F R \frac{\omega}{2 \pi} \cos{\alpha}
     \label{eq:pm_frein}
 \end{equation}
-où F est la norme de la force, R le rayon du disque de frein et \(\omega\) la vitesse angulaire du volant d'inertie en \si{\radian\per\second}.
+où \(\omega\) est la vitesse angulaire du volant d'inertie en \si{\radian\per\second} \cite{chadsermet}. 
 
 Enfin, la dernière méthode considère simplement la différence des flux chauds \(\phi_2\) et froids \(\phi_1\). Le flux froid \(\phi_1\) correspond au flux de chaleur évacué par le système de refroidissement à eau.
 \begin{equation}
