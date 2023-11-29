@@ -5,23 +5,23 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 
 \begin{table}[h]
     \centering
-    \begin{tabulary}{\textwidth}{C C}
+    \begin{tabulary}{\textwidth}{C C C C}
         \toprule
-        Variable & Erreur \\
+        Variable & Erreur & Variable & Erreur \\
         \midrule
-        \(\Delta V_\textrm{min}\) [\si{\centi\meter\cubed}] & 30 \\
-        \(\Delta V_\textrm{max}\) [\si{\centi\meter\cubed}] & 90 \\
-        \(\Delta p_\textrm{min}\) [\si{\bar}] & 0.05 \\
-        \(\Delta p_\textrm{max}\) [\si{\bar}] & 0.05 \\
-        \(\Delta U_\textrm{fil}\) [\si{\volt}] & 0.05 \\
-        \(\Delta I_\textrm{fil}\) [\si{\ampere}] & 0.05 \\
-        \(\Delta T_\textrm{fil}\) [\si{\kelvin}] & 70 \\
-        \(\Delta T_\textrm{eau}\) [\si{\kelvin}] & 0.1 \\
-        \(\Delta D\) [\si{\milli\liter \per \minute}] & 5 \\
-        \(\Delta C_\textrm{m,eau}\) [\si{\joule\per\kelvin\per\kilo\gram}] & 0.1 \\
-        \(\Delta \rho_\textrm{eau}\) [\si{\kilo\gram\per\meter\cubed}] & 0.1 \\
-        \(F\) [\si{\newton}] & 15\% \\
-        \(\omega\) [\si{\radian \per \second}] & 5\% \\
+        \(\Delta V_\textrm{min}\) [\si{\centi\meter\cubed}] & 30 & \(\Delta T_\textrm{eau}\) [\si{\kelvin}] & 0.1 \\
+        \(\Delta V_\textrm{max}\) [\si{\centi\meter\cubed}] & 90 & \(\Delta D\) [\si{\milli\liter \per \minute}] & 5 \\
+        \(\Delta p_\textrm{min}\) [\si{\bar}] & 0.05 & \(\Delta C_\textrm{m,eau}\) [\si{\joule\per\kelvin\per\kilo\gram}] & 0.1 \\
+        \(\Delta p_\textrm{max}\) [\si{\bar}] & 0.05 & \(\Delta \rho_\textrm{eau}\) [\si{\kilo\gram\per\meter\cubed}] & 0.1 \\
+        \(\Delta U_\textrm{fil}\) [\si{\volt}] & 0.05 & \(F\) [\si{\newton}] & 15\% \\
+        \(\Delta I_\textrm{fil}\) [\si{\ampere}] & 0.05 & \(\omega\) [\si{\radian \per \second}] & 5\% \\
+        \(\Delta T_\textrm{fil}\) [\si{\kelvin}] & 70 & - & -\\
+        % \(\Delta T_\textrm{eau}\) [\si{\kelvin}] & 0.1 \\
+        % \(\Delta D\) [\si{\milli\liter \per \minute}] & 5 \\
+        % \(\Delta C_\textrm{m,eau}\) [\si{\joule\per\kelvin\per\kilo\gram}] & 0.1 \\
+        % \(\Delta \rho_\textrm{eau}\) [\si{\kilo\gram\per\meter\cubed}] & 0.1 \\
+        % \(F\) [\si{\newton}] & 15\% \\
+        % \(\omega\) [\si{\radian \per \second}] & 5\% \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -29,7 +29,7 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 \end{table}
 
 \paragraph*{Regression linéaire}
-Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par l'équation \cite{erreursmesure}:
+Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \hdots, n\}\) sont donnés par \cite{erreursmesure}:
 
 \begin{equation}
     \label{eq:erreur:fit}
@@ -67,6 +67,13 @@ Erreur sur le rendement expérimental
 \begin{equation}
     \Delta \eta = \eta \left( \left|\frac{\Delta P_m}{P_m}\right| + \left|\frac{\Delta \phi_2}{\phi_2}\right| \right)
 \end{equation}
+
+Erreur sur le rendement expérimental du cycle frigorifique
+\begin{eqnarray}
+    \Delta \phi = \phi \left( \left|\frac{\Delta U_\textrm{fil}}{U_\textrm{fil}}\right| + \left|\frac{\Delta I_\textrm{fil}}{I_\textrm{fil}}\right| \right) \\
+    \Delta P_\textrm{moteur} = P_\textrm{moteur} \left( \left|\frac{\Delta U_\textrm{moteur}}{U_\textrm{moteur}}\right| + \left|\frac{\Delta I_\textrm{moteur}}{I_\textrm{moteur}}\right| \right) \\
+    \Delta \eta = \eta \left( \left|\frac{\Delta \phi}{\phi}\right| + \left|\frac{\Delta P_\textrm{moteur}}{P_\textrm{moteur}}\right| \right)
+\end{eqnarray}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
 
