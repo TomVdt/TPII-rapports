@@ -3,7 +3,7 @@
 \begin{minipage}{\linewidth}
     \begin{wrapfigure}{R}{0.55\linewidth}
         \includegraphics*[width=\linewidth]{figures/cycle-stirling.png}
-        \caption{Diagramme \((P,V)\) du cycle de Stirling}
+        \caption{Diagramme \((P,V)\) du cycle de Stirling \cite{notice}}
         \label{fig:cycle-pv}
     \end{wrapfigure}
 
@@ -27,18 +27,17 @@ De plus le cycle garantit que \(\Delta S = 0\) donc \(S_{1\to2} = S_{3\to4}\) av
 \end{equation}
 Finalement le rendement est obtenu par:
 \begin{equation}
-    \eta = \left|\frac{W_{cycle}}{Q_2}\right| = \frac{T_2 - T_1}{T_2} = 1 - \frac{T_1}{T_2}
+    \eta = \left|\frac{W_\textrm{cycle}}{Q_2}\right| = \frac{T_2 - T_1}{T_2} = 1 - \frac{T_1}{T_2}
     \label{eq:rend-theorie}
 \end{equation}
 qui est le rendement d'un cycle de Carnot, le cycle de Stirling est donc en théorie réversible \cite{cours-thermo}.
-
-
 
 \paragraph*{Cycle de Stirling en pompe à chaleur}
 Un moteur de Stirling peut également fonctionner en mode pompe à chaleur ou machine frigorifique, la seule différence étant l'intérêt dans l'apport ou l'extraction de chaleur. Il s'agit dans ces cas d'entraîner le cycle à l'aide d'un moteur extérieur. Selon le sens de rotation de l'arbre les flux de chaleurs produits par la pompe à chaleur seront dans des sens différents, dans le même sens pour une même rotation et dans le sens inverse dans le cas contraire. Dans le cas du même sens de rotation les valeurs des \(W\) et \(Q_2\) obtenus sont les opposés de ceux obtenus dans les \autoref{eq:Wstir} et \autoref{eq:Q2stir}.
 
 Le calcul du rendement vient du même concept mais les flux d'énergies considérés ne sont plus les même. Dans le cas d'un cycle frigorifique, la puissance fournie est la puissance du moteur d'entraînement \(P_{moteur}\) et la grandeur d'intérêt est le flux de chaleur évacué \(\phi\). Le rendement est donc donné par l'équation:
+
 \begin{equation}
-    \eta = \frac{\phi}{P_{moteur}}
+    \eta = \frac{\phi}{P_\textrm{moteur}}
     \label{eq:rend-frigo}
 \end{equation}

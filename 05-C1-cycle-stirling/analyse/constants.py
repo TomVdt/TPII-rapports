@@ -30,5 +30,5 @@ T_fil = ufloat(1143, 70) # K
 # Débit
 debit_eau = ufloat(280, 5) # mL / min
 # https://fr.wikipedia.org/wiki/Capacit%C3%A9_thermique_massique
-C_m_eau = ufloat(4_185, 0.1) # J / K / kg
-rho_eau = ufloat(1_000, 0.1) # kg / m^3
+C_m_eau = ufloat(4179.6, 0.1) # J / K / kg
+rho_eau = ufloat(999.9, 0.1) # kg / m^3
