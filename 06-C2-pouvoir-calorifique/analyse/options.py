@@ -3,7 +3,7 @@ rcParams = {
     "font.family": "serif",
     "axes.labelsize": 12,
     "font.size": 12,
-    "legend.fontsize": 12,
+    "legend.fontsize": 11,
     "xtick.labelsize": 12,
     "ytick.labelsize": 12,
     "figure.figsize": (4, 3),
