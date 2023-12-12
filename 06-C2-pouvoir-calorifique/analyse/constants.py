@@ -18,3 +18,10 @@ C_m_eau = ufloat(4179.6, 0.1) # J / K / kg
 
 H_CO2 = ...
 H_BiTe = ...
+
+
+# Masses molaires
+m_mol_ethanol = ufloat(46.07, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/ethanol
+m_mol_propane = ufloat(44.10, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/6334
+m_mol_butane = ufloat(58.12, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/7843
+m_mol_co2 = ufloat(44.009, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/280
