@@ -1,7 +1,8 @@
 \section{Résultats}
 
-\paragraph*{Pouvoir calorifique théorique de l'éthanol}
-Conformément aux \autoref{eq:chaleur_réaction} et \autoref{eq:ethanol_combustion} il est possible de calculer le pouvoir calorifique de l'éthanol, c'est-à-dire la chaleur que sa combustion libère. Pour ce faire il est nécessaire de connaître sa chaleur de formation \(\Delta H_{l} = (-276 \pm 2)\) \si{\kilo\joule\per\mol} et sa masse molaire \(\rho_e = (46.1 \pm 0.1)\) \si{\gram\per\mol} \cite{ethanol-values}. Les valeurs des chaleurs de formation pour le \(CO_2\) et l'\(H_2O\) sont également nécessaires \cite{notice}. La valeur théorique obtenue pour le pouvoir calorifique de l'éthanol est donc \(H_{ethanol} = (26.8 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
+\paragraph*{Pouvoir calorifique théorique du mélange éthanol-méthanol}
+TODO: REVOIR CA STP, UTILISER LE TABLEAU\\
+Conformément aux \autoref{eq:chaleur_réaction}, \autoref{eq:ethanol_combustion} et \autoref{eq:methanol_combustion} il est possible de calculer le pouvoir calorifique du mélange, c'est-à-dire la chaleur que sa combustion libère. Pour ce faire il est nécessaire de connaître sa chaleur de formation \(\Delta H_{l} = (-276 \pm 2)\) \si{\kilo\joule\per\mol} et sa masse molaire \(\rho_e = (46.1 \pm 0.1)\) \si{\gram\per\mol} \cite{ethanol-values}. Les valeurs des chaleurs de formation pour le \(CO_2\) et l'\(H_2O\) sont également nécessaires \cite{notice}. La valeur théorique obtenue pour le pouvoir calorifique de l'éthanol est donc \(H_{ethanol} = (26.8 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
 
 
 
@@ -49,10 +50,13 @@ L'écart relatif entre les valeurs théoriques \(H_\textrm{théo}\) et expérime
         \toprule
         Combustible & \(H_\textrm{théo}\) [\si{\mega\joule\per\kilo\gram}] & \(\langle H_\textrm{exp} \rangle\) [\si{\mega\joule\per\kilo\gram}] & Écart relatif \(a\) \\
         \midrule
-        Éthanol & \(26.8 \pm 0.1\) & \(24 \pm 2\) & \(10.6 \pm 0.7\)\%\\
+        88\% Éthanol 12\% Méthanol & \(26.8 \pm 0.1\) & \(24 \pm 2\) & \(10.6 \pm 0.7\)\%\\
         80\% Butane 20\% Propane & \(45.8 \pm 0.1\) & \(41 \pm 1\) & \(10.7 \pm 0.6\)\% \\
         \bottomrule
     \end{tabulary}
     \caption{Valeurs théoriques et expérimentales des combustibles}
     \label{tab:pouvoir_calorifique}
 \end{table}
+
+\paragraph*{\ce{CO2} produit}
+Le \ce{CO2} produit lors de la combustion est donné par l'\autoref{eq:masse_co2}. Puisque le débit était constant, deux mesures avec une masse d'eau \(\Delta M\) donnent un temps de combustion similaire. La quantité de \ce{CO2} produit 

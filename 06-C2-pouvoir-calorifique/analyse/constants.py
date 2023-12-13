@@ -25,3 +25,4 @@ m_mol_ethanol = ufloat(46.07, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov
 m_mol_propane = ufloat(44.10, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/6334
 m_mol_butane = ufloat(58.12, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/7843
 m_mol_co2 = ufloat(44.009, 0.01) # g / mol   https://pubchem.ncbi.nlm.nih.gov/compound/280
+m_mol_methanol = ufloat(32.042, 0.01) # g / mol  https://pubchem.ncbi.nlm.nih.gov/compound/887
