@@ -4,7 +4,6 @@
 Conformément aux \autoref{eq:chaleur_réaction} et \autoref{eq:ethanol_combustion} il est possible de calculer le pouvoir calorifique de l'éthanol, c'est-à-dire la chaleur que sa combustion libère. Pour ce faire il est nécessaire de connaître sa chaleur de formation \(\Delta H_{l} = (-276 \pm 2)\) \si{\kilo\joule\per\mol} et sa masse molaire \(\rho = (46.1 \pm 0.1)\) \si{\gram\per\mol} \cite{ethanol-values}. Les valeurs des chaleurs de formation pour le \(CO_2\) et l'\(H_2O\) sont également nécessaires \cite{notice}. La valeur théorique obtenue pour le pouvoir calorifique de l'éthanol est donc \(H_{ethanol} = (26.8 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
 
 
-\paragraph*{Analyse expérimentale de la combustion de l'éthanol}
 
 
 
@@ -19,7 +18,40 @@ Afin d'obtenir le pouvoir calorifique théorique du mélange butane-propane il e
 
 
 
+\paragraph*{Analyse expérimentale de la combustion de l'éthanol}
+Les valeurs du pouvoir calorifique de la combustion de l'éthanol sont calculées avec l'\autoref{eq:pouvoir_calorifique}. À la fin de toutes les mesures, une masse d'eau de condensation totale \(\Delta M_\textrm{c,tot} = (4.8 \pm 0.1)\) \si{\gram} a été récupérée, donnant une masse \(\Delta M_c = (0.30 \pm 0.01)\) \si{\gram}. La mesure a été effectuée 16 fois et les résultats sont reportés dans la \autoref{fig:H_etanol}. La formule pour le calcul des erreurs est donné dans l'\autoref{sec:erreurs}. La valeur moyenne \(\langle H \rangle\) est reportée dans le \autoref{tab:pouvoir_calorifique}.
 
 \paragraph*{Analyse expérimentale de la combustion du butane-propane}
 
+\(\Delta M_\textrm{c,tot} = (37.6 \pm 0.1)\) \si{\gram}
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.5\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/ethanol.pdf}
+        \caption{}
+        \label{fig:H_etanol}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/gaz_camping.pdf}
+        \caption{}
+        \label{fig:H_gaz_camping}
+    \end{subfigure}
+    \caption{Pouvoirs calorifiques de combustion calculés pour (a) l'éthanol (b) le gaz de camping (80\% Butane, 20\% Propane)}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\linewidth}{C C C}
+        \toprule
+        Combustible & \(H\) théorique [\si{\mega\joule\per\kilo\gram}] & \(\langle H \rangle\) expérimental [\si{\mega\joule\per\kilo\gram}] \\
+        \midrule
+        Éthanol & 26.8 & \(24 \pm 2\) \\
+        80\% Butane 20\% Propane & 45.8 & \(41 \pm 1\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs théoriques et expérimentales des combustibles}
+    \label{tab:pouvoir_calorifique}
+\end{table}
