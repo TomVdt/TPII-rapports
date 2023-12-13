@@ -20,20 +20,20 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur le pouvoir calorifique théorique de \(H\):
+Erreur sur le pouvoir calorifique théorique de \(H_\textrm{théo}\):
 \begin{equation}
-    \Delta H_{theo} = \Delta(\frac{H_{mol}}{\rho}) = \left|\frac{1}{\rho}\right| \Delta \left(\frac{H_{l} + \nu_{H2O} H_{H2O} + \nu_{O2} H_{O2} + \nu_{CO2} H_{CO2}}{\nu_{combustible}}\right) + \left|\frac{H_{mol}}{\rho^2}\right| \Delta\rho
+    \Delta H_\textrm{théo} = \Delta(\frac{H_{mol}}{\rho}) = \left|\frac{1}{\rho}\right| \Delta \left(\frac{H_{l} + \nu_{H2O} H_{H2O} + \nu_{O2} H_{O2} + \nu_{CO2} H_{CO2}}{\nu_\textrm{combustible}}\right) + \left|\frac{H_\textrm{mol}}{\rho^2}\right| \Delta\rho
 \end{equation}
 
 Erreur sur le pouvoir calorifique expérimental \(H\):
-\begin{equation}
-    \Delta H = \left|\frac{c^* M (T_2 - T_1) - M_c l^*_{vap}}{m^2}\right| \Delta m + \left|\frac{c^* (T_2 - T_1)}{m}\right| \Delta M + 2 \left|\frac{c^* M}{m}\right| \Delta T + \left|\frac{M (T_2 - T_1)}{m}\right| \Delta c^* + \left|\frac{l^*_{vap}}{m}\right| \Delta M_c
-\end{equation}
+\begin{multline}
+    \Delta H = \left|\frac{c^* M (T_2 - T_1) - M_c l^*_{vap}}{m^2}\right| \Delta m + \left|\frac{c^* (T_2 - T_1)}{m}\right| \Delta M + 2 \left|\frac{c^* M}{m}\right| \Delta T \\+ \left|\frac{M (T_2 - T_1)}{m}\right| \Delta c^* + \left|\frac{l^*_{vap}}{m}\right| \Delta M_c
+\end{multline}
 où \(l^*_{vap}\) a été supposé sans erreurs.
 
-La valeur finale expérimentale de \(H\) est obtenue en prenant la moyenne avec donc une erreur de:
+L'erreur (écart-type) sur la moyenne des \(H\) mesurés, \(\langle H \rangle\), est donnée par:
 \begin{equation}
-    \Delta H_{moyenne} = \sqrt{\frac{1}{N - 1}\sum_{i=1}^{N}(H - H_{moyenne})^2}
+    \Delta \langle H \rangle = \sqrt{\frac{1}{N - 1}\sum_{i=1}^{N}(H - \langle H \rangle)^2}
 \end{equation}
 où N est le nombre d'échantillons utilisés.
 
