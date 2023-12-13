@@ -1,21 +1,28 @@
 \section{Résultats}
 
-\paragraph*{Pouvoir calorifique théorique du mélange éthanol-méthanol}
-TODO: REVOIR CA STP, UTILISER LE TABLEAU\\
-Conformément aux \autoref{eq:chaleur_réaction}, \autoref{eq:ethanol_combustion} et \autoref{eq:methanol_combustion} il est possible de calculer le pouvoir calorifique du mélange, c'est-à-dire la chaleur que sa combustion libère. Pour ce faire il est nécessaire de connaître sa chaleur de formation \(\Delta H_{l} = (-276 \pm 2)\) \si{\kilo\joule\per\mol} et sa masse molaire \(\rho_e = (46.1 \pm 0.1)\) \si{\gram\per\mol} \cite{ethanol-values}. Les valeurs des chaleurs de formation pour le \(CO_2\) et l'\(H_2O\) sont également nécessaires \cite{notice}. La valeur théorique obtenue pour le pouvoir calorifique de l'éthanol est donc \(H_{ethanol} = (26.8 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
+\paragraph*{Pouvoirs calorifiques théoriques}
+A l'aide des équations chimiques de combustion des 4 combustibles utilisés, présentées dans les \autoref{eq:ethanol_combustion}, \autoref{eq:methanol_combustion}, \autoref{eq:butane_combustion} et \autoref{eq:propane_combustion}, et en utilisant celles-ci avec l'\autoref{eq:chaleur_réaction} il est possible de déterminer le pouvoir calorifique théorique des espèces utilisées. Les enthalpies de formation des espèces chimiques et les masses molaires nécessaires à ce calcul sont données dans le \autoref{tab:enthalpie_formation}.
 
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\linewidth}{C C C}
+        \toprule
+        Espèce chimique & Enthalpie de formation \(\Delta H\) [\si{\kilo\joule\per\mole}] & Masse molaire \(\rho\) [\si{\gram\per\mole}]\\
+        \midrule
+        Ethanol & -276 \(\pm\) 2 & 46.1 \(\pm\) 0.1 \\
+        Méthanol & -238.4 \(\pm\) 0.5 & 32.0 \(\pm\) 0.1 \\
+        Butane & -125.6 \(\pm\) 0.7 & 58.1 \(\pm\) 0.1\\
+        Propane & -104.7 \(\pm\) 0.5 & 44.1 \(\pm\) 0.1\\
+        \ce{O2} & 0 \(\pm\) 0.1 & / \\
+        \ce{CO2} & -393.5 \(\pm\) 0.1 & / \\
+        \ce{H2O} & -241.8 \(\pm\) 0.1 & / \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Chaleur de formation de différentes espèces chimiques et masses molaires nécessaires au calcul \cite{notice} \cite{NIST}}
+    \label{tab:enthalpie_formation}
+\end{table}
 
-
-
-
-
-
-\paragraph*{Pouvoir calorifique théorique du butane-propane}
-A l'aide des \autoref{eq:chaleur_réaction}, \autoref{eq:butane_combustion} et \autoref{eq:propane_combustion} il est possible de calculer le pouvoir calorifique du mélange butane-propane, c'est-à-dire la chaleur que sa combustion libère. Il s'agit d'abord de calculer le pouvoir calorifique de ses deux composants. Pour le butane, sa chaleur de formation est de \(\Delta H_{g} = (-125.6 \pm 0.7)\) \si{\kilo\joule\per\mol} et sa masse molaire est de \(\rho_b = (58.1 \pm 0.1)\) \si{\gram\per\mol} \cite{butane-values}. Pour le propane, celles-ci sont \(\Delta H_{g} = (-104.7 \pm 0.5)\) \si{\kilo\joule\per\mol} et \(\rho_p = (44.1 \pm 0.1)\) \si{\gram\per\mol} \cite{propane-values}. A l'aide des valeurs des chaleurs de formation du \ce{CO2} et de l'\ce{H2O} \cite{notice} il est possible d'obtenir le pouvoir calorifique du butane \(H_{butane} = (45.7 \pm 0.1)\) \si{\mega\joule\per\kilo\gram} et celui du propane \(H_{propane} = (46.3 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
-
-Afin d'obtenir le pouvoir calorifique théorique du mélange butane-propane il est nécessaire de connaître les proportions de chaque composant. Dans le mélange utilisé le butane composait 80\% du mélange et le propane 20\%. La supposition a été faite que le pouvoir calorifique du mélange correspondait à la moyenne pondérée par leur proportion de ces deux composants. La valeur obtenue est donc de \(H_{melange} = (45.8 \pm 0.1)\) \si{\mega\joule\per\kilo\gram}.
-
-
+Afin d'obtenir le pouvoir calorifique théorique des mélanges éthanol-méthanol et butane-propane il est possible d'effectuer une moyenne pondérée sur les pouvoirs calorifiques obtenus pour chaque espèce. La pondération de cette moyenne est égale aux proportions respectives de chaque composant dans le mélange. Les valeurs obtenues de cette manière sont présentées dans le \autoref{tab:pouvoir_calorifique}.
 
 
 
