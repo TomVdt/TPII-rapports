@@ -4,10 +4,25 @@
 \paragraph*{Réactions et pouvoir calorifique}
 Il est possible de calculer théoriquement l'énergie libérée par une réaction chimique sous forme de chaleur à partir des chaleurs de formation des réactifs et des produits. Il est possible d'étudier une réaction chimique sous la forme \(\sum_{A} \nu_A X_A \to \sum_{B} \nu_B X_B\) avec les réactifs \(X_A\), les produits \(X_B\) et les coefficients stoechimoétriques \(\nu\). Pour cette réaction la chaleur de la réaction par moles vaut:
 \begin{equation}
-    \mathcal{Q} = \sum_{A} \nu_A \Delta H_A - \sum_{B} \nu_B \Delta H_B
+    H = \sum_{A} \nu_A \Delta H_A - \sum_{B} \nu_B \Delta H_B
     \label{eq:chaleur_réaction}
 \end{equation}
-Avec les \(\Delta H_A\) et \(\Delta H_B\) les chaleurs de formation par moles des réactifs et des produits respectivement. Pour un combustible brûlant avec de l'\(O_2\), ayant chaleur de formation nulle \cite{notice}, la chaleur de la réaction donne directement la chaleur libérée par le combustible. Pour obtenir le pouvoir calorifique du combustible il faut donc également connaitre sa masse molaire.
+Avec les \(\Delta H_A\) et \(\Delta H_B\) les chaleurs de formation par moles des réactifs et des produits respectivement. Pour un combustible brûlant avec uniquement de l'\(O_2\), ayant chaleur de formation nulle \cite{notice}, la chaleur de la réaction donne directement la chaleur libérée par le combustible par \(\nu_A\) moles consommées. Pour obtenir le pouvoir calorifique du combustible il faut donc également connaître sa masse molaire afin de calculer la chaleur libérée par unités de masse consommées.
 
-
-\paragraph*{Pouvoir calorifique expérimental}
+\paragraph*{Réactions de combustion}
+Les combustibles étudiés dans cette expérience possèdent tous une équation chimique de combustion similaire. Ils consomment le combustible et de l'\ce{O2} pour produire du \ce{CO2} et de l'\ce{H2O}. Pour l'éthanol \ce{C2H5OH} sa combustion sous sa forme liquide donne:
+\begin{equation}
+    \ce{ C_2H_5OH_{(l)} + 3O_2_{(g)} -> 2CO_2_{(g)} + 3H_2O_{(g)} }
+    \label{eq:ethanol_combustion}
+\end{equation}
+Pour le butane \ce{C4H10} sous forme gazeuse l'équation obtenue est:
+\begin{equation}
+    \ce{ 2C_4H_{10}_{(g)} + 13O_2_{(g)} -> 8CO_2_{(g)} + 10H_2O_{(g)} }
+    \label{eq:butane_combustion}
+\end{equation}
+Et finalement pour le propane \ce{C3H8} gazeux:
+\begin{equation}
+    \ce{ C_3H_8_{(g)} + 5O_2_{(g)} -> 3CO_2_{(g)} + 4H_2O_{(g)} }
+    \label{eq:propane_combustion}
+\end{equation}
+Ces 3 équations sont celles de la combustion complète en présence d'un apport d'oxygène suffisant.
