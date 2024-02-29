@@ -1,0 +1,44 @@
+\section{Calcul d'erreurs}
+\label{sec:erreurs}
+
+Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{\textwidth}{C C}
+        \toprule
+        Variable & Erreur \\
+        \midrule
+        \(c^*\) [\si{\joule\per\kelvin\per\kilo\gram}] & 0.1 \\
+        \(l_\textrm{vap}^*\) [\si{\kilo\joule\per\kilo\gram}] & 0 \\
+        \(\Delta M\) [\si{\gram}] & 0.1 \\
+        \(\Delta m\) [\si{\gram}] & 0.02 \\
+        \(\Delta M_\textrm{c}\) [\si{\gram}] & 0.1 \\
+        \(T\) [\si{\kelvin}] & 0.1 \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Erreurs estimées sur les mesures}
+    \label{tab:erreurs}
+\end{table}
+
+
+\paragraph*{Formules d'erreurs}
+
+Erreur sur le pouvoir calorifique théorique de \(H_\textrm{théo}\):
+\begin{equation}
+    \Delta H_\textrm{théo} = \Delta\left(\frac{H_{mol}}{\rho}\right) = \left|\frac{1}{\rho}\right| \frac{\Delta H_{l} + \nu_{H2O} \Delta H_{H2O} + \nu_{O2} \Delta H_{O2} + \nu_{CO2} \Delta H_{CO2}}{\nu_\textrm{combustible}} + \left|\frac{H_\textrm{mol}}{\rho^2}\right| \Delta\rho
+\end{equation}
+
+Erreur sur le pouvoir calorifique expérimental \(H\):
+\begin{multline}
+    \Delta H = \left|\frac{c^* M (T_2 - T_1) - M_c l^*_{vap}}{m^2}\right| \Delta m + \left|\frac{c^* (T_2 - T_1)}{m}\right| \Delta M + 2 \left|\frac{c^* M}{m}\right| \Delta T \\+ \left|\frac{M (T_2 - T_1)}{m}\right| \Delta c^* + \left|\frac{l^*_{vap}}{m}\right| \Delta M_c
+\end{multline}
+où \(l^*_{vap}\) a été supposé sans erreurs.
+
+L'erreur (écart-type) sur la moyenne des \(H\) mesurés, \(\langle H \rangle\), est donnée par:
+\begin{equation}
+    \Delta \langle H \rangle = \sqrt{\frac{1}{N - 1}\sum_{i=1}^{N}(H - \langle H \rangle)^2}
+\end{equation}
+où N est le nombre d'échantillons utilisés.
+
+Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
