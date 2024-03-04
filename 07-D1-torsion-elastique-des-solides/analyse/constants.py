@@ -24,6 +24,9 @@ epaisseur_tige_acier = mean([ufloat(i/10, 0.001) for i in (5.12, 5.11, 5.19, 5.0
 masse_disque = ufloat(2991, 0.1)  # g
 diametre_disque = ufloat(14.935, 0.0001)  # cm
 
+delta_temps = 0.01 # s
+delta_tension = 0.01 # V
+
 epaisseur_fil_acier = mean([ufloat(i/10, 0.001) for i in (1.11, 1.04, 1.04, 1.06)])  # cm
 longueur_fil_acier = ufloat(7.996, 0.001)  # cm
 
