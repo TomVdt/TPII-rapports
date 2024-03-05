@@ -16,7 +16,7 @@ rcParams = {
     'lines.markersize': 12,
     'lines.color': 'grey',
     'scatter.marker': '+',
-    'errorbar.capsize': 3,
+    'errorbar.capsize': 4,
     'savefig.bbox': 'tight',
     # 'savefig.directory': '../figures/'
 }

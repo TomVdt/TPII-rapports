@@ -5,11 +5,11 @@ from numpy import pi, mean
 g = 9.81
 
 # Statique
-delta_regle_laser = 0.05  # cm
-delta_regle_tige = 0.01  # cm
-delta_masse = 1  # g
+delta_regle_laser = 0.1  # cm
+delta_regle_tige = 0.2  # cm
+delta_masse = 10  # g
 
-distance_regle = ufloat(67, 0.1)  # cm
+distance_regle = ufloat(67, 0.3)  # cm
 
 taille_disque_magnesium = ufloat(9.94, 0.001)  # cm
 epaisseur_tige_magnesium = mean([ufloat(i/10, 0.001) for i in (10.11, 10.02, 10.04, 10.08, 10.05, 10.02, 10.01, 10.02, 10.06)])  # cm
