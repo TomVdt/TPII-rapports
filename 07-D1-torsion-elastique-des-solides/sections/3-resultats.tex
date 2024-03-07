@@ -46,9 +46,9 @@ En utilisant l'\autoref{eq:module_cisaillement_statique}, le module de cisaillem
         \toprule
         & $G_\textrm{ref}$ [\si{\giga\pascal}] & $G_P$ [\si{\giga\pascal}] & Écart relatif $G_P$ [\%] & $G_L$ [\si{\giga\pascal}] & Écart relatif $G_L$ [\%] \\
         \midrule
-        Laiton & 37.3 & $31.1\pm0.7$ & $16.5 \pm 1.8$ & $33.4\pm0.7$ & $10.5 \pm 1.9$ \\
-        Acier & 82.2 & $75\pm0.1$ & $8.0 \pm 1.3$ & $79\pm3$ & $3 \pm 3 $ \\
-        Magnésium & 17.3 & $13.0\pm0.2$ & $25.0 \pm 1.1$ & $23\pm4$ & $35 \pm 22$ \\
+        Laiton & 37.3 & $31.1\pm0.7$ & $16.5$ & $33.4\pm0.7$ & $10.5$ \\
+        Acier & 82.2 & $75\pm1$ & $8.0$ & $79\pm3$ & $3$ \\
+        Magnésium & 17.3 & $13.0\pm0.2$ & $25.0$ & $23\pm4$ & $35$ \\
         \bottomrule
     \end{tabulary}
     % \end{adjustbox}
@@ -57,7 +57,7 @@ En utilisant l'\autoref{eq:module_cisaillement_statique}, le module de cisaillem
 \end{table}
 
 \paragraph{Méthode dynamique}
-Ensuite, des échantillons de même composition mais de format differents ont été étudiés.les dimensions de ces échantillons en forme de fil ont été reportés dans le \autoref{tab:dimensions_echantillons_dynamique}. Encore une fois, l'échantillon de magnésium était plus épais que les deux autres échantillons. Le diamètre a été obtenu avec le même procédé que précedement.
+Ensuite, les même trois matériaux ont été étudiés avec des échantillons en forme de fils. Les dimensions de ces nouveaux échantillons ont été reportés dans le \autoref{tab:dimensions_echantillons_dynamique}. Encore une fois, l'échantillon de magnésium était plus épais que les deux autres échantillons. Le diamètre a été obtenu avec le même procédé que précédement.
 
 \begin{table}[h]
     \centering
@@ -74,9 +74,9 @@ Ensuite, des échantillons de même composition mais de format differents ont é
     \label{tab:dimensions_echantillons_dynamique}
 \end{table}
 
-Le disque d'inertie avait pour masse $M=(2.991 \pm 0.1)$ \si{\kilo\gram} et rayon $R=(7.467 \pm 0.001)$ \si{\centi\meter}. Son moment d'inertie $I$ vaut alors $I=\int_V r^2 \dd V = \frac{MR^2}{2}$. Après la mise en mouvement du pendule de torsion, les oscillations ont été capturées pendant environ 60 \si{\second}. La \autoref{fig:dynamique} montre la décroissance de l'amplitude des oscillation pour chaque échantillon.
+Le disque d'inertie avait pour masse $M=(2.991 \pm 0.1)$ \si{\kilo\gram} et rayon $R=(7.467 \pm 0.001)$ \si{\centi\meter}. Son moment d'inertie $I$ vaut alors $I = \frac{MR^2}{2}$ \cite{notice}. Après la mise en mouvement du pendule de torsion, les oscillations ont été capturées pendant environ 60 \si{\second}. La \autoref{fig:dynamique} montre la décroissance de l'amplitude des oscillation pour chaque échantillon.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.45\linewidth}
         \centering
@@ -100,7 +100,7 @@ Le disque d'inertie avait pour masse $M=(2.991 \pm 0.1)$ \si{\kilo\gram} et rayo
     \label{fig:dynamique}
 \end{figure}
 
-Une régression avec une fonction de la forme $y = Ae^{-\lambda t}$ sur l'enveloppe des oscillations permet d'obtenir le coefficient d'amortissement $\lambda$ de l'échantillon. Afin d'ameillorer la précision, la moyenne de $\lambda$ sur 3 mesures a été prise. La periode $T$ des oscillations a été obtenue en considérant l'ensemble de la mesure, soit environ 30 periodes, permettant de trouver la periode avec une assez grande précision. L'\autoref{eq:module_cisaillement_dynamique} donne alors le module de cisaillement pour chaque échantillon. Les valeurs sont recensées dans le \autoref{tab:module_dynamique}.
+Une régression avec une fonction de la forme $y = Ae^{-\lambda t}$ sur l'enveloppe des oscillations permet d'obtenir le coefficient d'amortissement $\lambda$ de l'échantillon. Afin d'améliorer la précision, la moyenne de $\lambda$ sur 3 mesures a été prise. La periode $T$ des oscillations a été obtenue en considérant l'ensemble de la mesure, soit environ 30 periodes, permettant de trouver la periode avec une assez grande précision. L'\autoref{eq:module_cisaillement_dynamique} donne alors le module de cisaillement pour chaque échantillon. Les valeurs sont recensées dans le \autoref{tab:module_dynamique}.
 
 \begin{table}[h]
     \centering
@@ -108,9 +108,9 @@ Une régression avec une fonction de la forme $y = Ae^{-\lambda t}$ sur l'envelo
         \toprule
         & $T$ [\si{\second}] & $\lambda$ [\si{\per\second}] & $G_\textrm{dyn}$ [\si{\giga\pascal}] & Écart relatif $G_\textrm{dyn}$ [\%] \\
         \midrule
-        Laiton & $3.5727 \pm 0.0005$ & $\left(9 \pm 2\right) \cdot 10^{-4}$ & $13.1 \pm 0.5$ & $65.0 \pm 1.3$ \\
-        Acier & $2.7109 \pm 0.0004$  & $\left(2.51 \pm 0.04\right) \cdot 10^{-3}$ & $29 \pm 1$ & $65.0 \pm 1.3$ \\
-        Magnésium & $1.2791 \pm 0.0002$ & $\left(1.31 \pm 0.03\right) \cdot 10^{-2}$ & $ 9.6 \pm 0.3$ & $44.7 \pm 1.9$ \\
+        Laiton & $3.5727 \pm 0.0005$ & $\left(9 \pm 2\right) \cdot 10^{-4}$ & $13.1 \pm 0.5$ & $65.0$ \\
+        Acier & $2.7109 \pm 0.0004$  & $\left(2.51 \pm 0.04\right) \cdot 10^{-3}$ & $29 \pm 1$ & $65.0$ \\
+        Magnésium & $1.2791 \pm 0.0002$ & $\left(1.31 \pm 0.03\right) \cdot 10^{-2}$ & $ 9.6 \pm 0.3$ & $44.7$ \\
         \bottomrule
     \end{tabulary}
     \caption{Periode d'oscillations, coefficient d'amortissement et modules de cisaillement $G_\textrm{dyn}$ obtenues pour chaque échantillon par la méthode dynamique, comparé aux valeurs de référence}
