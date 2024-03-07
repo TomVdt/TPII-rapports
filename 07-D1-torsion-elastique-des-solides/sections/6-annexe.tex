@@ -9,23 +9,48 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur \\
         \midrule
-        \(c^*\) [\si{\joule\per\kelvin\per\kilo\gram}] & 0.1 \\
-        \(l_\textrm{vap}^*\) [\si{\kilo\joule\per\kilo\gram}] & 0 \\
-        \(\Delta M\) [\si{\gram}] & 0.1 \\
-        \(\Delta m\) [\si{\gram}] & 0.02 \\
-        \(\Delta M_\textrm{c}\) [\si{\gram}] & 0.1 \\
-        \(T\) [\si{\kelvin}] & 0.1 \\
+        \(L_\textrm{échantillon}\) [\si{\centi\meter}] & 0.1 \\
+        \(\delta_\textrm{laser}\) [\si{\centi\meter}] & 0.2 \\
+        \(m_\textrm{sus}\) [\si{\gram}] & 5 \\
+        \(a\) [\si{\centi\metre}] & 0.3 \\
+        \(D\) [\si{\centi\metre}] & 0.005 \\
+        \(d\) [\si{\centi\meter}] & 0.001 \\
+        \(\ell\) [\si{\centi\meter}] & 0.005 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
     \label{tab:erreurs}
 \end{table}
 
+\paragraph*{Regression linéaire}
+Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \dots, n\}\) sont donnés par \cite{erreursmesure}:
+
+\begin{equation}
+    \label{eq:erreur:fit}
+    \begin{aligned}
+        (\Delta a)^2 &= \frac{\sum_{i=1}^{n}(y_i - (a x_i + b))^2}{(n-2) \sum_{i=1}^{n}(x_i - \bar{x})^2}\\
+        \Delta b &= \bar{x} \Delta a + a \Delta \bar{x}
+    \end{aligned}
+\end{equation}
+
+En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{numpy}.
+
+
 \paragraph*{Formules d'erreurs}
 
-Erreur sur \textit{feur}:
+Erreur sur l'angle de déformation:
 \begin{equation}
-    \Delta H_\textrm{théo} = \Delta\left(\frac{H_{mol}}{\rho}\right) = \left|\frac{1}{\rho}\right| \frac{\Delta H_{l} + \nu_{H2O} \Delta H_{H2O} + \nu_{O2} \Delta H_{O2} + \nu_{CO2} \Delta H_{CO2}}{\nu_\textrm{combustible}} + \left|\frac{H_\textrm{mol}}{\rho^2}\right| \Delta\rho
+    \Delta \theta = \absfrac{D}{\delta^2 + D^2} \Delta \delta + \absfrac{\delta}{\delta^2 + D^2} \Delta D
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
+
+\section{Figures supplémentaires}
+\label{sec:figsup}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/magnesium1.pdf}
+    \caption{Amplitude des oscillation d'un échantillon de magnésium pour la méthode dynamique}
+    \label{fig:dynamique_magnesium_feur}
+\end{figure}

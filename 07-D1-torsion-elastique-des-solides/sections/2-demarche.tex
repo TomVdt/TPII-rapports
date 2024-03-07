@@ -16,15 +16,25 @@ La méthode statique est appliquée à des échantillon cylindriques d'épaisseu
     \item La longueur $L$ de l'échantillon
     \item Le poids $P=mg$ accroché à la poulie de diamètre $D$
 \end{itemize}
-Une régression linéaire sur les mesures longueur-angle ou poids-angle permet alors de déterminer le module de cisaillement à l'aide de l'\autoref{eq:module_cisaillement_statique}.
+L'angle de déformation est alors donné par
+\begin{equation}
+    \theta = \frac{1}{2}\arctan\left(\frac{\delta}{a}\right)
+    \label{eq:angle_deformation}
+\end{equation}
+où $\delta$ est la déviation du laser et $a$ est la distance miroir-règle. Le faceteur $1/2$ vient du fait  que le laser est dévié d'un angle $2\theta$.
+
+Une régression linéaire sur les mesures longueur-angle ou poids-angle permet alors de déterminer le module de cisaillement à l'aide de l'\autoref{eq:module_cisaillement_statique}, en exprimant $\theta$ en fonction des paramètres qui ont été variés.
 
 \subsection{Méthode dynamique}
 
 \begin{wrapfigure}{R}{0.45\linewidth}
+    % WARNING
+    \vspace*{-2cm}
     \centering
     \includegraphics[width=\linewidth]{figures/dynamique.png}
     \caption{Montage pour la méthode dynamique \cite{notice}}
     \label{fig:montage_dynamique}
+    \vspace*{-1.5cm}
 \end{wrapfigure}
 La méthode dynamique s'applique sur des échantillons en forme de fil, de longueur constante $\ell$ et épaisseur $d$. Le montage présenté à la \autoref{fig:montage_dynamique} constitue un pendule de tension. L'échantillon est suspendu à l'extrémité d'un fil, auquel est attaché un disque de moment d'inertie $I$. En utilisant le fait que chaque matériaux a sa propre pulsation caractéristique, la mesure de la periode d'oscillation permet de déterminer le module de cisaillement de l'échantillon à l'aide de l'\autoref{eq:module_cisaillement_dynamique}. La periode est mesurée avec un système de miroir et laser similaire au montage précédent.
 
