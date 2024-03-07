@@ -35,12 +35,36 @@ Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_
 
 En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{numpy}.
 
-
 \paragraph*{Formules d'erreurs}
 
 Erreur sur l'angle de déformation:
 \begin{equation}
     \Delta \theta = \absfrac{D}{\delta^2 + D^2} \Delta \delta + \absfrac{\delta}{\delta^2 + D^2} \Delta D
+\end{equation}
+
+Erreur sur le module de cisaillement par méthode statique:
+\begin{equation}
+    \Delta G_P = G_P \left(\frac{\Delta L}{L} + \frac{\Delta \alpha_1}{\alpha_1} + \frac{\Delta D}{D} + \frac{4\Delta d}{d}\right)
+\end{equation}
+\begin{equation}
+    \Delta G_L = G_L \left(\frac{\Delta m}{m} + \frac{\Delta \alpha_2}{\alpha_2} + \frac{\Delta D}{D} + \frac{4 \Delta d}{d}\right)
+\end{equation}
+où $\alpha_1$ et $\alpha_2$ sont les coefficients de pente obtenu par regression linéaire.
+
+Erreur sur le moment d'inertie:
+\begin{equation}
+    \Delta I = \frac{R^2}{2}\Delta M + M R \Delta R
+\end{equation}
+
+Erreur sur la periode:
+\begin{equation}
+    \Delta T = \frac{T}{N}
+\end{equation}
+avec $N$ le nombre de periodes prises en compte
+
+Erreur sur le module de cisaillement par méthode dynamique:
+\begin{equation}
+    \Delta G_\textrm{dyn} = G_\textrm{dyn} \left(\frac{\Delta I}{I} + \frac{\Delta \ell}{\ell} + \frac{2 \Delta T}{T} + \frac{4 \Delta d}{d}\right)
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
