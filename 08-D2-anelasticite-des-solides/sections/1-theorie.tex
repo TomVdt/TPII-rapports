@@ -1,1 +1,26 @@
 \section{Théorie}
+
+Le sujet de cette expérience est la relaxation anélastique. Ce phénomène a lieu quand un matériau est soumis à une contrainte $\ligma$ de faible intensité. Une première déformation instantanée, dite élastique, $\varepsilon_e = J_u \ligma$ est observée avec $J_u$ la complaisance non relaxée. Ensuite la déformation anélastique $\varepsilon_a$ augmente progressivement de $0$ vers une valeur d'équilibre $\varepsilon_a^\infty$ telle que:
+\begin{equation}
+    \varepsilon_a(t) = \varepsilon_a^\infty \left(1-e^{-\frac{t}{\tau}}\right)
+\end{equation}
+\begin{equation}
+    \varepsilon = \varepsilon_e + \varepsilon_a^\infty = J_r \ligma
+\end{equation}
+avec $\tau$ le temps de relaxation anélastique et $J_r$ la complaisance relaxée. Il est utile également de définir l'intensité de relaxation: $\Delta = \frac{J_r - J_u}{J_u}$
+
+En appliquant une contrainte harmonique $\ligma = \ligma_0 \exp(i\omega t)$ de pulsation $\omega$ au matériau sa réponse en déformation sera elle aussi périodique $\varepsilon = \varepsilon_0\exp(i(\omega t - \delta))$ avec un déphasage $\delta$. Ce déphasage est relié au frottement intérieur du matériau $Q^{-1}$ et il est possible de montrer:
+\begin{equation}
+    Q^{-1} = \tan(\delta) = \Delta\frac{\omega\tau}{1+\omega^2\tau^2}
+\end{equation}
+ce qui permet de déduire que $Q^{-1}$ possède un maximum en fonction de $\omega\tau$ en $\omega\tau = 1$. En sachant qu'il est possible d'écrire $\tau(T) = \tau_0 \exp(\frac{H}{k_bT})$ avec $H$ l'enthalpie ou énergie de diffusion, $k_b$ la constante de Boltzmann et $T$ la température cela donne:
+\begin{equation}
+    Q^{-1} = \frac{\Delta}{2 \mathrm{ch}\left(\frac{H}{k_b}\left(\frac{1}{T_P}-\frac{1}{T}\right)\right)}
+\end{equation}
+avec $T_P$ la température du pic c'est à dire la température telle que $\omega\tau(T_P) = 1$.
+
+La relaxation anélastique est la réalisation macroscopique du réarrangement microscopique des défauts du matériau élastique. Dans le cadre d'une contrainte uniaxiale cela donne \hbox{$\varepsilon_a = \Delta\lambda\left(c_1 - c_0/3\right)$} avec $c_0$ la concentration atomique des défauts interstitiels, $c_1$ la concentration de ceux fromant un dipole dans l'axe de la contrainte et $\Delta\lambda$ la variation de déformation due aux mouvements des défauts sous la contrainte. Cela donne une nouvelle relation:
+\begin{equation}
+    \Delta = \frac{2}{9}\frac{c_0 v_0}{J_u k_b T_P}\Delta\lambda^2
+\end{equation}
+avec $v_0$ le volume atomique des défauts interstitiels.
