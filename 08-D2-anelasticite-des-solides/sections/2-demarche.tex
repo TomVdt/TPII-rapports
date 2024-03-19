@@ -1,1 +1,14 @@
-\section{Démarche Expérimentale}
+% \section{Démarche Expérimentale}
+
+\begin{wrapfigure}{R}{0.6\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/montage.png}
+    \caption{Montage expérimental \cite{notice}}
+    \label{fig:montage}
+\end{wrapfigure}
+
+\paragraph{Démarche} Les mesures sont réalisées à l'aide du montage en \autoref{fig:montage}. Afin de limiter les frottements entre l'air et l'échantillon, l'installation est placée sous vide. L'échantillon est alors stimulé et vibre, avec une amplitude est mesurée grâce à l'électrode. Un programme informatique permet alors d'obtenir la fréquence des oscillations et de calculer le module de Young \(E\) avec
+\begin{equation}
+    E = 0.934 \frac{\rho L^4}{e^2}f^2
+\end{equation}
+où \(\rho\) est la masse volumique de l'échantillon, \(L\) sa longueur, \(e\) son épaisseur et \(f\) la fréquence fondamentale de vibration. Afin d'observer les propriétés de l'échantillon, plus précisément le module de Young et la capacité d'amortissement, en fonction de la température, un régulateur PID permet de controler la chauffage de l'échantillon.

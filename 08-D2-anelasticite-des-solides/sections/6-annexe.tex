@@ -9,37 +9,50 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur \\
         \midrule
-        \(L_\textrm{échantillon}\) [\si{\centi\meter}] & 0.1 \\
-        \(\delta_\textrm{laser}\) [\si{\centi\meter}] & 0.2 \\
-        \(m_\textrm{sus}\) [\si{\gram}] & 5 \\
-        \(a\) [\si{\centi\metre}] & 0.3 \\
-        \(D\) [\si{\centi\metre}] & 0.005 \\
-        \(d\) [\si{\centi\meter}] & 0.001 \\
-        \(\ell\) [\si{\centi\meter}] & 0.005 \\
+        Longueur \(L\) [\si{\milli\meter}] & 0.03 \\
+        Largeur \(\ell\) [\si{\milli\meter}] & 0.02 \\
+        Épaisseur \(e\) [\si{\milli\meter}] & 0.02 \\
+        Masse \(m\) [\si{\gram}] & 0.0005 \\
+        Température \(T\) [\si{\kelvin}] & 1 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
     \label{tab:erreurs}
 \end{table}
 
-\paragraph*{Regression linéaire}
-Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \dots, n\}\) sont donnés par \cite{erreursmesure}:
+% \paragraph*{Regression linéaire}
+% Les erreurs sur les régressions linéaires \(y = ax + b\) sur les mesures \((x_i, y_i) ; i = \{1, \dots, n\}\) sont donnés par \cite{erreursmesure}:
 
-\begin{equation}
-    \label{eq:erreur:fit}
-    \begin{aligned}
-        (\Delta a)^2 &= \frac{\sum_{i=1}^{n}(y_i - (a x_i + b))^2}{(n-2) \sum_{i=1}^{n}(x_i - \bar{x})^2}\\
-        \Delta b &= \bar{x} \Delta a + a \Delta \bar{x}
-    \end{aligned}
-\end{equation}
+% \begin{equation}
+%     \label{eq:erreur:fit}
+%     \begin{aligned}
+%         (\Delta a)^2 &= \frac{\sum_{i=1}^{n}(y_i - (a x_i + b))^2}{(n-2) \sum_{i=1}^{n}(x_i - \bar{x})^2}\\
+%         \Delta b &= \bar{x} \Delta a + a \Delta \bar{x}
+%     \end{aligned}
+% \end{equation}
 
-En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{numpy}.
+% En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{numpy}.
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur feur:
+Erreur sur la masse volumique:
 \begin{equation}
-    \Delta \theta = \absfrac{D}{\delta^2 + D^2} \Delta \delta + \absfrac{\delta}{\delta^2 + D^2} \Delta D
+    \Delta \rho = \left(\absfrac{\Delta m}{m} + \absfrac{\Delta \ell}{\ell} + \absfrac{\Delta L}{L} + \absfrac{\Delta e}{e}\right) \rho
+\end{equation}
+
+Erreur sur le module de Young:
+\begin{equation}
+    \Delta E = \left(\absfrac{\Delta \rho}{\rho} + \absfrac{4\Delta L}{L} + \absfrac{2\Delta e}{e} + \absfrac{2\Delta f}{f} \right) E
+\end{equation}
+
+Erreur sur la capacité d'amortissement:
+\begin{equation}
+    feur
+\end{equation}
+
+Erreur sur :
+\begin{equation}
+    feur
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
