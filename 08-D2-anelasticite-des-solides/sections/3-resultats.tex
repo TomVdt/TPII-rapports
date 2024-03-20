@@ -36,7 +36,7 @@
     \label{tab:young_amortissement}
 \end{table}
 
-\paragraph{Module de Young et température} Afin d'observer les effets de température sur un échantillon d'acier doux, le module de Young a été déterminé pour des températures entre \mbox{\(T = (299 \pm 1)\) \si{\kelvin}} et \mbox{\(T = 525 \pm 1\) \si{\kelvin}}. Les résultats sont reportés dans la \autoref{fig:module_young_temp}.
+\paragraph{Module de Young et température} Afin d'observer les effets de la température sur un échantillon d'acier doux, le module de Young a été déterminé pour des températures entre \mbox{\(T = (299 \pm 1)\) \si{\kelvin}} et \mbox{\(T = 525 \pm 1\) \si{\kelvin}}. Les résultats sont reportés dans la \autoref{fig:module_young_temp}.
 
 \begin{figure}[h]
     \centering
@@ -45,12 +45,10 @@
     \label{fig:module_young_temp}
 \end{figure}
 
-\paragraph{Frottement interieur et température} blabla. Un fit sur la fonction
-\begin{equation}
-    y(x) = \frac{\Delta}{2 \cosh \left(\frac{H}{k_b}\left(\frac{1}{T_P} - \frac{1}{x}\right)\right)}
-    \label{eq:fit_q1}
-\end{equation}
-où \(H\) est FEUR, \(k_b\) est la constante de Boltzmann, \(T_P\) la température du pic et \(\Delta\) FEUR, qui est la grandeur recherchée. En raison d'une accumulation d'erreur sur la durée de la mesure, un fit quadratique a été réalisé afin de corriger les valeurs obtenues. Les données brutes ainsi que le fit sont visibles en \autoref{fig:acier_doux_temp_unadjusted}. Le fit de la fonction en \autoref{eq:fit_q1} a été réalisé sur les données corrigées en \autoref{fig:acier_doux_temp_adjusted}. Une valeur de \(\Delta = \textrm{FEUR}\) est alors obtenue.
+\paragraph{Frottement intérieur et température} Afin de déterminer plusieurs caractéristiques supplémentaires de l'acier doux des mesures du frottement intérieur en fonction de la température $Q^{-1}(T)$ ont été effectuées. Le pic prédit par l'\autoref{eq:Q_inv_T} à $T_P$ a bien été observé et étudié, il est visible dans
+
+
+. En raison d'une accumulation d'erreur sur la durée de la mesure, un fit quadratique a été réalisé afin de corriger les valeurs obtenues. Les données brutes ainsi que le fit sont visibles en \autoref{fig:acier_doux_temp_unadjusted}. Le fit de la fonction en \autoref{eq:fit_q1} a été réalisé sur les données corrigées en \autoref{fig:acier_doux_temp_adjusted}. Une valeur de \(\Delta = \textrm{FEUR}\) est alors obtenue.
 
 \begin{figure}[h]
     \centering
@@ -68,6 +66,14 @@ où \(H\) est FEUR, \(k_b\) est la constante de Boltzmann, \(T_P\) la températu
     \end{subfigure}
     \caption{Frottement interieur \(Q^{-1}\) pour un échantillon d'acier doux (a) avec l'erreur quadratique (b) sans l'erreur quadratique}
 \end{figure}
+
+
+blabla. Un fit sur la fonction
+\begin{equation}
+    y(x) = \frac{\Delta}{2 \cosh \left(\frac{H}{k_b}\left(\frac{1}{T_P} - \frac{1}{x}\right)\right)}
+    \label{eq:fit_q1}
+\end{equation}
+où \(H\) est FEUR, \(k_b\) est la constante de Boltzmann, \(T_P\) la température du pic et \(\Delta\) FEUR, qui est la grandeur recherchée
 
 \paragraph{Relaxation anélastique de Snoek}
 

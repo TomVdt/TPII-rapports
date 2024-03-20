@@ -16,6 +16,7 @@ En appliquant une contrainte harmonique $\ligma = \ligma_0 \exp(i\omega t)$ de p
 ce qui permet de déduire que $Q^{-1}$ possède un maximum en fonction de $\omega\tau$ en $\omega\tau = 1$. En sachant qu'il est possible d'écrire $\tau(T) = \tau_0 \exp(\frac{H}{k_bT})$ avec $H$ l'enthalpie ou énergie de diffusion, $k_b$ la constante de Boltzmann et $T$ la température cela donne:
 \begin{equation}
     Q^{-1} = \frac{\Delta}{2 \mathrm{ch}\left(\frac{H}{k_b}\left(\frac{1}{T_P}-\frac{1}{T}\right)\right)}
+    \label{eq:Q_inv_T}
 \end{equation}
 avec $T_P$ la température du pic c'est à dire la température telle que $\omega\tau(T_P) = 1$.
 
@@ -24,3 +25,7 @@ La relaxation anélastique est la réalisation macroscopique du réarrangement m
     \Delta = \frac{2}{9}\frac{c_0 v_0}{J_u k_b T_P}\Delta\lambda^2
 \end{equation}
 avec $v_0$ le volume atomique des défauts interstitiels.
+Cela permet d'avoir une expression pour la concentration des interstitiels:
+\begin{equation}
+    c_0 = \frac{9}{2}\frac{\Delta J_u k_b T_P}{v_0 \Delta \lambda^2}
+\end{equation}
