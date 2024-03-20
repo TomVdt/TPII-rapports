@@ -23,23 +23,52 @@
 
 \begin{table}[h]
     \centering
-    \begin{tabulary}{0.7\linewidth}{c|C C C}
+    \begin{tabulary}{0.9\linewidth}{c|C C C}
         \toprule
-        & Titane & Laiton & Acier doux \\
+        & \(E\) [\si{\giga\pascal}] & \(Q^{-1}\) \\
         \midrule
-        \(E\) [\si{\giga\pascal}] & \(108 \pm 3\) & \(101 \pm 3\) & \(180 \pm 7\) \\
-        \(Q^{-1}\) & \(\pm\) & \(\pm\) & \(\pm\) \\
+        Titane & \(108 \pm 3\) & \(\left(7.20 \pm 0.02\right) \cdot 10^{-5}\) \\
+        Laiton & \(101 \pm 3\) & \(\left(5.32 \pm 0.05\right) \cdot 10^{-5}\) \\
+        Acier doux & \(180 \pm 7\) & \(\left(2.61 \pm 0.04\right) \cdot 10^{-4}\) \\
         \bottomrule
-    \end{tabulary}
+    \end{tabulary}    
     \caption{Module de Young et capacité d'amortissement obtenues pour chacun des échantillons}
     \label{tab:young_amortissement}
 \end{table}
 
-\paragraph{Influence de la température} Afin d'observer les effets de température sur un échantillon d'acier doux, la mesure du module de Young a été réalisée pour des températures entre \(T = (299 \pm 1)\) \si{\kelvin} et \(T = 525 \pm 1\) \si{\kelvin}. Les ŕesultats sont reportés dans la \autoref{fig:module_young_temp}
+\paragraph{Module de Young et température} Afin d'observer les effets de température sur un échantillon d'acier doux, le module de Young a été déterminé pour des températures entre \mbox{\(T = (299 \pm 1)\) \si{\kelvin}} et \mbox{\(T = 525 \pm 1\) \si{\kelvin}}. Les résultats sont reportés dans la \autoref{fig:module_young_temp}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics{figures/acier_doux_module_young_temp.pdf}
+    \includegraphics[width=0.6\linewidth]{figures/acier_doux_module_young_temp.pdf}
     \caption{Module de Young d'un échantillon d'acier doux en fonction de la température}
     \label{fig:module_young_temp}
 \end{figure}
+
+\paragraph{Frottement interieur et température} blabla. Un fit sur la fonction
+\begin{equation}
+    y(x) = \frac{\Delta}{2 \cosh \left(\frac{H}{k_b}\left(\frac{1}{T_P} - \frac{1}{x}\right)\right)}
+    \label{eq:fit_q1}
+\end{equation}
+où \(H\) est FEUR, \(k_b\) est la constante de Boltzmann, \(T_P\) la température du pic et \(\Delta\) FEUR, qui est la grandeur recherchée. En raison d'une accumulation d'erreur sur la durée de la mesure, un fit quadratique a été réalisé afin de corriger les valeurs obtenues. Les données brutes ainsi que le fit sont visibles en \autoref{fig:acier_doux_temp_unadjusted}. Le fit de la fonction en \autoref{eq:fit_q1} a été réalisé sur les données corrigées en \autoref{fig:acier_doux_temp_adjusted}. Une valeur de \(\Delta = \textrm{FEUR}\) est alors obtenue.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        % \includegraphics[width=\linewidth]{figures/acier_doux_q_1_temp_unadjusted.pdf}
+        \caption{}
+        \label{fig:acier_doux_temp_unadjusted}
+    \end{subfigure}
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        % \includegraphics[width=\linewidth]{figures/acier_doux_q_1_temp_adjusted.pdf}
+        \caption{}
+        \label{fig:acier_doux_temp_adjusted}
+    \end{subfigure}
+    \caption{Frottement interieur \(Q^{-1}\) pour un échantillon d'acier doux (a) avec l'erreur quadratique (b) sans l'erreur quadratique}
+\end{figure}
+
+\paragraph{Relaxation anélastique de Snoek}
+
+\paragraph{Concentration de carbone interstitiel}
