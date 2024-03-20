@@ -9,7 +9,7 @@ delta_masse = 0.0005  # g
 # Notice me senpai
 Delta_lambda = 0.62  # sans unités
 k_boltzmann = 1.38 * 1e-23  # J/K
-nu_0 = 3.05 * 1e-30  # m³
+v_0 = 3.05 * 1e-30  # m³
 
 # Trucs
 titane_epaisseur = ufloat(2.10, delta_largeur_epaisseur)  # mm
