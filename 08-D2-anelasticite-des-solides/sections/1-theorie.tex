@@ -7,20 +7,20 @@ Le sujet de cette expérience est la relaxation anélastique. Ce phénomène a l
 \begin{equation}
     \varepsilon = \varepsilon_e + \varepsilon_a^\infty = J_r \ligma
 \end{equation}
-avec $\tau$ le temps de relaxation anélastique et $J_r$ la complaisance relaxée. Il est utile également de définir l'intensité de relaxation: $\Delta = \frac{J_r - J_u}{J_u}$
+avec $\tau$ le temps de relaxation anélastique et $J_r$ la complaisance relaxée. Il est utile également de définir l'intensité de relaxation: $\Delta = \frac{J_r - J_u}{J_u}$.
 
 En appliquant une contrainte harmonique $\ligma = \ligma_0 \exp(i\omega t)$ de pulsation $\omega$ au matériau sa réponse en déformation sera elle aussi périodique $\varepsilon = \varepsilon_0\exp(i(\omega t - \delta))$ avec un déphasage $\delta$. Ce déphasage est relié au frottement intérieur du matériau $Q^{-1}$ et dans le cas où $(J_r - J_u) \ll J_u$:
 \begin{equation}
     Q^{-1} = \tan(\delta) = \Delta\frac{\omega\tau}{1+\omega^2\tau^2}
 \end{equation}
-ce qui permet de déduire que $Q^{-1}$ possède un maximum en fonction de $\omega\tau$ en $\omega\tau = 1$. En sachant qu'il est possible d'écrire $\tau(T) = \tau_0 \exp(\frac{H}{k_bT})$ avec $H$ l'enthalpie ou énergie de diffusion, $k_b = 1.38 \times 10^{-23}$ \si{\joule \per \kelvin} la constante de Boltzmann et $T$ la température cela donne:
+ce qui permet de déduire que $Q^{-1}$ possède un maximum égal à $\Delta/2$ en fonction de $\omega\tau$ en $\omega\tau = 1$. En sachant qu'il est possible d'écrire $\tau(T) = \tau_0 \exp(\frac{H}{k_bT})$ avec $H$ l'enthalpie ou énergie de diffusion, $k_b = 1.38 \times 10^{-23}$ \si{\joule \per \kelvin} la constante de Boltzmann et $T$ la température cela donne pour une fréquence $\omega$ fixée:
 \begin{equation}
     Q^{-1}(T) = \frac{\Delta}{2 \mathrm{ch}\left(\frac{H}{k_b}\left(\frac{1}{T_P}-\frac{1}{T}\right)\right)}
     \label{eq:Q_inv_T}
 \end{equation}
 avec $T_P$ la température du pic c'est à dire la température telle que $\omega\tau(T_P) = 1$.
 
-L'\autoref{eq:Q_inv_T} permet également de trouver une formule pour la valeur de $H$. En connaissant $T_1$ et $T_2$ les deux valeurs telles que $Q^{-1}(T_1) = Q^{-1}(T_2) = \frac{\Delta}{4}$, c'est-à-dire la mi-hauteur du pic, il est possible de déduire l'expression:
+L'\autoref{eq:Q_inv_T} permet de plus de trouver une formule pour la valeur de $H$. En connaissant $T_1$ et $T_2$ les deux valeurs telles que $Q^{-1}(T_1) = Q^{-1}(T_2) = \frac{\Delta}{4}$, c'est-à-dire la mi-hauteur du pic, il est possible de déduire l'expression:
 \begin{equation}
     H = \frac{2.633 k_b}{\frac{1}{T_1} - \frac{1}{T_2}}
     \label{eq:H_mi_hauteur}
@@ -28,7 +28,7 @@ L'\autoref{eq:Q_inv_T} permet également de trouver une formule pour la valeur d
 en ayant choisi $T_1 < T_2$.
 
 
-La relaxation anélastique est la réalisation macroscopique du réarrangement microscopique des défauts du matériau élastique. Dans le cadre d'une contrainte uniaxiale cela donne \hbox{$\varepsilon_a = \Delta\lambda\left(c_1 - c_0/3\right)$} avec $c_0$ la concentration atomique des défauts interstitiels, $c_1$ la concentration de ceux fromant un dipole dans l'axe de la contrainte et $\Delta\lambda$ la variation de déformation due aux mouvements des défauts sous la contrainte. Cela donne une nouvelle relation:
+La relaxation anélastique est la réalisation macroscopique du réarrangement microscopique des défauts du matériau élastique sous la contrainte. Dans le cadre d'une contrainte uniaxiale cela donne \hbox{$\varepsilon_a = \Delta\lambda\left(c_1 - c_0/3\right)$} avec $c_0$ la concentration atomique des défauts interstitiels, $c_1$ la concentration de ceux formant un dipole dans l'axe de la contrainte et $\Delta\lambda$ la variation de déformation due aux mouvements des défauts sous la contrainte. Cela donne une nouvelle relation:
 
 \begin{equation}
     \Delta = \frac{2}{9}\frac{c_0 v_0}{J_u k_b T_P}\Delta\lambda^2

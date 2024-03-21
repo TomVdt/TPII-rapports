@@ -17,9 +17,9 @@
     \label{tab:dimensions}
 \end{table}
 
-\paragraph{Module de Young} Pour chacun des échantillons, le module de Young \(E\) à température ambiante de \(T = (299 \pm 1)\) \si{\kelvin} a été obtenu avec l'\autoref{eq:young_programme}. La fréquence fondamentale de vibration, ainsi que le module de Young pour chacun des échantillons sont recensées dans le \autoref{tab:young_amortissement}.
+\paragraph{Module de Young} Pour chacun des échantillons, le module de Young \(E\) à température ambiante de \(T = (299 \pm 1)\) \si{\kelvin} a été obtenu avec l'\autoref{eq:young_programme}. La fréquence fondamentale de vibration, ainsi que le module de Young pour chacun des échantillons sont recensés dans le \autoref{tab:young_amortissement}.
 
-\paragraph{Capacité d'amortissement} En plus du module de Young, le programme calcule aussi, en utilisant l'\autoref{eq:q1_programme}, la capacité d'amortissement \(Q^{-1}\). Cette mesure est réalisé plusieurs fois sur le même échantillon. Le \autoref{tab:young_amortissement} reporte la valeur moyenne et leur déviation pour chaque échantillon.
+\paragraph{Capacité d'amortissement} En plus du module de Young, le programme calcule aussi, en utilisant l'\autoref{eq:q1_programme}, la capacité d'amortissement \(Q^{-1}\). Cette mesure est réalisé plusieurs fois sur le même échantillon. Le \autoref{tab:young_amortissement} reporte la valeur moyenne et la déviation standard pour chaque échantillon.
 
 \begin{table}[h]
     \centering
@@ -32,7 +32,7 @@
         Acier doux & \(2228 \pm 1\) & \(180 \pm 7\) & \(211.9\) & 14\% & \(\left(2.61 \pm 0.04\right) \cdot 10^{-4}\) \\
         \bottomrule
     \end{tabulary}    
-    \caption{Fréquence fondamentale, module de Young et capacité d'amortissement obtenues à température ambiante \(T = (299 \pm 1)\) pour chacun des échantillons}
+    \caption{Fréquence fondamentale, module de Young et capacité d'amortissement obtenues à température ambiante \(T = (299 \pm 1)\) \si{\kelvin} pour chacun des échantillons}
     \label{tab:young_amortissement}
 \end{table}
 
@@ -45,7 +45,7 @@
     \label{fig:module_young_temp}
 \end{figure}
 
-\paragraph{Frottement intérieur et température} Afin de déterminer plusieurs caractéristiques supplémentaires de l'acier doux en relaxation inélastique des mesures du frottement intérieur en fonction de la température $Q^{-1}(T)$ ont été effectuées. Le pic prédit par l'\autoref{eq:Q_inv_T} à $T_P$ a été observé et étudié, il est visible dans les \autoref{fig:acier_doux_temp_unadjusted} et \autoref{fig:acier_doux_temp_adjusted}.
+\paragraph{Frottement intérieur et température} Afin de déterminer plusieurs caractéristiques supplémentaires de l'acier doux en relaxation anélastique des mesures du frottement intérieur en fonction de la température $Q^{-1}(T)$ ont été effectuées. Le pic prédit par l'\autoref{eq:Q_inv_T} à $T_P$ a été observé et étudié, il est visible dans les \autoref{fig:acier_doux_temp_unadjusted} et \autoref{fig:acier_doux_temp_adjusted}.
 
 En raison d'une accumulation d'erreurs sur la durée de la mesure, une régression quadratique a été réalisée afin de corriger les valeurs obtenues. La sortie non-traitée du programme pour $Q^{-1}$ ainsi que la régression sont visibles en \autoref{fig:acier_doux_temp_unadjusted}. Afin d'obtenir un pic plat sans cette erreur la valeur de la fonction $y$ obtenue par la régression a été soustraite à tous les points et le résultat est affiché en \autoref{fig:acier_doux_temp_adjusted}.
 
@@ -66,13 +66,13 @@ En raison d'une accumulation d'erreurs sur la durée de la mesure, une régressi
     \caption{Frottement interieur \(Q^{-1}\) pour un échantillon d'acier doux (a) avec l'erreur quadratique (b) sans l'erreur quadratique}
 \end{figure}
 
-Le pic obtenu permet de déduire plusieurs informations. Tout d'abord il a pu être extrait du graphique $\Delta / 2 = (5.2 \pm 0.2) \times 10^{-4}$ . Ensuite les valeurs de $T_P$, $T_1$ et $T_2$ telles que définies pour les \autoref{eq:Q_inv_T} et \autoref{eq:H_mi_hauteur} ont pu être estimées. Pour $T_P$ toutes les valeurs proches de moins $10^{-5}$ du point maximal selon $Q^{-1}$ ont été sélectionnées. La moyenne de cet échantillon ainsi que l'écart entre les deux éléments les plus éloignés a donné la valeur et l'erreur pour $T_P = (369 \pm 3)$ \si{\kelvin}. Pour $T_1$ et $T_2$ tous les points pour lesquels la barre de mi-hauteur $\Delta / 4$ était franchie en ce point étaient sélectionnés, et triés selon leur proximité entre $T_1$ et $T_2$. Pareillement les valeurs moyennes et les écarts entre les extrêmes ont donnés: $T1 = (339.7 \pm 0.7)$ \si{\kelvin} et \mbox{$T2 = (400 \pm 1)$ \si{\kelvin}}.
+Le pic obtenu permet de déduire plusieurs informations. Tout d'abord il a pu être extrait du graphique que $\Delta / 2 = (5.2 \pm 0.2) \times 10^{-4}$ . Ensuite les valeurs de $T_P$, $T_1$ et $T_2$ telles que définies pour les \autoref{eq:Q_inv_T} et \autoref{eq:H_mi_hauteur} ont pu être estimées. Pour $T_P$ tous les points proches de moins de $10^{-5}$ du point maximal selon $Q^{-1}$ ont été sélectionnés. La moyenne de cet échantillon ainsi que l'écart entre les deux éléments les plus éloignés a donné la valeur et l'erreur pour $T_P = (369 \pm 3)$ \si{\kelvin}. Pour $T_1$ et $T_2$ tous les points pour lesquels la barre de mi-hauteur $\Delta / 4$ était franchie en ce point étaient sélectionnés et triés selon leur proximité entre $T_1$ et $T_2$. Pareillement, les valeurs moyennes et les écarts entre les extrêmes ont donnés: $T1 = (339.7 \pm 0.7)$ \si{\kelvin} et \mbox{$T2 = (400 \pm 1)$ \si{\kelvin}}.
 
-A l'aide de ces valeurs et de l'\autoref{eq:H_mi_hauteur} la valeur de l'énergie de diffusion obtenue est: $H = (8.2 \pm 0.2)\times 10^{-20}$.
+A l'aide de ces valeurs et de l'\autoref{eq:H_mi_hauteur} la valeur de l'énergie de diffusion obtenue est: $H = (8.2 \pm 0.2)\times 10^{-20}$ \si{\joule}.
 
-Les données corrigées en \autoref{fig:acier_doux_temp_adjusted} correspondant à l'\autoref{eq:Q_inv_T} une régression a été appliquée à ces valeurs avec les valeurs connues de $H$, $k_b$ et $T_P$. Une valeur pour l'intensité de relaxation de \(\Delta = (9.98 \pm 0.03) \times 10^{-4}\) est alors obtenue. La valeur de $\Delta$ conservée est celle obtenue par la régression plus précise que celle obtenue par analyse du graphique. 
+Les données corrigées en \autoref{fig:acier_doux_temp_adjusted} correspondant à l'\autoref{eq:Q_inv_T} une régression a été appliquée à ces valeurs avec les valeurs connues de \(H\), $k_b$ et $T_P$. Une valeur pour l'intensité de relaxation de \(\Delta = (9.98 \pm 0.03) \times 10^{-4}\) est alors obtenue. La valeur de $\Delta$ conservée est celle obtenue par la régression plus précise que celle obtenue par analyse du graphique. 
 
 
 \paragraph{Concentration de carbone interstitiel}
 
-$J_u = 1/E$, $k_b$, $T_P$ et $\Delta$ sont connus pour l'acier doux grâce aux études précédentes. Sachant que les défauts interstitiels sont du carbone il est donné que $\Delta\lambda = 0.62$ et $v_0 = 3.05 \times 10^{-30}$ \si{\cubic\meter} tels que définis pour l'\autoref{eq:delta_defauts}. Il est possible de calculer la concentration en carbone interstitiels dans l'acier doux étudié par l'\autoref{eq:c_0}: $c_0 = (1.08 \pm 0.04)\times 10^{-4}$.
+$J_u = 1/E$, $k_b$, $T_P$ et $\Delta$ sont connus pour l'acier doux grâce aux études précédentes. Sachant que les défauts interstitiels sont du carbone il est connu que $\Delta\lambda = 0.62$ et $v_0 = 3.05 \times 10^{-30}$ \si{\cubic\meter} tels que définis pour l'\autoref{eq:delta_defauts}. Il est possible de calculer la concentration en carbone interstitiels dans l'acier doux étudié par l'\autoref{eq:c_0}: $c_0 = (1.08 \pm 0.04)\times 10^{-4}$.
