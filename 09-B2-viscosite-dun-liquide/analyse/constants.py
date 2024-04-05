@@ -11,7 +11,7 @@ k_boltzmann = 1.38 * 1e-23  # J/K
 
 bille_rayon = ufloat(1, 0.005) * 0.001  # m
 bille_masse = ufloat(0.00443, 3e-5) * 1e-3  # kg
-distance_top_bottom = ufloat(0.01, 0)  # m
+distance_top_bottom = ufloat(0.1, 0)  # m
 densite_1 = 819  # kg/m³
 densite_2 = 837  # kg/m³
 

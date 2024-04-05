@@ -1,1 +1,56 @@
 \section{Résultats}
+
+\paragraph{Mesure de la viscosité} La viscosité \(\eta\) de chaque huile à différentes températures a été déterminée à partir de l'\autoref{eq:viscosite}. La température de chaque huile a été variée entre \mbox{\(T=(22 \pm 1)\) \si{\celsius}} et \mbox{\(T=(72 \pm 1)\) \si{\celsius}} pour la température ascendante, notée \(T\nearrow\), et entre \mbox{\(T=(72 \pm 1)\) \si{\celsius}} et \mbox{\(T=(29 \pm 1)\) \si{\celsius}} pour la température descendante, notée \(T\searrow\). Les détails sur le calcul d'erreurs sont disponibles en \autoref{sec:erreurs}. Les résultats obtenus sont reportés dans les \autoref{fig:huile1_eta} et \autoref{fig:huile2_eta}. Afin d'alléger les figures, seul une partie des mesures sont montrées.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/huile1_eta.pdf}
+        \caption{}
+        \label{fig:huile1_eta}
+    \end{subfigure}
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/huile2_eta.pdf}
+        \caption{}
+        \label{fig:huile2_eta}
+    \end{subfigure}
+    \caption{Viscosité \(\eta\) en fonction de la température dans le sens croissant ou décroissant dans l'huile (a) 1, (b) 2}
+\end{figure}
+
+Afin d'obtenir l'énergie d'activation \(E\), ainsi qu'une constante \(A\), une régression linéaire est réalisée sur les \autoref{fig:huile1_lneta} et \autoref{fig:huile2_lneta}, conformément à l'\autoref{eq:ln_relation_boltzmann}. Les valeurs obtenues sont reportées dans le \autoref{tab:energie_fit}.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/huile1_lneta.pdf}
+        \caption{}
+        \label{fig:huile1_lneta}
+    \end{subfigure}
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/huile2_lneta.pdf}
+        \caption{}
+        \label{fig:huile2_lneta}
+    \end{subfigure}
+    \caption{Logarithme de la viscosité \(\ln(\eta)\) en fonction de l'inverse de la température \(T\) dans l'huile (a) 1, (b) 2}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabulary}{0.8\linewidth}{C C|C C}
+        \toprule
+        & & \(E\) [\si{\joule}] & \(A\) [\si{\kilo\gram\per\meter\per\second}] \\
+        \midrule
+        Huile 1 & \(T \nearrow\) & \((2.9 \pm 0.2) \cdot 10^{-20}\) & \((1.5 \pm 0.5) \cdot 10^{-5}\) \\
+        & \(T \searrow\) & \((2.68 \pm 0.06) \cdot 10^{-20}\) & \((3.1 \pm 0.4) \cdot 10^{-5}\) \\
+        \midrule
+        Huile 2 & \(T \nearrow\) & \((5.4 \pm 0.1) \cdot 10^{-20}\) & \((1.3 \pm 0.4) \cdot 10^{-7}\) \\
+        & \(T \searrow\) & \((5.35 \pm 0.09) \cdot 10^{-20}\) & \((2.0 \pm 0.4) \cdot 10^{-7}\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs de l'énergie d'activation \(E\) et la constante \(A\) pour des mesures à température croissante et décroissante des huiles 1 et 2}
+    \label{tab:energie_fit}
+\end{table}
