@@ -13,7 +13,7 @@ rcParams = {
         r"\usepackage[detect-all,locale=FR]{siunitx}",
         r"\usepackage{mathabx}",
     ]),
-    'lines.markersize': 12,
+    'lines.markersize': 14,
     'lines.color': 'grey',
     'scatter.marker': '+',
     'errorbar.capsize': 4,
