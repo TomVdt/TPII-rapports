@@ -1,18 +1,18 @@
 \section{Théorie}
-La viscosité d'un fluide à une température donnée $\eta$ correspond à sa capacité à amortir, ou diminuer, les déplacements du fluide. Dans le cas de l'expérience simple présentée en \autoref{fig:plaques} avec deux plaques séparées par un fluide dont l'une est maintenue immobile et l'autre est déplacée à vitesse constante $\vec{v}_t$ cela donne:
-\begin{equation}
-    \vec{F}_t = \eta \frac{S\vec{v}_t}{e}
-\end{equation} 
-avec $\vec{F}_t$ la force appliquée, $S$ la surface de la plaque et $e$ la distance entre les deux plaques. Il est aussi utilde de définir la viscosité cinématique: $\nu = \eta/\rho$.
+% La viscosité d'un fluide à une température donnée $\eta$ correspond à sa capacité à amortir, ou diminuer, les déplacements du fluide. Dans le cas de l'expérience simple présentée en \autoref{fig:plaques} avec deux plaques séparées par un fluide dont l'une est maintenue immobile et l'autre est déplacée à vitesse constante $\vec{v}_t$ cela donne:
+% \begin{equation}
+%     \vec{F}_t = \eta \frac{S\vec{v}_t}{e}
+% \end{equation} 
+% avec $\vec{F}_t$ la force appliquée, $S$ la surface de la plaque et $e$ la distance entre les deux plaques. Il est aussi utilde de définir la viscosité cinématique: $\nu = \eta/\rho$.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\linewidth]{figures/viscosite_plaques.png}
-    \caption{Expérience permettant de mesurer la viscosité d'un liquide \cite{notice}}
-    \label{fig:plaques}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{figures/viscosite_plaques.png}
+%     \caption{Expérience permettant de mesurer la viscosité d'un liquide \cite{notice}}
+%     \label{fig:plaques}
+% \end{figure}
 
-Lorsqu'un solide se déplace dans un fluide cette même viscosité va donner lieu à une force de traînée dans la direction du mouvement et dans le sens opposé et dont la norme s'exprime dans le cadre général sous la forme:
+Lorsqu'un solide se déplace dans un fluide la même viscosité va donner lieu à une force de traînée dans la direction du mouvement et dans le sens opposé et dont la norme s'exprime dans le cadre général sous la forme:
 \begin{equation}
     T = C_x S \frac{1}{2} \rho v_\infty ^2
     \label{eq:trainee_gen}
@@ -52,10 +52,10 @@ La dernière analyse nécessaire pour plus tard vérifier la cohérence de nos m
 \end{equation}
 où le volume de la bille est noté $V = 4/3 \pi r^3$. En posant $\alpha = -6\pi \eta r / m$, $\beta = g(1-\rho V/m)$ et $X = \dot{x}$ cela donne $\dot{X} = \alpha X + \beta$. En résolvant cette équation différentielle cela donne la solution pour la condition initiale $v(t=0)=0$:
 \begin{equation}
-    \dot{x}(t) = X = \frac{\beta}{\alpha}(e^{At} - 1)
+    \dot{x}(t) = X = \frac{\beta}{\alpha}(e^{\alpha t} - 1)
 \end{equation}
 Ainsi la vitesse tend avec une décroissance exponentielle vers une vitesse de $\beta/\alpha$. Cette décroissance exponentielle à la forme $\exp(-t/\tau)$ avec $\tau$ une constante de temps qui s'exprime:
 \begin{equation}
-    \tau = -\frac{1}{A} = \frac{m}{6\pi \eta r}
+    \tau = -\frac{1}{\alpha} = \frac{m}{6\pi \eta r}
     \label{eq:constante_temps}
 \end{equation}
