@@ -34,9 +34,29 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur feur:
+Erreur sur $v_\infty = d/t$:
 \begin{equation}
-    feur
+    \Delta v_\infty = \absfrac{d}{t^2} \Delta t
+\end{equation}
+Erreur sur $V = 4/3 \pi r^3$:
+\begin{equation}
+    \Delta V = \left|4 \pi r^2 \right| \Delta r
+\end{equation}
+Erreur sur $\rho = m/V$:
+\begin{equation}
+    \Delta \rho = \absfrac{1}{V} \Delta m + \absfrac{m}{V^2} \Delta V
+\end{equation}
+Erreur sur $\eta = \frac{g(m-V \rho)}{6\pi r v_\infty}$:
+\begin{equation}
+    \Delta \eta = \frac{g}{6\pi} \left( \absfrac{1}{r v_\infty} \Delta m + \absfrac{\rho}{r v_\infty} \Delta V + \absfrac{V}{r v_\infty} \Delta \rho + \absfrac{m - V\rho}{r^2 v_\infty}\Delta r + \absfrac{m - V\rho}{r v_\infty^2}\Delta v_\infty \right)
+\end{equation}
+Erreur sur $\mathrm{Re = \frac{\rho}{\eta} v_\infty 2r}$:
+\begin{equation}
+    \Delta \mathrm{Re} = \left(\absfrac{1}{\rho}\Delta \rho + \absfrac{1}{v_\infty}\Delta v_\infty + \absfrac{1}{r} \Delta r + \absfrac{-1}{\eta} \Delta \eta \right) |\mathrm{Re}|
+\end{equation}
+Erreur sur $\tau = \frac{m}{6 \pi \eta r}$:
+\begin{equation}
+    \Delta \tau = \left(\absfrac{1}{m} \Delta m + \absfrac{-1}{\eta}\Delta \eta + \absfrac{-1}{r}\Delta r \right)|\tau|
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
