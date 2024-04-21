@@ -9,7 +9,7 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur \\
         \midrule
-        Frequence \(\omega\) [\si{\radian\per\second}] & est \\
+        Temps \(t\) [\si{\second}] & 0.05 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -31,9 +31,24 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur feur:
+Erreur sur la pulsation \(\omega\) et \(\Omega\):
 \begin{equation}
-    feur
+    \Delta \omega = \frac{2 \pi}{T^2} \Delta T, \qquad
+    \Delta \Omega = \frac{2 \pi}{T^2} \Delta T
+\end{equation}
+où l'erreur sur la periode \(T\) est trouvée à partir de la mesures de \(n\) periodes par:
+\begin{equation}
+    \Delta T = \frac{\Delta t}{n}
+\end{equation}
+
+Erreur sur la pulsation de l'oscillateur idéal \(\omega_0\):
+\begin{equation}
+    \Delta \omega_0 = \frac{\omega \Delta \omega + \lambda \Delta \lambda}{\omega_0}
+\end{equation}
+
+Erreur sur la pulsation de battement \(\omega_B\):
+\begin{equation}
+    \Delta \omega_B = \Delta \omega + \Delta \Omega
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.

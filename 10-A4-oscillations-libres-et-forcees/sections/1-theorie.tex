@@ -27,16 +27,17 @@ ce qui donne l'équation différentielle de l'oscillateur harmonique, qu'il est 
 
 \paragraph*{Oscillations libres}
 L'oscillation est dite "libre" si le couple forcant n'est pas appliqué, c'est à dire \(p = 0\). À partir des conditions initiales \(\theta(0) = \theta_0\) et \(\dot\theta(0) = 0\), il est possible de trouver 3 solutions en fonction des valeurs de \(\omega_0\) et \(\lambda\):
+\begin{align}
+    &\theta(t) = \theta_0 e^{-\lambda t} \cos (\omega t + \phi) &&\textrm{si } \lambda^2 < \omega_0^2, \textrm{où } \omega^2 = \omega_0^2 - \lambda^2 \\
+    \label{eq:oscil_libre}
+    &\theta(t) = \theta_0 e^{-\lambda t} (1 + \lambda t) &&\textrm{si } \lambda^2 = \omega_0^2 \\
+    &\theta(t) = \theta_0 e^{-\lambda t} \left(C_1e^{\omega t} + C_2e^{-\omega t}\right) &&\textrm{si } \lambda^2 < \omega_0^2, \textrm{où } \omega^2 = \lambda^2 - \omega_0^2
+\end{align}
+Pour cette expérience, seul le cas de l'amortissment faible avec \(\lambda^2 < \omega_0^2\) sera considéré. \(\phi\) est une constante donnant la phase de l'oscillation. Il est alors possible de trouver la pulsation de l'oscillation harmonique sans frottements avec:
 \begin{equation}
-    \begin{cases}
-        \begin{aligned}
-            &\theta(t) = \theta_0 e^{-\lambda t} \cos (\omega t + \phi) &&\textrm{si } \lambda^2 < \omega_0^2, \textrm{où } \omega^2 = \omega_0^2 - \lambda^2 \\
-            &\theta(t) = \theta_0 e^{-\lambda t} (1 + \lambda t) &&\textrm{si } \lambda^2 = \omega_0^2 \\
-            &\theta(t) = \theta_0 e^{-\lambda t} \left(C_1e^{\omega t} + C_2e^{-\omega t}\right) &&\textrm{si } \lambda^2 < \omega_0^2, \textrm{où } \omega^2 = \lambda^2 - \omega_0^2
-        \end{aligned}
-    \end{cases}
+    \omega_0 = \sqrt{\omega^2 + \lambda^2}
+    \label{eq:omega_0}
 \end{equation}
-Pour cette expérience, seul le cas de l'amortissment faible avec \(\lambda^2 < \omega_0^2\) sera considéré. \(\phi\) est une constante donnant la phase de l'oscillation.
 
 \paragraph*{Oscillations forcées}
 Pour cette section, la situation \(p \ne 0\), c'est à dire la présence d'un couple sinusoïdal, sera considérée. Pour le cas de l'amortissement faible, la solution de l'\autoref{eq:mouvement} devient:
@@ -51,6 +52,8 @@ Pour cette section, la situation \(p \ne 0\), c'est à dire la présence d'un co
     \includegraphics[width=\linewidth]{figures/pic_amplitude.png}
     \caption{Amplitude des oscillations en fonction de la pulsation \cite{notice}}
     \label{fig:pic_amplitude}
+    %%%%% WARNING %%%%%%%
+    \vspace*{-2cm}
 \end{wrapfigure}
 où \(\omega = \omega_0^2 - \lambda^2\), 
 \begin{equation}
