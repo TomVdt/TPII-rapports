@@ -5,7 +5,7 @@ Le coefficient d'amortissement et la pulsation du disque ont été déterminé p
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\linewidth]{figures/I3_50_nomot_fitted.pdf}
+    \includegraphics[width=0.98\linewidth]{figures/I3_50_nomot_fitted.pdf}
     \caption{Oscillation libre du disque avec 3 masses supplémentaires et un amortissement de 50\%}
     \label{fig:signal_libre}
 \end{figure}
@@ -27,11 +27,17 @@ Le coefficient d'amortissement et la pulsation du disque ont été déterminé p
     \caption{(a) Le coefficient d'amortissement \(\lambda\) et (b) la pulsation \(\omega\) pour différentes configurations de masses supplémentaires, en fonction de l'amortissement appliqué}
 \end{figure}
 
-La pulsation \(\omega_0\) de l'oscillateur harmonique libre sans frottements peut alors être détérminé à partir de l'\autoref{eq:omega_0}. La \autoref{fig:omega0_libre} a été obtenue.
+La pulsation \(\omega_0\) de l'oscillateur harmonique libre sans frottements peut alors être détérminé à partir de l'\autoref{eq:omega_0}. Puisque \(\omega_0\) est censé être constant pour les différents amortissements appliqués, la valeur moyenne a été retenue. Les résultats sont présentés dans le \autoref{tab:omega0_libre}.
 
-\begin{figure}[h]
+\begin{table}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/omega0_nomot.pdf}
-    \caption{Pulsation de l'oscillateur harmonique sans frottements en fonction de la configuration}
-    \label{fig:omega0_libre}
-\end{figure}
+    \begin{tabulary}{0.9\linewidth}{C C C C}
+        \toprule
+        & 0 masses & 2 masses & 3 masses \\
+        \midrule
+        \(\omega_0\) [\si{\radian\per\second}] & \(4.03 \pm 0.02\) & \(3.14 \pm 0.02\) & \(2.87 \pm 0.02\) \\
+        \bottomrule
+    \end{tabulary}
+    \caption{Valeurs moyennes de la pulsation de l'oscillateur harmonique sans frottements}
+    \label{tab:omega0_libre}
+\end{table}
