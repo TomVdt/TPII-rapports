@@ -33,22 +33,32 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 Erreur sur la pulsation \(\omega\) et \(\Omega\):
 \begin{equation}
-    \Delta \omega = \frac{2 \pi}{T^2} \Delta T, \qquad
-    \Delta \Omega = \frac{2 \pi}{T^2} \Delta T
+    \Delta (\omega) = \frac{2 \pi}{T^2} \Delta (T), \qquad
+    \Delta (\Omega) = \frac{2 \pi}{T^2} \Delta (T)
 \end{equation}
 où l'erreur sur la periode \(T\) est trouvée à partir de la mesures de \(n\) periodes par:
 \begin{equation}
-    \Delta T = \frac{\Delta t}{n}
+    \Delta (T) = \frac{\Delta (t)}{n}
 \end{equation}
 
 Erreur sur la pulsation de l'oscillateur idéal \(\omega_0\):
 \begin{equation}
-    \Delta \omega_0 = \frac{\omega \Delta \omega + \lambda \Delta \lambda}{\omega_0}
+    \Delta (\omega_0) = \frac{\omega \Delta (\omega) + \lambda \Delta (\lambda)}{\omega_0}
 \end{equation}
 
 Erreur sur la pulsation de battement \(\omega_B\):
 \begin{equation}
-    \Delta \omega_B = \Delta \omega + \Delta \Omega
+    \Delta (\omega_B) = \Delta (\omega) + \Delta (\Omega)
+\end{equation}
+
+Erreur sur la largeur de la raie $\Delta \Omega$:
+\begin{equation}
+    \Delta (\Delta \Omega) = \absfrac{\Delta \Omega}{\lambda}\Delta (\lambda) + \absfrac{\Delta \Omega}{\omega} \Delta(\omega) + \absfrac{\Delta \Omega}{\Omega_r}\Delta(\Omega)
+\end{equation}
+
+Erreur sur le facteur qualité $Q$:
+\begin{equation}
+    \Delta (Q) = \absfrac{Q}{\Omega_r} \Delta (\Omega) + \absfrac{Q}{\Delta \Omega}\Delta(\Delta \Omega)
 \end{equation}
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
