@@ -23,7 +23,7 @@ il est possible de réécrire l'\autoref{eq:theoreme_moment_inertie} comme:
     \ddot\theta + 2\lambda\dot\theta + \omega_0^2\theta = p \sin (\Omega t)
     \label{eq:mouvement}
 \end{equation}
-ce qui donne l'équation différentielle de l'oscillateur harmonique, qu'il est possible de résoudre à partir des conditions initiales.
+ce qui donne l'équation différentielle de l'oscillateur harmonique forcé avec frottements, qu'il est possible de résoudre à partir des conditions initiales.
 
 \paragraph*{Oscillations libres}
 L'oscillation est dite "libre" si le couple forcant n'est pas appliqué, c'est à dire \(p = 0\). À partir des conditions initiales \(\theta(0) = \theta_0\) et \(\dot\theta(0) = 0\), il est possible de trouver 3 solutions en fonction des valeurs de \(\omega_0\) et \(\lambda\):
@@ -42,7 +42,7 @@ Pour cette expérience, seul le cas de l'amortissment faible avec \(\lambda^2 < 
 \paragraph*{Oscillations forcées}
 Pour cette section, la situation \(p \ne 0\), c'est à dire la présence d'un couple sinusoïdal, sera considérée. Pour le cas de l'amortissement faible, la solution de l'\autoref{eq:mouvement} devient:
 \begin{equation}
-    \theta(t) = A(\Omega) \sin(\Omega t + \psi) + C e^{-\lambda t} \cos(\omega t - \phi)
+    \theta(t) = A(\Omega) \sin(\Omega t - \psi) + C e^{-\lambda t} \cos(\omega t - \phi)
     \label{eq:oscillations_forcees}
 \end{equation}
 
@@ -60,7 +60,7 @@ où \(\omega = \omega_0^2 - \lambda^2\),
     A(\Omega) = \frac{p}{\sqrt{\left(\omega_0^2-\Omega^2\right)^2 + 4\lambda^2\Omega^2}}, \quad \psi = \arctan \left(\frac{2\lambda\Omega}{\omega_0^2-\Omega^2}\right)
 \end{equation}
 
-L'amplitude \(A(\Omega)\) est maximale autour de la pulsation de résonnance \(\Omega_r = \sqrt{\omega_0^2-2\lambda^2}\). Cette situation est illustrée sur la \autoref{fig:pic_amplitude}. La largeur du pic d'amplitude à mi-hauteur peut être définie comme \(\Delta \Omega = \frac{2 \lambda \omega}{\Omega_r}\). De plus, ces valeurs permettent de définir le facteur de qualité de résonnance, qui vaut \(Q = \frac{\Omega_r}{\Delta\Omega}\).
+L'amplitude \(A(\Omega)\) est maximale autour de la pulsation de résonance \(\Omega_r = \sqrt{\omega_0^2-2\lambda^2}\). Cette situation est illustrée sur la \autoref{fig:pic_amplitude}. La largeur du pic d'amplitude à mi-hauteur peut être définie comme \(\Delta \Omega = \frac{2 \lambda \omega}{\Omega_r}\). De plus, ces valeurs permettent de définir le facteur de qualité de la résonance, qui vaut \(Q = \frac{\Omega_r}{\Delta\Omega}\).
 
 \paragraph*{Régime transitoire}
 De l'\autoref{eq:oscillations_forcees}, il est possible de voir que pour un \(t\) croissant, le second terme perd de l'importance dans le temps. Cela correspond au régime transitoire. Si \(\Omega\) et \(\omega\) sont proches, un battement de pulsation \(\omega_B = |\omega- \Omega|\) se produit.

@@ -41,3 +41,29 @@ La pulsation \(\omega_0\) de l'oscillateur harmonique libre sans frottements peu
     \caption{Valeurs moyennes de la pulsation de l'oscillateur harmonique sans frottements}
     \label{tab:omega0_libre}
 \end{table}
+
+\paragraph{Battements transitoires}
+Pour les battements dans la solution transitoire de l'\autoref{eq:oscillations_forcees} plusieurs essais de conditions initiales ont été essayés pour le disque à 0 masses et amortissement de 50\%. Le résultat permettant de mieux visualiser les battements est présenté en \autoref{fig:bat_ampl}. Les amplitudes affichées ont été obtenues en prélevant les valeurs absolues des pics minimums et maximums des oscillations. En prenant l'écart entre les deux minimums d'amplitude à $t_1$ et $t_2$ il est possible d'obtenir une période de battement donnant la pulsation de battement expérimentale: $\omega_{B,exp} = (0.426 \pm 0.001)
+$ \si{\radian\per\second}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/bat_ampl.pdf}
+    \caption{Oscillation forcées du disque et amplitudes avec condition initiale $\theta \gg 1$, 0 masses et un amortissement de 50\%, intervalle d'un battement}
+    \label{fig:bat_ampl}
+\end{figure}
+
+La transformation de Fourier des signaux du disque et du moteur ont ensuite été prises afin d'obtenir leurs pulsations respectives. Les fonctions obtenues sont présentées en \autoref{fig:bat_fourier}. Deux pics symétriques sont obtenus correspondant à la fréquence $f$ et à $-f$. Cette valeur de $f$ pour les deux signaux permet d'obtenir les pulsations, pour le moteur \hbox{$\Omega = (3.47\pm0.10)$ \si{\radian\per\second}} et pour les oscillations $\omega = 3.84\pm0.12$ \si{\radian\per\second}. Cela donne en utilisant la formule \hbox{\(\omega_{B,th} = |\omega- \Omega| = 0.4\pm0.2\)}. L'écart relatif entre $\omega_{B,exp}$ et $\omega_{B,th}$ par rapport à $\omega_{B,th}$ est donc de 10\%.
+\begin{wrapfigure}{R}{0.5\linewidth}
+    % \vspace*{-0.5cm}
+    \centering
+    \includegraphics[width=\linewidth]{figures/bat_fourier.pdf}
+    \caption{Transformation de Fourier des oscillations du disque et du moteur}
+    \label{fig:bat_fourier}
+    %%%%% WARNING %%%%%%%
+    \vspace*{-0.5cm}
+\end{wrapfigure}
+
+
+\paragraph{Résonance}
+
+
