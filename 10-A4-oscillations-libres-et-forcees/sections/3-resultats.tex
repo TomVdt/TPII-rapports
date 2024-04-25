@@ -52,7 +52,7 @@ $ \si{\radian\per\second}.
     \label{fig:bat_ampl}
 \end{figure}
 
-La transformation de Fourier des signaux du disque et du moteur ont ensuite été prises afin d'obtenir leurs pulsations respectives. Les fonctions obtenues sont présentées en \autoref{fig:bat_fourier}. Deux pics symétriques sont obtenus correspondant à la fréquence $f$ et à $-f$. Cette valeur de $f$ pour les deux signaux permet d'obtenir les pulsations, pour le moteur \hbox{$\Omega = (3.47\pm0.10)$ \si{\radian\per\second}} et pour les oscillations $\omega = 3.84\pm0.12$ \si{\radian\per\second}. Cela donne en utilisant la formule \hbox{\(\omega_{B,th} = |\omega- \Omega| = 0.4\pm0.2\)}. L'écart relatif entre $\omega_{B,exp}$ et $\omega_{B,th}$ par rapport à $\omega_{B,th}$ est donc de 10\%.
+La transformation de Fourier des signaux du disque et du moteur ont ensuite été prises afin d'obtenir leurs pulsations respectives. Les fonctions obtenues sont présentées en \autoref{fig:bat_fourier}. Deux pics symétriques sont obtenus correspondant à la fréquence $f$ et à $-f$. Cette valeur de $f$ pour les deux signaux permet d'obtenir les pulsations, pour le moteur \hbox{$\Omega = (3.5\pm0.1)$ \si{\radian\per\second}} et pour les oscillations $\omega = (3.8 \pm 0.1)$ \si{\radian\per\second}. Cela donne en utilisant la formule \hbox{\(\omega_{B,th} = |\omega- \Omega| = (0.4\pm0.2)\) \si{\radian\per\second}}. L'écart relatif entre $\omega_{B,exp}$ et $\omega_{B,th}$ par rapport à $\omega_{B,th}$ est donc de 10\%.
 \begin{wrapfigure}{R}{0.5\linewidth}
     % \vspace*{-0.5cm}
     \centering
@@ -65,5 +65,28 @@ La transformation de Fourier des signaux du disque et du moteur ont ensuite ét�
 
 
 \paragraph{Résonance}
+Afin de caractériser la résonance, 30 relevés d'oscillations permanentes ont été faits avec le disque sans masse et 75\% d'amortissement. Pour chacun l'amplitude moyenne $A$ a été relevé comme précédemment. La pulsation $\Omega$ et le déphasage $\psi_\mathrm{exp}$ entre le signal du moteur et l'oscillation ont été relevé grâce aux transformées de Fourier des deux signaux, la valeur de $\Omega$ étant la même pour les deux et le déphasage étant l'écart d'angle entre les transformées à la fréquence d'oscillation. Les résultats sont présentés en \autoref{fig:resonance} avec la fonction $\psi_\mathrm{th}$ calculées avec l'\autoref{eq:A_et_psi} et les valeurs de $\lambda$ et $\omega_0$ déterminées grâce aux oscillations libres. Pour $\psi$ la fonction \texttt{angle} de \texttt{numpy} ayant retourné des valeurs entre $-\pi/2$ et $\pi/2$ un décalage de $\pi$ de toutes les valeurs inférieures à 0 a été effectué. Il est possible d'extraire la valeur de la pulsation de résonance $\Omega_r = 4.1\pm0.1$ \si{\radian\per\second} de la \autoref{fig:res_A}.
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/resonance_A.pdf}
+        \caption{}
+        \label{fig:res_A}
+    \end{subfigure}
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/resonance_psi.pdf}
+        \caption{}
+        \label{fig:res_psi}
+    \end{subfigure}
+    \caption{(a) Amplitude des oscillations $A$ et (b) déphasage par rapport au moteur $\psi$, théorique et expérimental, du disque en fonction de la pulsation $\Omega$}
+    \label{fig:resonance}
+\end{figure}
+
+Les valeurs de $\lambda$ et $\omega_0$ des oscillations libres ont également permis de déterminer $\omega = \sqrt{\omega_0^2 - \lambda^2}$ afin de calculer $\Delta \Omega$ et $Q$. Les valeurs obtenues sont:
+\[
+    \Delta \Omega = \frac{2 \lambda \omega}{\Omega_r} = (0.50\pm0.01) \, \si{\radian\per\second} , \quad Q = \frac{\Omega_r}{\Delta\Omega} = 8.2\pm0.3
+\]
 
