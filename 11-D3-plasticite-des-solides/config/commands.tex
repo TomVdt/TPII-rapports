@@ -1,0 +1,39 @@
+
+% Something figure spacing
+% \setlength\intextsep{5pt}
+
+% Smallcaps autoref
+\let\oldautoref=\autoref
+\renewcommand{\autoref}[1]{\textsc{\oldautoref{#1}}}
+
+% Legendes correctes
+\captionsetup[figure]{name=Figure}
+\captionsetup[table]{name=Tableau}
+
+% Template de mes couilles
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{\z@}
+	{-3.5ex \@plus -1ex \@minus -.2ex}%
+	{2.3ex \@plus.2ex}%
+	{\normalfont\normalsize\bfseries}}
+\makeatother
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection {subsection}{1}{\z@}%
+	{-3.5ex \@plus -1ex \@minus -.2ex}%
+	{2.3ex \@plus.2ex}%
+	{\normalfont\normalsize\bfseries}}
+\makeatother
+
+\newcommand{\couille}[5]{
+	\begin{center}
+		\large\textbf{\sffamily Expérience #1: #2}\\%
+		\large\sffamily Groupe N$^\circ$#3: #4\\%
+		\large\sffamily \today\qquad #5\\%
+	\end{center}
+}
+
+\newcommand{\absfrac}[2]{\ensuremath{\left|\frac{#1}{#2}\right|}}
+\newcommand{\dd}[0]{\ensuremath{\textrm{d}}}
+
+\newcommand{\ligma}[0]{\ensuremath{\sigma}}

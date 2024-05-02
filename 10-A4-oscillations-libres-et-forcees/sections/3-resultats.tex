@@ -1,7 +1,7 @@
 \section{Résultats}
 
 \paragraph{Oscillations libres}
-Le coefficient d'amortissement et la pulsation du disque ont été déterminé pour des amortissements et masses différentes. Le disque a été laché avec un angle initial de 135°. Conformement à l'\autoref{eq:oscil_libre}, une régression exponentielle sur l'enveloppe du signal a été réalisée afin d'obtenir le coefficient d'amortissement \(\lambda\). Un des signaux obtenus lors de l'expérience est présenté en \autoref{fig:signal_libre}. Le coefficient \(\lambda\) a été déterminé pour 0, 2, ou 3 masses supplémentaires ainsi que pour un amortissment variant entre 0 et 100\%. Les résultats obtenus sont présentés en \autoref{fig:lambda_libre}. Le calcul de la periode \(T\) a été réalisée en prenant une moyenne sur plusieurs periodes, en fonction du nombre de periodes disponnibles, permettant d'obtenir \(\omega = 2 \pi / T\). Cela résulte en une plus grande incertitude sur \(\omega\) pour des grands amortissement. Les détails sur l'estimation des incertitudes sont disponnibles en \autoref{sec:erreurs}. La \autoref{fig:omega_libre} présente les résultats obtenus.
+Le coefficient d'amortissement et la pulsation du disque ont été déterminés pour des amortissements et masses différentes. Le disque a été laché avec un angle initial de 135°. Conformement à l'\autoref{eq:oscil_libre}, une régression exponentielle sur l'enveloppe du signal a été réalisée afin d'obtenir le coefficient d'amortissement \(\lambda\). Un des signaux obtenus lors de l'expérience est présenté en \autoref{fig:signal_libre}. Le coefficient \(\lambda\) a été déterminé pour 0, 2, ou 3 masses supplémentaires ainsi que pour un amortissment variant entre 0 et 100\%. Les résultats obtenus sont présentés en \autoref{fig:lambda_libre}. Le calcul de la periode \(T\) a été réalisée en prenant une moyenne sur plusieurs periodes, en fonction du nombre de periodes disponibles, permettant d'obtenir \(\omega = 2 \pi / T\). Les détails sur l'estimation des incertitudes sont disponibles en \autoref{sec:erreurs}. La \autoref{fig:omega_libre} présente les résultats obtenus.
 
 \begin{figure}[h]
     \centering
@@ -54,7 +54,7 @@ $ \si{\radian\per\second}.
 
 La transformation de Fourier des signaux du disque et du moteur ont ensuite été prises afin d'obtenir leurs pulsations respectives. Les fonctions obtenues sont présentées en \autoref{fig:bat_fourier}. Deux pics symétriques sont obtenus correspondant à la fréquence $f$ et à $-f$. Cette valeur de $f$ pour les deux signaux permet d'obtenir les pulsations, pour le moteur \hbox{$\Omega = (3.5\pm0.1)$ \si{\radian\per\second}} et pour les oscillations $\omega = (3.8 \pm 0.1)$ \si{\radian\per\second}. Cela donne en utilisant la formule \hbox{\(\omega_{B,th} = |\omega- \Omega| = (0.4\pm0.2)\) \si{\radian\per\second}}. L'écart relatif entre $\omega_{B,exp}$ et $\omega_{B,th}$ par rapport à $\omega_{B,th}$ est donc de 10\%.
 \begin{wrapfigure}{R}{0.5\linewidth}
-    % \vspace*{-0.5cm}
+    \vspace*{-0.5cm}
     \centering
     \includegraphics[width=\linewidth]{figures/bat_fourier.pdf}
     \caption{Transformation de Fourier des oscillations du disque et du moteur}
@@ -85,8 +85,11 @@ Afin de caractériser la résonance, 30 relevés d'oscillations permanentes ont 
     \label{fig:resonance}
 \end{figure}
 
-Les valeurs de $\lambda$ et $\omega_0$ des oscillations libres ont également permis de déterminer $\omega = \sqrt{\omega_0^2 - \lambda^2}$ afin de calculer $\Delta \Omega$ et $Q$. Les valeurs obtenues sont:
+Les valeurs de $\lambda$ et $\omega$ des oscillations libres ont également permis de calculer $\Delta \Omega$ et $Q$. Les valeurs obtenues sont:
 \[
-    \Delta \Omega = \frac{2 \lambda \omega}{\Omega_r} = (0.50\pm0.01) \, \si{\radian\per\second} , \quad Q = \frac{\Omega_r}{\Delta\Omega} = 8.2\pm0.3
+    \Delta \Omega = \frac{2 \lambda \omega}{\Omega_r} = (0.50\pm0.01) \, \si{\radian\per\second}
+\]
+\[
+    Q = \frac{\Omega_r}{\Delta\Omega} = 8.2\pm0.3
 \]
 
