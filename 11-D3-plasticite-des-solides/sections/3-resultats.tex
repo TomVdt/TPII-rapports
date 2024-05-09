@@ -1,2 +1,46 @@
 \section{Résultats}
 
+\paragraph{Dimensions} Avant de commencer les essais de traction, la longueur \(L_0\), largeur \(\ell\) et épaisseur \(e\) des partie fine des échantillons ont étés mesurés. Les dimensions sont reportés dans le \autoref{tab:dims}.
+
+\begin{table}[h]
+    \centering
+    % TODO supprimer inutiles
+    \begin{tabular}{ |c||c|c|c|c| }
+        \cline{2-5}
+        \multicolumn{1}{c|}{} & Échantillon & \(L_0\) [mm] & \(\ell\) [mm] & \(e\) \\
+        \hline
+        \multirow{2}{3cm}{Non-traités} & 1 & \(18.13 \pm 0.01\) & \(4.21 \pm 0.01\) & \(2.30 \pm 0.01\) \\
+        & 2 & \(20.46 \pm 0.01\) & \(4.19 \pm 0.01\) & \(2.07 \pm 0.01\) \\
+        \hline
+        \multirow{2}{3cm}{Adoucis} & 3 & \(17.42 \pm 0.01\) & \(4.05 \pm 0.01\) & \(2.01 \pm 0.01\) \\
+        & 4 & \(17.41 \pm 0.01\) & \(4.09 \pm 0.01\) & \(2.00 \pm 0.01\) \\
+        \hline
+        \multirow{3}{3cm}{Adoucis puis durcis} & 5 & \(18.04 \pm 0.01\) & \(4.06 \pm 0.01\) & \(2.03 \pm 0.01\) \\
+        & 6 & \(18.19 \pm 0.01\) & \(4.12 \pm 0.01\) & \(2.04 \pm 0.01\) \\
+        & 7 & \(18.81 \pm 0.01\) & \(4.20 \pm 0.01\) & \(2.04 \pm 0.01\) \\
+        \hline
+    \end{tabular}
+    \caption{Dimensions des échantillons avant la traction}
+    \label{tab:dims}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ |c||c|c|c|c|c| }
+        \cline{2-6}
+        \multicolumn{1}{c|}{} & Échantillon & \(E\) [GPa] & \(\sigma_{0.2}\) [MPa] & \(\sigma_{\textrm{max}}\) [MPa] & \(\varepsilon_{\textrm{rup}}\) [\%] \\
+        \hline
+        \multirow{2}{4cm}{Non-traité} & 1 & \input{data/froid1_E} & feur & \input{data/froid1_s_max} & feur \\
+        & 2 & \input{data/froid2_E} & feur & \input{data/froid2_s_max} & feur \\
+        \hline
+        \multirow{2}{4cm}{Adouci} & 3 & \input{data/chaud3_E} & feur & \input{data/chaud3_s_max} & feur \\
+        & 4 & \input{data/chaud4_E} & feur & \input{data/chaud4_s_max} & feur \\
+        \hline
+        \multirow{3}{4cm}{Adoucis puis durci} & 5 & \input{data/tiede5_E} & feur & \input{data/tiede5_s_max} & feur \\
+        & 6 & \input{data/tiede6_E} & feur & \input{data/tiede6_s_max} & feur \\
+        & 7 & \input{data/tiede7_E} & feur & \input{data/tiede7_s_max} & feur \\
+        \hline
+    \end{tabular}
+    \caption{Module de Young \(E\), limite élasitque \(\sigma_{0.2}\), résistance à la traction \(\sigma_{\textrm{max}}\) et déformation à la rupture \(\varepsilon_{\textrm{rup}}\) pour les échantillons \#NUMS}
+    \label{tab:results}
+\end{table}
