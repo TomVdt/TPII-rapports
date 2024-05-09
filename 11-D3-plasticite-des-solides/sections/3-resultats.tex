@@ -24,7 +24,10 @@
     \label{tab:dims}
 \end{table}
 
-\begin{figure}[h]
+\paragraph{Essais de traction}
+Il a bien été observé empiriquement pour tous les essais de traction effectués dans l'ordre: une déformation élastique, une déformation plastique suivie d'une striction puis d'une rupture. Une figure pour chaque traitement thermique est donnée en \autoref{fig:tractions_exp} montrant l'extraction du module de Young $E$, de la contrainte maximale $\sigma_\mathrm{max}$ et de la déformation rémanente à la rupture $\varepsilon_r$. L'ensemble des figures restantes avec les même annotations sont disponibles en \autoref{sec:fig_supp}. Les résultats numériques sont tous reportés dans le \autoref{tab:results}.
+
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.48\linewidth}
         \centering
@@ -45,15 +48,12 @@
         \label{fig:tiede6}
     \end{subfigure}
     \caption{Courbe de traction pour un échantillon (a) non-traité (b) adouci (c) adouci puis durci. Une régression linéaire a été réalisée afin d'obtenir le module de Young \(E\) et d'autre propriétés sont reportées sur les graphiques.}
-    \label{<label>}
+    \label{fig:tractions_exp}
 \end{figure}
 
-\begin{wrapfigure}{R}{0.5\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{figures/comparaison.pdf}
-    \caption{Comparaison entre les coubres de traction obtenues pour les échantillons non traités, adoucis et adoucis puis durcis}
-\end{wrapfigure}
-Une comparaison entre les courbes de traction des échantillons traités et non traités se trouve en \autoref{fig:comparaison}
+
+De même 
+
 
 \begin{table}[h]
     \centering
@@ -61,17 +61,27 @@ Une comparaison entre les courbes de traction des échantillons traités et non 
         \cline{2-6}
         \multicolumn{1}{c|}{} & Échantillon & \(E\) [GPa] & \(\sigma_{0.2}\) [MPa] & \(\sigma_{\textrm{max}}\) [MPa] & \(\varepsilon_{\textrm{rup}}\) [\%] \\
         \hline
-        \multirow{2}{4cm}{Non-traité} & 1 & \input{data/froid1_E} & feur & \input{data/froid1_s_max} & feur \\
-        & 2 & \input{data/froid2_E} & feur & \input{data/froid2_s_max} & feur \\
+        \multirow{2}{4cm}{Non-traité} & 1 & \input{data/froid1_E} & \input{data/froid1_sigma2} & \input{data/froid1_s_max} & \input{data/froid1_eps_rup} \\
+        & 2 & \input{data/froid2_E} & \input{data/froid2_sigma2} & \input{data/froid2_s_max} & \input{data/froid2_eps_rup} \\
         \hline
-        \multirow{2}{4cm}{Adouci} & 3 & \input{data/chaud3_E} & feur & \input{data/chaud3_s_max} & feur \\
-        & 4 & \input{data/chaud4_E} & feur & \input{data/chaud4_s_max} & feur \\
+        \multirow{2}{4cm}{Adouci} & 3 & \input{data/chaud3_E} & \input{data/chaud3_sigma2} & \input{data/chaud3_s_max} & \input{data/chaud3_eps_rup} \\
+        & 4 & \input{data/chaud4_E} & \input{data/chaud4_sigma2} & \input{data/chaud4_s_max} & \input{data/chaud4_eps_rup} \\
         \hline
-        \multirow{3}{4cm}{Adoucis puis durci} & 5 & \input{data/tiede5_E} & feur & \input{data/tiede5_s_max} & feur \\
-        & 6 & \input{data/tiede6_E} & feur & \input{data/tiede6_s_max} & feur \\
-        & 7 & \input{data/tiede7_E} & feur & \input{data/tiede7_s_max} & feur \\
+        \multirow{3}{4cm}{Adoucis puis durci} & 5 & \input{data/tiede5_E} & \input{data/tiede5_sigma2} & \input{data/tiede5_s_max} & \input{data/tiede5_eps_rup} \\
+        & 6 & \input{data/tiede6_E} & \input{data/tiede6_sigma2} & \input{data/tiede6_s_max} & \input{data/tiede6_eps_rup} \\
+        & 7 & \input{data/tiede7_E} & \input{data/tiede7_sigma2} & \input{data/tiede7_s_max} & \input{data/tiede7_eps_rup} \\
         \hline
     \end{tabular}
     \caption{Module de Young \(E\), limite élasitque \(\sigma_{0.2}\), résistance à la traction \(\sigma_{\textrm{max}}\) et déformation à la rupture \(\varepsilon_{\textrm{rup}}\) pour les échantillons \#NUMS}
     \label{tab:results}
 \end{table}
+
+
+
+\begin{wrapfigure}{R}{0.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/comparaison.pdf}
+    \caption{Comparaison entre les coubres de traction obtenues pour les échantillons non traités, adoucis et adoucis puis durcis}
+    \label{fig:comparaison}
+\end{wrapfigure}
+Une comparaison entre les courbes de traction des échantillons traités et non traités se trouve en \autoref{fig:comparaison}
