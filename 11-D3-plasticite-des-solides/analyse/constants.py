@@ -13,4 +13,5 @@ chaud3 = dimensions(ufloat(17.42, delta_dist), ufloat(4.05, delta_dist), ufloat(
 chaud4 = dimensions(ufloat(17.41, delta_dist), ufloat(4.09, delta_dist), ufloat(2.00, delta_dist))
 
 tiede5 = dimensions(ufloat(18.04, delta_dist), ufloat(4.06, delta_dist), ufloat(2.03, delta_dist))
-tiede6 = dimensions(ufloat(00, delta_dist), ufloat(00, delta_dist), ufloat(00, delta_dist))
+tiede6 = dimensions(ufloat(18.19, delta_dist), ufloat(4.12, delta_dist), ufloat(2.04, delta_dist))
+tiede7 = dimensions(ufloat(18.81, delta_dist), ufloat(4.20, delta_dist), ufloat(2.04, delta_dist))
