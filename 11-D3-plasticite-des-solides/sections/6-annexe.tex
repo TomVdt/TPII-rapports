@@ -9,7 +9,9 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur \\
         \midrule
-        Temps \(t\) [\si{\second}] & 0.05 \\
+        Longueur, largeur, et épaisseur \(L, \ell, e\) [\si{\milli\meter}] & 0.01 \\
+        \(U_F\) [\si{\volt}] & 0.001 \\
+        \(U_{\Delta L}\) [\si{\volt}] & 0.001 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -31,9 +33,16 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur feur:
+Erreur sur la contrainte de cisaillement \(\sigma\):
 \begin{equation}
-    feur
+    \Delta \sigma = \absfrac{\Delta U_F}{U_F} \sigma + \absfrac{\Delta S_0}{S_0} \sigma
 \end{equation}
+où \(S_0 = \ell e\) est la surface de coupe de l'échantillon avant traction et \(U_F\) est la tension de sortie du capteur de force.
+
+Erreur sur la déformation de cisaillement \(\varepsilon\):
+\begin{equation}
+    \Delta \varepsilon = \absfrac{\Delta U_{\Delta L}}{U_{\Delta L}} \varepsilon + \absfrac{\Delta L_0}{L_0} \sigma
+\end{equation}
+où \(L_0\) est la longueur avant traction de l'échantillon et \(U_{\Delta L}\) est la tension de sortie du capteur de déformation.
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
