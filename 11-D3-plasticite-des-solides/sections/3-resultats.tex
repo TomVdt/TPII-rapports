@@ -7,17 +7,20 @@
     % TODO supprimer inutiles
     \begin{tabular}{ |c||c|c|c|c| }
         \cline{2-5}
-        \multicolumn{1}{c|}{} & Échantillon & \(L_0\) [mm] & \(\ell\) [mm] & \(e\) \\
+        \multicolumn{1}{c|}{} & Échantillon n$^\circ$ & \(L_0\) [mm] & \(\ell\) [mm] & \(e\) \\
         \hline
-        \multirow{2}{3cm}{Non-traités} & 1 & \(18.13 \pm 0.01\) & \(4.21 \pm 0.01\) & \(2.30 \pm 0.01\) \\
+        \multirow{1}{4cm}{Non-traités}
+        % & 1 & \(18.13 \pm 0.01\) & \(4.21 \pm 0.01\) & \(2.30 \pm 0.01\) \\
         & 2 & \(20.46 \pm 0.01\) & \(4.19 \pm 0.01\) & \(2.07 \pm 0.01\) \\
         \hline
-        \multirow{2}{3cm}{Adoucis} & 3 & \(17.42 \pm 0.01\) & \(4.05 \pm 0.01\) & \(2.01 \pm 0.01\) \\
-        & 4 & \(17.41 \pm 0.01\) & \(4.09 \pm 0.01\) & \(2.00 \pm 0.01\) \\
+        \multirow{1}{4cm}{Adoucis}
+        & 3 & \(17.42 \pm 0.01\) & \(4.05 \pm 0.01\) & \(2.01 \pm 0.01\) \\
+        % & 4 & \(17.41 \pm 0.01\) & \(4.09 \pm 0.01\) & \(2.00 \pm 0.01\) \\
         \hline
-        \multirow{3}{3cm}{Adoucis puis durcis} & 5 & \(18.04 \pm 0.01\) & \(4.06 \pm 0.01\) & \(2.03 \pm 0.01\) \\
+        \multirow{1}{4cm}{Adoucis puis durcis}
+        % & 5 & \(18.04 \pm 0.01\) & \(4.06 \pm 0.01\) & \(2.03 \pm 0.01\) \\
         & 6 & \(18.19 \pm 0.01\) & \(4.12 \pm 0.01\) & \(2.04 \pm 0.01\) \\
-        & 7 & \(18.81 \pm 0.01\) & \(4.20 \pm 0.01\) & \(2.04 \pm 0.01\) \\
+        % & 7 & \(18.81 \pm 0.01\) & \(4.20 \pm 0.01\) & \(2.04 \pm 0.01\) \\
         \hline
     \end{tabular}
     \caption{Dimensions des échantillons avant la traction}
@@ -25,32 +28,41 @@
 \end{table}
 
 \paragraph{Essais de traction}
-Il a bien été observé empiriquement pour tous les essais de traction effectués dans l'ordre: une déformation élastique, une déformation plastique suivie d'une striction puis d'une rupture. Une figure pour chaque traitement thermique est donnée en \autoref{fig:tractions_exp} montrant l'extraction du module de Young $E$, de la contrainte maximale $\sigma_\mathrm{max}$ et de la déformation rémanente à la rupture $\varepsilon_r$. L'ensemble des figures restantes avec les annotations sont disponibles en \autoref{sec:fig_supp}. Les résultats numériques sont tous reportés dans le \autoref{tab:results}.
-\begin{figure}[H]
+Il a bien été observé empiriquement pour tous les essais de traction effectués dans l'ordre: une déformation élastique, une déformation plastique suivie d'une striction puis d'une rupture. Une figure pour chaque traitement thermique est donnée en \autoref{fig:tractions_exp} montrant l'extraction du module de Young $E$, de la contrainte maximale $\sigma_\mathrm{max}$ et de la déformation rémanente à la rupture $\varepsilon_r$.
+% L'ensemble des figures restantes avec les annotations sont disponibles en \autoref{sec:fig_supp}.
+Les résultats numériques sont tous reportés dans le \autoref{tab:results}. De même les valeurs de la limite élastique $\sigma_{0.2}$ ont été relevées et les figures correspondantes pour deux échantillons sélectionnés sont disponible en \autoref{fig:limite_elastique}. Cette limite élastique a été prélevée selon la théorie présentée en \autoref{sec:theorie} et le module de Young obtenu précédement pour chaque essai de traction. Les valeurs numériques correspondantes sont en \autoref{tab:results}.
+
+Une comparaison entre les courbes de traction des échantillons traités et non traités se trouve en \autoref{fig:comparaison}.
+
+\begin{figure}[h!]
     \centering
     \begin{subfigure}{0.48\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/froid2_annotated.pdf}
+        \includegraphics[width=\linewidth]{figures/froid2all.pdf}
         \caption{}
         \label{fig:froid2}
     \end{subfigure}
     \begin{subfigure}{0.48\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/chaud3_annotated.pdf}
+        \includegraphics[width=\linewidth]{figures/chaud3all.pdf}
         \caption{}
         \label{fig:chaud3}
     \end{subfigure}
     \begin{subfigure}{0.48\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/tiede6_annotated.pdf}
+        \includegraphics[width=\linewidth]{figures/tiede6all.pdf}
         \caption{}
         \label{fig:tiede6}
     \end{subfigure}
-    \caption{Courbe de traction pour un échantillon (a) non-traité (b) adouci (c) adouci puis durci. Une régression linéaire a été réalisée afin d'obtenir le module de Young \(E\) et d'autre propriétés sont reportées sur les graphiques.}
+    \begin{subfigure}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/comparaison.pdf}
+        \caption{}
+        \label{fig:comparaison}
+    \end{subfigure}
+    \caption{Courbe de traction pour un échantillon (a) non-traité (b) adouci (c) adouci puis durci. Une régression linéaire a été réalisée afin d'obtenir le module de Young \(E\) permettant de déterminer \(\sigma_{0.2}\) et \(\varepsilon_r\). En (d) une comparaison entre les coubres de traction obtenues pour les échantillons non traités, adoucis et adoucis puis durcis}
     \label{fig:tractions_exp}
 \end{figure}
-
-De même les valeurs de la limite élastique $\sigma_{0.2}$ ont été relevées et les figures correspondantes pour deux échantillons sélectionnés sont disponible en \autoref{fig:limite_elastique}. Cette limite élastique a été prélevée selon la théorie présentée en \autoref{sec:theorie} et le module de Young obtenu précédement pour chaque essai de traction. Les valeurs numériques correspondantes sont en \autoref{tab:results}.
 
 \begin{figure}[H]
     \centering
@@ -75,29 +87,42 @@ De même les valeurs de la limite élastique $\sigma_{0.2}$ ont été relevées 
     \centering
     \begin{tabular}{ |c||c|c|c|c|c| }
         \cline{2-6}
-        \multicolumn{1}{c|}{} & Échantillon & \(E\) [GPa] & \(\sigma_{0.2}\) [MPa] & \(\sigma_{\textrm{max}}\) [MPa] & \(\varepsilon_{\textrm{rup}}\) [\%] \\
+        \multicolumn{1}{c|}{} & Échantillon n$^\circ$ & \(E\) [GPa] & \(\sigma_{0.2}\) [MPa] & \(\sigma_{\textrm{max}}\) [MPa] & \(\varepsilon_{\textrm{r}}\) [\%] \\
         \hline
-        \multirow{2}{4cm}{Non-traité} & 1 & \input{data/froid1_E} & \input{data/froid1_sigma2} & \input{data/froid1_s_max} & \input{data/froid1_eps_rup} \\
+        \multirow{1}{4cm}{Non-traité}
+        % & 1 & \input{data/froid1_E} & \input{data/froid1_sigma2} & \input{data/froid1_s_max} & \input{data/froid1_eps_rup} \\
         & 2 & \input{data/froid2_E} & \input{data/froid2_sigma2} & \input{data/froid2_s_max} & \input{data/froid2_eps_rup} \\
         \hline
-        \multirow{2}{4cm}{Adouci} & 3 & \input{data/chaud3_E} & \input{data/chaud3_sigma2} & \input{data/chaud3_s_max} & \input{data/chaud3_eps_rup} \\
-        & 4 & \input{data/chaud4_E} & \input{data/chaud4_sigma2} & \input{data/chaud4_s_max} & \input{data/chaud4_eps_rup} \\
+        \multirow{1}{4cm}{Adouci}
+        & 3 & \input{data/chaud3_E} & \input{data/chaud3_sigma2} & \input{data/chaud3_s_max} & \input{data/chaud3_eps_rup} \\
+        % & 4 & \input{data/chaud4_E} & \input{data/chaud4_sigma2} & \input{data/chaud4_s_max} & \input{data/chaud4_eps_rup} \\
         \hline
-        \multirow{3}{4cm}{Adoucis puis durci} & 5 & \input{data/tiede5_E} & \input{data/tiede5_sigma2} & \input{data/tiede5_s_max} & \input{data/tiede5_eps_rup} \\
+        \multirow{1}{4cm}{Adoucis puis durci}
+        % & 5 & \input{data/tiede5_E} & \input{data/tiede5_sigma2} & \input{data/tiede5_s_max} & \input{data/tiede5_eps_rup} \\
         & 6 & \input{data/tiede6_E} & \input{data/tiede6_sigma2} & \input{data/tiede6_s_max} & \input{data/tiede6_eps_rup} \\
-        & 7 & \input{data/tiede7_E} & \input{data/tiede7_sigma2} & \input{data/tiede7_s_max} & \input{data/tiede7_eps_rup} \\
+        % & 7 & \input{data/tiede7_E} & \input{data/tiede7_sigma2} & \input{data/tiede7_s_max} & \input{data/tiede7_eps_rup} \\
         \hline
     \end{tabular}
-    \caption{Module de Young \(E\), limite élasitque \(\sigma_{0.2}\), résistance à la traction \(\sigma_{\textrm{max}}\) et déformation à la rupture \(\varepsilon_{\textrm{rup}}\) pour les échantillons \#NUMS}
+    \caption{Module de Young \(E\), limite élastique \(\sigma_{0.2}\), résistance à la traction \(\sigma_{\textrm{max}}\) et déformation à la rupture \(\varepsilon_{\textrm{r}}\) pour les échantillons non-traités, adoucis et adoucis puis durcis}
     \label{tab:results}
 \end{table}
 
+Les résultats obtenus pour l'échantillon non-traité ont été comparés aux valeurs tabulées de l'alliage d'aluminium 6061-T6, dont la composition est la plus proche de l'Anticorodal 110 \cite{alualualu}. La comparaison est dans le \autoref{tab:err_rel}.
 
-
-\begin{wrapfigure}{R}{0.5\linewidth}
+\begin{table}[h]
     \centering
-    \includegraphics[width=\linewidth]{figures/comparaison.pdf}
-    \caption{Comparaison entre les coubres de traction obtenues pour les échantillons non traités, adoucis et adoucis puis durcis}
-    \label{fig:comparaison}
-\end{wrapfigure}
-Une comparaison entre les courbes de traction des échantillons traités et non traités se trouve en \autoref{fig:comparaison}
+    \begin{tabular}{ |c||c|c|c|c| }
+        \cline{2-5}
+        \multicolumn{1}{c|}{} & \(E\) [GPa] & \(\sigma_{0.2}\) [MPa] & \(\sigma_{\textrm{max}}\) [MPa] & \(\varepsilon_{\textrm{r}}\) [\%] \\
+        \hline
+        \multirow{1}{4cm}{Valeur de référence \cite{alualualu}}
+        & 69 & 275 & 310 & \(\ge\)12 \\
+        \hline
+        \multirow{1}{4cm}{Erreur relative}
+        & \input{data/froid2_E_rel}\% & \input{data/froid2_sigma2_rel}\% & \input{data/froid2_s_max_rel}\% & \input{data/froid2_eps_rup_rel}\% \\
+        \hline
+    \end{tabular}
+    \caption{Comparaison entre l'échantillon non-traité et les valeurs tabulées pour l'alliage 6061-T6 \cite{alualualu}}
+    \label{tab:err_rel}
+\end{table}
+
