@@ -21,5 +21,6 @@ rcParams = {
     'axes.formatter.useoffset': False,
     'axes.spines.right': False,
     'axes.spines.top': False,
+    'legend.framealpha': 1.0,
     # 'savefig.directory': '../figures/'
 }
