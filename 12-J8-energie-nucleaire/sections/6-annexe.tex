@@ -9,7 +9,8 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \toprule
         Variable & Erreur \\
         \midrule
-        Var \(e\) [\si{\milli\meter}] & 0.01 \\
+        Temps \(t\) [s] & 0.1 \\
+        Hauteur \(h\) [mm] & 0.1 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -31,9 +32,16 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur la feur:
+Erreur sur le nombre de neutrons \(n\). En estimant que les neutrons sont libérés selon une loi de Poisson, \(n \sim \textrm{Pois}(\lambda)\), on a \(\bar n = \textrm{Var}(n)\) et alors:
 \begin{equation}
-    feur
+    \Delta n = n \frac{1}{\sqrt{n}} = \sqrt{n}
 \end{equation}
+
+Erreur sur le taux de compte \(C\):
+\begin{equation}
+    \Delta C = \absfrac{\Delta n}{n} C + \absfrac{\Delta t}{t} C
+\end{equation}
+
+L'estimation de l'erreur sur \(h_c\) est réalisée graphiquement, à partir de paires de points. L'estimation basse est donnée on considérant la borne supérieure du premier point (\(h_i, 1/C_i + 1/\Delta C_i\)) et l'estimaton basse du second (\(h_{i+1}, 1/C_{i+1} - 1/\Delta C_{i+1}\)), et inversement pour l'estimation haute. En réalisant une régression linéaire, les valeurs \(h_{c,\textrm{min}}\) et \(h_{c,\textrm{max}}\) sont données par l'abscisse de l'intersection avec l'axe x.
 
 Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
