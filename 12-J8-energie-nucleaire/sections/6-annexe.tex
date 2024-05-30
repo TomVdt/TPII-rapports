@@ -11,6 +11,8 @@ Les erreurs sur les mesures sont données dans le \autoref{tab:erreurs}.
         \midrule
         Temps \(t\) [s] & 0.1 \\
         Hauteur \(h\) [mm] & 0.1 \\
+        Intensité \(I\) [nA] & $\sim$ 10\% \\
+        Compte $N$ & 1000 \\
         \bottomrule
     \end{tabulary}
     \caption{Erreurs estimées sur les mesures}
@@ -32,11 +34,11 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 \paragraph*{Formules d'erreurs}
 
-Erreur sur le nombre de neutrons \(n\). En estimant que les neutrons sont libérés selon une loi de Poisson, \(n \sim \textrm{Pois}(\lambda)\), on a \(\bar n = \textrm{Var}(n)\) et alors:
+Erreur sur le nombre $N$ de neutrons. En estimant que les neutrons sont libérés selon une loi de Poisson, \(N \sim \textrm{Pois}(\lambda)\), on a \(\bar N = \textrm{Var}(N)\) et alors:
 \begin{equation}
-    \Delta n = {\sqrt{\textrm{Var}(n)}} = \sqrt{n}
+    \Delta N = {\sqrt{\textrm{Var}(N)}} = \sqrt{N}
 \end{equation}
-ce qui donne un écart relatif de $\varepsilon = \Delta n/n = 1/\sqrt{n}$. Ainsi afin d'avoir un écart relatif de 1\% il est nécessaire d'avoir $n=10 000$.
+ce qui donne un écart relatif de $\varepsilon = \Delta N/N = 1/\sqrt{N}$. Ainsi afin d'avoir un écart relatif de 1\% il est nécessaire d'avoir $N\approx10 000$.
 
 Erreur sur le taux de compte \(C\):
 \begin{equation}
