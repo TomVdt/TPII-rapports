@@ -34,8 +34,9 @@ En pratique, ces valeurs sont calculées par la bibliothèque python \texttt{num
 
 Erreur sur le nombre de neutrons \(n\). En estimant que les neutrons sont libérés selon une loi de Poisson, \(n \sim \textrm{Pois}(\lambda)\), on a \(\bar n = \textrm{Var}(n)\) et alors:
 \begin{equation}
-    \Delta n = n \frac{1}{\sqrt{n}} = \sqrt{n}
+    \Delta n = {\sqrt{\textrm{Var}(n)}} = \sqrt{n}
 \end{equation}
+ce qui donne un écart relatif de $\varepsilon = \Delta n/n = 1/\sqrt{n}$. Ainsi afin d'avoir un écart relatif de 1\% il est nécessaire d'avoir $n=10 000$.
 
 Erreur sur le taux de compte \(C\):
 \begin{equation}
