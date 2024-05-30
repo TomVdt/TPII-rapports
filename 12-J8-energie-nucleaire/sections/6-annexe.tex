@@ -42,6 +42,7 @@ Erreur sur le taux de compte \(C\):
     \Delta C = \absfrac{\Delta n}{n} C + \absfrac{\Delta t}{t} C
 \end{equation}
 
+Ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
+
 L'estimation de l'erreur sur \(h_c\) est réalisée graphiquement, à partir de paires de points. L'estimation basse est donnée on considérant la borne supérieure du premier point (\(h_i, 1/C_i + 1/\Delta C_i\)) et l'estimaton basse du second (\(h_{i+1}, 1/C_{i+1} - 1/\Delta C_{i+1}\)), et inversement pour l'estimation haute. En réalisant une régression linéaire, les valeurs \(h_{c,\textrm{min}}\) et \(h_{c,\textrm{max}}\) sont données par l'abscisse de l'intersection avec l'axe x.
 
-Toutes ces erreurs sont calculées en pratique par la bibliothèque \texttt{uncertainties}.
